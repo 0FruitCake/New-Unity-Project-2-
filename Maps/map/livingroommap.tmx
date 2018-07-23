@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="12" height="12" tilewidth="32" tileheight="32" infinite="0" nextobjectid="1">
- <tileset firstgid="1" source="assets/interior.tsx"/>
- <tileset firstgid="257" source="assets/victoria.tsx"/>
- <tileset firstgid="312" source="assets/castlefloors.tsx"/>
- <tileset firstgid="412" source="assets/inside.tsx"/>
+ <tileset firstgid="1" source="../assets/interior.tsx"/>
+ <tileset firstgid="257" source="../assets/victoria.tsx"/>
+ <tileset firstgid="312" source="../assets/castlefloors.tsx"/>
+ <tileset firstgid="412" source="../assets/inside.tsx"/>
+ <tileset firstgid="512" source="../assets/Terrain.tsx"/>
  <layer name="Tile Layer 1" width="12" height="12">
   <data encoding="csv">
 49,49,49,49,49,49,49,49,49,49,49,49,
@@ -23,8 +24,8 @@
  <layer name="inside" width="12" height="12">
   <data encoding="csv">
 34,36,36,36,37,0,0,35,36,36,36,33,
-21,423,423,423,423,0,0,423,423,423,423,19,
-21,20,20,20,20,0,0,423,423,423,423,19,
+21,996,996,996,996,0,0,996,996,996,996,19,
+21,20,20,20,20,0,0,996,996,996,996,19,
 21,0,0,0,0,0,0,0,0,0,0,19,
 37,0,0,0,0,0,0,0,0,0,0,19,
 66,0,0,0,0,0,0,0,0,0,0,19,
@@ -68,7 +69,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer name="red" width="12" height="12" opacity="0.59">
+ <layer name="red" width="12" height="12" visible="0" opacity="0.59">
   <data encoding="csv">
 384,384,384,384,384,0,0,384,384,384,384,384,
 384,384,384,384,384,0,0,384,384,384,384,384,
