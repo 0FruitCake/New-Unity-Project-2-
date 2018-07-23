@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="12" height="12" tilewidth="32" tileheight="32" infinite="0" nextobjectid="1">
- <tileset firstgid="1" source="assets/castlefloors_outside.tsx"/>
- <tileset firstgid="21" source="assets/castlewalls.tsx"/>
- <tileset firstgid="201" source="assets/country.tsx"/>
- <tileset firstgid="221" source="assets/cementstair.tsx"/>
- <tileset firstgid="241" source="assets/Sci-fi Obj Set 1.tsx"/>
- <tileset firstgid="262" source="assets/inside.tsx"/>
- <tileset firstgid="362" source="assets/terrain.tsx"/>
- <tileset firstgid="1386" source="assets/interior.tsx"/>
- <tileset firstgid="1642" source="assets/house.tsx"/>
- <tileset firstgid="1705" source="assets/chests.tsx"/>
- <tileset firstgid="1711" source="assets/victoria.tsx"/>
- <tileset firstgid="1766" source="assets/castlefloors.tsx"/>
+ <tileset firstgid="1" source="../assets/castlefloors_outside.tsx"/>
+ <tileset firstgid="21" source="../assets/castlewalls.tsx"/>
+ <tileset firstgid="201" source="../assets/country.tsx"/>
+ <tileset firstgid="221" source="../assets/cementstair.tsx"/>
+ <tileset firstgid="241" source="../assets/Sci-fi Obj Set 1.tsx"/>
+ <tileset firstgid="262" source="../assets/inside.tsx"/>
+ <tileset firstgid="362" source="../assets/Terrain.tsx"/>
+ <tileset firstgid="1386" source="../assets/interior.tsx"/>
+ <tileset firstgid="1642" source="../assets/house.tsx"/>
+ <tileset firstgid="1705" source="../assets/chests.tsx"/>
+ <tileset firstgid="1711" source="../assets/victoria.tsx"/>
+ <tileset firstgid="1766" source="../assets/castlefloors.tsx"/>
  <layer name="Tile Layer 1" width="12" height="12">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
+0,846,846,846,846,846,846,846,846,846,846,0,
+0,846,846,846,846,846,846,846,846,846,846,0,
 0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,
@@ -31,8 +31,8 @@
  <layer name="bed" width="12" height="12">
   <data encoding="csv">
 1419,1421,1421,1421,1421,1421,1421,1421,1421,1421,1421,1418,
-1406,273,273,273,273,273,273,273,273,273,273,1404,
-1406,273,273,273,273,273,273,273,273,273,273,1404,
+1406,0,0,0,0,0,0,0,0,0,0,1404,
+1406,0,0,0,0,0,0,0,0,0,0,1404,
 1406,1434,1434,1434,1434,1434,1434,1434,1434,1434,1434,1404,
 1406,1434,1434,1434,1434,1434,1434,1434,1434,1434,1434,1404,
 1406,1434,1434,1434,1434,1434,1434,1434,1434,1434,1434,1404,
@@ -47,8 +47,8 @@
  <layer name="interior" width="12" height="12">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,
-0,273,273,273,273,273,1548,273,273,273,273,0,
-0,1483,1483,1483,1483,273,273,248,249,1482,1482,0,
+0,0,0,0,0,0,1549,0,0,0,0,0,
+0,1483,1483,1483,1483,0,0,248,249,1482,1482,0,
 0,1499,1499,1499,1499,244,245,255,256,1498,1498,0,
 0,0,0,0,0,0,0,0,0,0,0,0,
 0,1715,1716,0,0,0,0,0,0,201,202,0,
