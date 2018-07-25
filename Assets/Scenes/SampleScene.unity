@@ -146,7 +146,7 @@ Transform:
   - {fileID: 1237005812}
   - {fileID: 933375345}
   m_Father: {fileID: 928578896}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &299316650
 GameObject:
@@ -756,7 +756,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fee18b37b48d3244e8d8928d88b8632f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mspeed: 65
+  moveSpeed: 65
 --- !u!212 &1044468022
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1142,5 +1142,5 @@ Transform:
   - {fileID: 743830407}
   - {fileID: 1129395522}
   m_Father: {fileID: 928578896}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
