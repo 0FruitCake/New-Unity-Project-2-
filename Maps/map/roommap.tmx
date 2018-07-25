@@ -12,10 +12,10 @@
  <tileset firstgid="1705" source="../assets/chests.tsx"/>
  <tileset firstgid="1711" source="../assets/victoria.tsx"/>
  <tileset firstgid="1766" source="../assets/castlefloors.tsx"/>
- <tileset firstgid="1866" source="tileset_16x16_interior.tsx"/>
- <tileset firstgid="1930" source="../assets/tileset_16x16_interior.tsx"/>
- <tileset firstgid="1994" source="../../../../Desktop/assets/castlefloors.tsx"/>
- <tileset firstgid="2094" source="../../../../Desktop/assets/interior.tsx"/>
+ <tileset firstgid="1866" source="../assets/tileset_16x16_interior.tsx"/>
+ <tileset firstgid="1930" source="../../../../Desktop/assets/castlefloors.tsx"/>
+ <tileset firstgid="2030" source="../../../../Desktop/assets/interior.tsx"/>
+ <tileset firstgid="2286" source="../assets/tileset_16x16_interior.tsx"/>
  <layer name="Tile Layer 1" width="12" height="12">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,
@@ -29,7 +29,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,2021,2020,0,0,0,0,0
+0,0,0,0,0,1957,1956,0,0,0,0,0
 </data>
  </layer>
  <layer name="bed" width="12" height="12">
@@ -64,7 +64,7 @@
 0,0,0,0,1390,0,0,1388,0,0,0,0
 </data>
  </layer>
- <layer name="red" width="12" height="12" opacity="0.5">
+ <layer name="red" width="12" height="12" opacity="0">
   <data encoding="csv">
 1838,1838,1838,1838,1838,1838,1838,1838,1838,1838,1838,1838,
 1838,1838,1838,1838,1838,1838,1838,1838,1838,1838,1838,1838,
