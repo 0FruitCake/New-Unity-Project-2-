@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!--Tiled2Unity generated xml data-->
 <!--Do not modify by hand-->
-<!--Last exported: 7/25/2018 9:31:18 PM-->
+<!--Last exported: 7/25/2018 9:51:22 PM-->
 <Tiled2Unity version="1.0.13.2">
   <AssignMaterial mesh="Obedroom_mesh_0001" material="interior" />
   <AssignMaterial mesh="Obedroom_mesh_0002" material="inside" />
@@ -30,7 +30,7 @@
     </GameObject>
     <GameObject name="red" x="0" y="0" z="0">
       <TileLayer offsetX="0" offsetY="0" />
-      <GameObject name="castlefloors" x="0" y="0" mesh="Obedroom_mesh_0008" sortingLayerName="" sortingOrder="3" opacity="0.8" />
+      <GameObject name="castlefloors" x="0" y="0" mesh="Obedroom_mesh_0008" sortingLayerName="" sortingOrder="3" opacity="0" />
       <GameObject name="Collision">
         <PolygonCollider2D>
           <Path>0,-31 384,-31 384,0 0,0</Path>
