@@ -227,7 +227,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 417a8634f5788f0489e6905b9559c860, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: Wow wow wow
+  dialogueLines:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
 --- !u!61 &70342327
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1579,10 +1584,7 @@ MonoBehaviour:
   image: {fileID: 20955765}
   dText: {fileID: 901331140}
   dialogActive: 0
-  dialogLines:
-  - bayot
-  - og pisot si
-  - RJ Reroma
+  dialogLines: []
   boy: {fileID: 21300000, guid: 3773550b777d58b45b72dac9e0568b70, type: 3}
   girl: {fileID: 21300000, guid: a90e1f8483353574abba9ad314023c15, type: 3}
   curimage: {fileID: 0}

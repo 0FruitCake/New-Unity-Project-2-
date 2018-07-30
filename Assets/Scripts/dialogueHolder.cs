@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class dialogueHolder : MonoBehaviour {
 
-    public string dialogue;
+    public string[] dialogueLines;
     private DialogueManager dMan;
+    private string name;
+
 
 
 	// Use this for initialization
 	void Start () {
+        name = gameObject.name;
         dMan = FindObjectOfType<DialogueManager>();  
 	}
 	
@@ -24,7 +27,20 @@ public class dialogueHolder : MonoBehaviour {
         {
             if (Input.GetKeyUp(KeyCode.F))
             {
-                dMan.ShowBox(dialogue);
+                if (!dMan.dialogActive)
+                {
+                    dMan.dialogLines = dialogueLines;
+                    dMan.currentLine = 0;
+                    dMan.showDialogue();
+
+                    if(name == "Assistant")
+                    {
+                        if (!dMan.dialogActive)
+                        {
+
+                        }
+                    }
+                }
             }
         }
     }

@@ -16,14 +16,14 @@ public class DialogueManager : MonoBehaviour {
     public int currentLine;
     public int charactime;
 
-	// Use this for initialization
-	void Start () {
-        	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		if(dialogActive && Input.GetKeyDown(KeyCode.Space))
+    // Use this for initialization
+    void Start() {
+
+    }
+
+    // Update is called once per frame
+    void Update() {
+        if (dialogActive && Input.GetKeyDown(KeyCode.Space))
         {
             // dBox.SetActive(false);
             // dialogActive = false;
@@ -32,12 +32,12 @@ public class DialogueManager : MonoBehaviour {
         }
         if (currentLine >= dialogLines.Length) {
             dBox.SetActive(false);
-             dialogActive = false;
+            dialogActive = false;
 
             currentLine = 0;
             charactime = 0;
         }
-      
+
         dText.text = dialogLines[currentLine];
         if (charactime == 2)
         {
@@ -49,10 +49,10 @@ public class DialogueManager : MonoBehaviour {
         }
     }
 
-    public void ShowBox(string dialogue)
+    public void showDialogue()
     {
         dialogActive = true;
         dBox.SetActive(true);
-        dText.text = dialogue;
+        
     }
 }
