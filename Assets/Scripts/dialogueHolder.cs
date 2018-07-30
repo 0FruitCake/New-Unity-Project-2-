@@ -2,46 +2,54 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class dialogueHolder : MonoBehaviour {
 
     public string[] dialogueLines;
     private DialogueManager dMan;
-    private string name;
+    public string name;
+    private bool playerEnter;
+    
 
 
 
 	// Use this for initialization
 	void Start () {
-        name = gameObject.name;
+        name = "Assistant";
+        Debug.Log(name);
         dMan = FindObjectOfType<DialogueManager>();  
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if(Input.GetKeyDown(KeyCode.F) && playerEnter)
+        {
+
+           
+            if (!dMan.dialogActive)
+            {
+                dMan.dialogLines = dialogueLines;
+                dMan.currentLine = 0;
+                dMan.showDialogue(name);
+
+            }
+        }
 	}
 
-    private void OnTriggerStay2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.name == "Player")
+        if (other.gameObject.name == "Player")
         {
-            if (Input.GetKeyUp(KeyCode.F))
-            {
-                if (!dMan.dialogActive)
-                {
-                    dMan.dialogLines = dialogueLines;
-                    dMan.currentLine = 0;
-                    dMan.showDialogue();
+            playerEnter = true;
+            
+        }
+    }
 
-                    if(name == "Assistant")
-                    {
-                        if (!dMan.dialogActive)
-                        {
-
-                        }
-                    }
-                }
-            }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.name == "Player")
+        {
+            playerEnter = false;
         }
     }
 }

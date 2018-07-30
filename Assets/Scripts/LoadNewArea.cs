@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class NewBehaviourScript : MonoBehaviour {
+public class LoadNewArea : MonoBehaviour {
 
     public string LevelToLoad;
 	// Use this for initialization
@@ -24,10 +24,13 @@ public class NewBehaviourScript : MonoBehaviour {
         }
     }
 
-    private void getLevel(string level)
+    public void loadFromDialogue(string name)
     {
-        LevelToLoad = level;
-        SceneManager.LoadScene(LevelToLoad);
+        if(name == "Assistant")
+        {
+            SceneManager.LoadScene("palawan");
+        }
+        
 
     }
 
