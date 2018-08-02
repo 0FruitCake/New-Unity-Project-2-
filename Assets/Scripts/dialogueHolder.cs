@@ -15,9 +15,9 @@ public class dialogueHolder : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        name = "Assistant";
-        Debug.Log(name);
+        
         dMan = FindObjectOfType<DialogueManager>();  
+
 	}
 	
 	// Update is called once per frame
@@ -25,7 +25,8 @@ public class dialogueHolder : MonoBehaviour {
 		if(Input.GetKeyDown(KeyCode.F) && playerEnter)
         {
 
-           
+            name = gameObject.transform.parent.name;
+            Debug.Log(name);
             if (!dMan.dialogActive)
             {
                 dMan.dialogLines = dialogueLines;
