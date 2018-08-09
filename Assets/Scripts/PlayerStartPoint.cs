@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class PlayerStartPoint : MonoBehaviour {
 
-    private PlayerMovement thePlayer;
-    private CameraController theCamera;
+    private PlayerMovement2 thePlayer;
+    private CameraController2 theCamera;
 	// Use this for initialization
 	void Start () {
-        thePlayer = FindObjectOfType<PlayerMovement>();
+        thePlayer = FindObjectOfType<PlayerMovement2>();
         thePlayer.transform.position = transform.position;
 
-        theCamera = FindObjectOfType<CameraController>();
+        theCamera = FindObjectOfType<CameraController2>();
         theCamera.transform.position = new Vector3(transform.position.x, transform.position.y, theCamera.transform.position.z);
     }
 	

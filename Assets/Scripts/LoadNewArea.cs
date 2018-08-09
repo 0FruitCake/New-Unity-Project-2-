@@ -18,9 +18,10 @@ public class LoadNewArea : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.name == "Player")
+        if(other.gameObject.name == "Player_2")
         {
             SceneManager.LoadScene(LevelToLoad);
+            Debug.Log("oyoyoyo");
         }
     }
 

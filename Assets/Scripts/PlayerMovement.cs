@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;
     private bool playerMoving;
     private Vector2 lastMove;
-    private static bool playerExists;
+    
    
 
     // Use this for initialization
@@ -17,15 +17,7 @@ public class PlayerMovement : MonoBehaviour
         anim = GetComponent<Animator>();
         
         
-        if (!playerExists)
-        {
-            playerExists = true;
-            DontDestroyOnLoad(transform.gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+  
 
     }
 
