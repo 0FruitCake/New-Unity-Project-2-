@@ -10,50 +10,62 @@ public class DialogueManager : MonoBehaviour {
     public Text dText;
     public bool dialogActive;
     public string[] dialogLines;
-    public Sprite boy;
-    public Sprite girl;
+    public Sprite[] images;
     public Image curimage;
-    public int currentLine;
+    public int currentLine = 0;
     public int charactime;
     public string name2;
     private LoadNewArea lna;
+    public TextAsset textFile;
+    public string[] textLines;
+    public int i = 0;
+
+
 
     // Use this for initialization
     void Start() {
         lna = new LoadNewArea();
+        if (textFile != null)
+        {
+            textLines = (textFile.text.Split('\n', ';'));
+        }
     }
 
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
+        if (i < textLines.Length-1)
+        {
+            int pic = int.Parse(textLines[i + 2]);
+            dText.text = textLines[i] + ": " + textLines[i + 1];
+            image.GetComponent<Image>().sprite = images[pic];
+
+        }
         if (dialogActive && Input.GetKeyDown(KeyCode.Space))
-        { 
+        {
             currentLine++;
             charactime++;
+            i += 3;
         }
 
-       
-        if (currentLine >= dialogLines.Length) {
+
+        if (currentLine > textLines.Length/3-1)
+        {
             dBox.SetActive(false);
             dialogActive = false;
 
-            currentLine = 0;
+           
             charactime = 0;
             Debug.Log(name);
-            if(name2 == "Assistant")
+            if (name2 == "Assistant")
             {
                 lna.loadFromDialogue(name2);
             }
+           
         }
 
-        dText.text = dialogLines[currentLine];
-        if (charactime == 2)
-        {
-            image.GetComponent<Image>().sprite = girl;
-        }
-        else
-        {
-            image.GetComponent<Image>().sprite = boy;
-        }
+        
+        
     }
 
     public void showDialogue(string name1)
