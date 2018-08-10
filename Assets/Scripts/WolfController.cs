@@ -21,6 +21,8 @@ public class WolfController : MonoBehaviour {
     public Vector3 initial;
     public bool chaseactive;
 
+    private bool backtoinit;
+
     private Transform target;
 
     public Transform Target
@@ -128,12 +130,25 @@ public class WolfController : MonoBehaviour {
     private void FollowTarget()
     {   
         moving = true;
+        if(backtoinit==false)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, initial, moveSpeed * Time.deltaTime);
+            moveDirection.x = -(transform.position.x - initial.x);
+            moveDirection.y = -(transform.position.y - initial.y);
+
+            if(transform.position.Equals(initial))
+            {
+                Debug.Log("Yes");
+                backtoinit = true;
+                chaseactive = false;
+            }
+        }
 
         if (System.Math.Abs(transform.position.x - initial.x) > 250 || System.Math.Abs(transform.position.y - initial.y) > 250)
         {
-
+            backtoinit = false;
            target = null;
-            chaseactive = false;
+            //chaseactive = false;
                  
          
             
