@@ -118,13 +118,13 @@ public class WolfController : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.gameObject.name == "Player_2")
-        {
-            other.gameObject.SetActive(false);
-            reloading = true;
-            thePlayer = other.gameObject;
+       //if(other.gameObject.name == "Player_2")
+       //{
+            //other.gameObject.SetActive(false);
+            //reloading = true;
+            //thePlayer = other.gameObject;
             
-        }
+       //}
     }
 
     private void FollowTarget()

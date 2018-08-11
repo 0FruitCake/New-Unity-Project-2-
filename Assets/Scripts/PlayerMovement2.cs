@@ -13,6 +13,7 @@ public class PlayerMovement2 : MonoBehaviour
     private bool attacking;
     public float attackTime;
     private float attackTimeCounter;
+    private DamageController dmgctrl;
 
 
     // Use this for initialization
@@ -100,6 +101,7 @@ public class PlayerMovement2 : MonoBehaviour
 
     }
 
+  
 
 
 

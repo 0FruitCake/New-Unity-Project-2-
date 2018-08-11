@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\CameraController2.cs" />
+    <Compile Include="Assets\Scripts\DamageController.cs" />
     <Compile Include="Assets\Scripts\dialogueHolder.cs" />
     <Compile Include="Assets\Scripts\DialogueManager.cs" />
     <Compile Include="Assets\Scripts\LoadNewArea.cs" />
