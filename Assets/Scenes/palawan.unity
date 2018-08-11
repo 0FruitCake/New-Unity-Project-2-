@@ -179,7 +179,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -200,7 +200,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.18652344, y: -3.2011719}
   serializedVersion: 2
-  m_Radius: 13.754883
+  m_Radius: 17
 --- !u!114 &662011118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,7 +496,11 @@ Prefab:
     - target: {fileID: 212913231855030020, guid: df922be613c126446a8aead4a080d94f,
         type: 2}
       propertyPath: m_SortingOrder
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1064364203314890, guid: df922be613c126446a8aead4a080d94f, type: 2}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: df922be613c126446a8aead4a080d94f, type: 2}

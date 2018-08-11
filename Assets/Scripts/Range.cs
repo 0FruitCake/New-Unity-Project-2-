@@ -17,10 +17,10 @@ public class Range : MonoBehaviour {
         {
             parent.myRigidbody.velocity = Vector2.zero;
             parent.Target = other.transform;
-            parent.initial = parent.transform.position;
             parent.chaseactive = true;
-            Debug.Log(parent.transform.position);
-            Debug.Log(parent.initial);
+            parent.initial = parent.transform.position;
+            
+            
         }
     }
 

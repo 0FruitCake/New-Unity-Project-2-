@@ -66,6 +66,9 @@
     <Compile Include="Assets\Scripts\DamageController.cs" />
     <Compile Include="Assets\Scripts\dialogueHolder.cs" />
     <Compile Include="Assets\Scripts\DialogueManager.cs" />
+    <Compile Include="Assets\Scripts\EnemyAttack.cs" />
+    <Compile Include="Assets\Scripts\EnemyAttackRangeTrigger.cs" />
+    <Compile Include="Assets\Scripts\EnemyDamageController.cs" />
     <Compile Include="Assets\Scripts\LoadNewArea.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement2.cs" />
