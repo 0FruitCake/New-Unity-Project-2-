@@ -739,58 +739,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!1001 &1420449479
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4401053022327984, guid: da3209e187671cd43b2943e7c80886e6, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 1754.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4401053022327984, guid: da3209e187671cd43b2943e7c80886e6, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 9728.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4401053022327984, guid: da3209e187671cd43b2943e7c80886e6, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4401053022327984, guid: da3209e187671cd43b2943e7c80886e6, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4401053022327984, guid: da3209e187671cd43b2943e7c80886e6, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4401053022327984, guid: da3209e187671cd43b2943e7c80886e6, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4401053022327984, guid: da3209e187671cd43b2943e7c80886e6, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4401053022327984, guid: da3209e187671cd43b2943e7c80886e6, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 198306487484580698, guid: da3209e187671cd43b2943e7c80886e6,
-        type: 2}
-      propertyPath: looping
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 198306487484580698, guid: da3209e187671cd43b2943e7c80886e6,
-        type: 2}
-      propertyPath: InitialModule.startSize.scalar
-      value: 3
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: da3209e187671cd43b2943e7c80886e6, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1608789769 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1246784267763662, guid: 2c573e550848ace49b3f2e4c82c7f6c2,
