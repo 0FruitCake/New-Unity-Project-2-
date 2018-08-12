@@ -6,6 +6,8 @@ public class DamageController : MonoBehaviour {
 
     public int damage;
     public GameObject damageBurst;
+    public GameObject damageNumber;
+    public int basedamage;
     // Use this for initialization
     void Start () {
 		
@@ -22,8 +24,13 @@ public class DamageController : MonoBehaviour {
         {
             if (other.CompareTag("Enemy")) 
             {
-                other.gameObject.GetComponent<EnemyHealthManager>().HurtEnemy(damage + Random.Range(0, 2));
+                damage = basedamage + (Random.Range(0, 3));
+                
+                other.gameObject.GetComponent<EnemyHealthManager>().HurtEnemy(damage);
+                var clone = (GameObject)Instantiate(damageNumber, transform.position, Quaternion.Euler(Vector3.zero));
+                clone.GetComponent<DamageNumbers>().damageNumber = damage;
                 Instantiate(damageBurst, transform.position,transform.rotation);
+                
             }
         }
     }
