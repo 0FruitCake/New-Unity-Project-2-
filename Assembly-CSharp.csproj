@@ -69,7 +69,9 @@
     <Compile Include="Assets\Scripts\EnemyAttack.cs" />
     <Compile Include="Assets\Scripts\EnemyAttackRangeTrigger.cs" />
     <Compile Include="Assets\Scripts\EnemyDamageController.cs" />
+    <Compile Include="Assets\Scripts\EnemyHealthManager.cs" />
     <Compile Include="Assets\Scripts\LoadNewArea.cs" />
+    <Compile Include="Assets\Scripts\PlayerHealthManager.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement2.cs" />
     <Compile Include="Assets\Scripts\PlayerStartPoint.cs" />

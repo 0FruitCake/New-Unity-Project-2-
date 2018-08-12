@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyDamageController : MonoBehaviour {
 
+
+    public int damage;
 	// Use this for initialization
 	void Start () {
 		
@@ -20,8 +22,7 @@ public class EnemyDamageController : MonoBehaviour {
         {
             if (other.CompareTag("Player"))
             {
-                Debug.Log("Hit");
-                //Destroy(other.gameObject);
+                other.gameObject.GetComponent<PlayerHealthManager>().HurtPlayer(damage+Random.Range(0,2));
             }
         }
     }

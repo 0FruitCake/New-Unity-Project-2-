@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class DamageController : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    public int damage;
+    public GameObject damageBurst;
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -20,8 +22,8 @@ public class DamageController : MonoBehaviour {
         {
             if (other.CompareTag("Enemy")) 
             {
-                Debug.Log("Hit");
-                Destroy(other.gameObject);
+                other.gameObject.GetComponent<EnemyHealthManager>().HurtEnemy(damage + Random.Range(0, 2));
+                Instantiate(damageBurst, transform.position,transform.rotation);
             }
         }
     }

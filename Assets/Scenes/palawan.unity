@@ -232,6 +232,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &662011120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 662011115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1881908537c1c7c4399c62dc162eea43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMaxHealth: 50
+  playerCurrentHealth: 0
 --- !u!4 &662011121 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4053072663829250, guid: df922be613c126446a8aead4a080d94f,
@@ -321,6 +334,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32dadb468ac10a544859bc0a86242103, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 9
+  damageBurst: {fileID: 1453668642189148, guid: da3209e187671cd43b2943e7c80886e6,
+    type: 2}
 --- !u!50 &806277863
 Rigidbody2D:
   serializedVersion: 4
@@ -424,6 +440,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32dadb468ac10a544859bc0a86242103, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 9
+  damageBurst: {fileID: 1453668642189148, guid: da3209e187671cd43b2943e7c80886e6,
+    type: 2}
 --- !u!50 &850368814
 Rigidbody2D:
   serializedVersion: 4
@@ -590,6 +609,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32dadb468ac10a544859bc0a86242103, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 9
+  damageBurst: {fileID: 1453668642189148, guid: da3209e187671cd43b2943e7c80886e6,
+    type: 2}
 --- !u!50 &1020874508
 Rigidbody2D:
   serializedVersion: 4
@@ -694,6 +716,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32dadb468ac10a544859bc0a86242103, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 9
+  damageBurst: {fileID: 1453668642189148, guid: da3209e187671cd43b2943e7c80886e6,
+    type: 2}
 --- !u!50 &1125514379
 Rigidbody2D:
   serializedVersion: 4
@@ -714,6 +739,58 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1001 &1420449479
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4401053022327984, guid: da3209e187671cd43b2943e7c80886e6, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1754.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4401053022327984, guid: da3209e187671cd43b2943e7c80886e6, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 9728.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4401053022327984, guid: da3209e187671cd43b2943e7c80886e6, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4401053022327984, guid: da3209e187671cd43b2943e7c80886e6, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4401053022327984, guid: da3209e187671cd43b2943e7c80886e6, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4401053022327984, guid: da3209e187671cd43b2943e7c80886e6, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4401053022327984, guid: da3209e187671cd43b2943e7c80886e6, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4401053022327984, guid: da3209e187671cd43b2943e7c80886e6, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 198306487484580698, guid: da3209e187671cd43b2943e7c80886e6,
+        type: 2}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198306487484580698, guid: da3209e187671cd43b2943e7c80886e6,
+        type: 2}
+      propertyPath: InitialModule.startSize.scalar
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: da3209e187671cd43b2943e7c80886e6, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1608789769 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1246784267763662, guid: 2c573e550848ace49b3f2e4c82c7f6c2,
