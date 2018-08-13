@@ -9,7 +9,12 @@ public class Warp : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        other.gameObject.transform.position = warpTarget.position;
+
+        if(other.gameObject.tag == "Player")
+        {
+            other.gameObject.transform.position = warpTarget.position;
+        }
+        
         
     }
 }
