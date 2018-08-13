@@ -6,8 +6,9 @@ using UnityEngine.SceneManagement;
 public class LoadNewArea : MonoBehaviour {
 
     public string LevelToLoad;
-	// Use this for initialization
-	void Start () {
+   
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -29,7 +30,9 @@ public class LoadNewArea : MonoBehaviour {
     {
         if(name == "Assistant")
         {
+           
             SceneManager.LoadScene("palawan");
+            
         }
         
 
