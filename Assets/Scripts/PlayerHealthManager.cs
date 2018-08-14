@@ -23,10 +23,7 @@ public class PlayerHealthManager : MonoBehaviour {
     public void HurtPlayer(int damage)
     {
         playerCurrentHealth -= damage;
-        if(playerCurrentHealth < 0)
-        {
-            playerCurrentHealth = 0;
-        }
+        Debug.Log(playerCurrentHealth);
     }
 
     public void SetMaxHealth()

@@ -9,7 +9,6 @@ public class DamageController : MonoBehaviour {
     public GameObject damageNumber;
     public int basedamage;
     public Transform hitPoint;
-    public Transform hitPointburst;
     // Use this for initialization
     void Start () {
 		
@@ -31,7 +30,7 @@ public class DamageController : MonoBehaviour {
                 other.gameObject.GetComponent<EnemyHealthManager>().HurtEnemy(damage);
                 var clone = (GameObject)Instantiate(damageNumber, hitPoint.position, Quaternion.Euler(Vector3.zero));
                 clone.GetComponent<DamageNumbers>().damageNumber = damage;
-                Instantiate(damageBurst, hitPointburst.position,transform.rotation);
+                Instantiate(damageBurst, transform.position,transform.rotation);
                 
             }
         }

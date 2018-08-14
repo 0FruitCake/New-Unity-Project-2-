@@ -47,21 +47,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1372442481097254
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4553217941951510}
-  m_Layer: 0
-  m_Name: hitpoint number
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1543330061100646
 GameObject:
   m_ObjectHideFlags: 0
@@ -72,6 +57,7 @@ GameObject:
   - component: {fileID: 4789461779930100}
   - component: {fileID: 60543819137536586}
   - component: {fileID: 114209881917330900}
+  - component: {fileID: 50820546298045506}
   m_Layer: 0
   m_Name: Atk_up_collider
   m_TagString: Untagged
@@ -89,6 +75,7 @@ GameObject:
   - component: {fileID: 4397895824908274}
   - component: {fileID: 60153948332258596}
   - component: {fileID: 114751029615161576}
+  - component: {fileID: 50525281842355378}
   m_Layer: 0
   m_Name: Atk_down_collider
   m_TagString: Untagged
@@ -106,6 +93,7 @@ GameObject:
   - component: {fileID: 4787350800035432}
   - component: {fileID: 60483765958773870}
   - component: {fileID: 114240592178268444}
+  - component: {fileID: 50172382207911130}
   m_Layer: 0
   m_Name: Atk_left_collider
   m_TagString: Untagged
@@ -123,6 +111,7 @@ GameObject:
   - component: {fileID: 4678559982923618}
   - component: {fileID: 60231195331353026}
   - component: {fileID: 114198591741567012}
+  - component: {fileID: 50126640754445544}
   m_Layer: 0
   m_Name: Atk_right_collider
   m_TagString: Untagged
@@ -137,7 +126,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1314455216833892}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1882, y: 323, z: 0}
+  m_LocalPosition: {x: -2220, y: -669, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4787350800035432}
@@ -145,7 +134,6 @@ Transform:
   - {fileID: 4397895824908274}
   - {fileID: 4789461779930100}
   - {fileID: 4516730159394338}
-  - {fileID: 4553217941951510}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -174,19 +162,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4021026945030432}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4553217941951510
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1372442481097254}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.2, y: 1.6, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4021026945030432}
-  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4678559982923618
 Transform:
@@ -227,6 +202,46 @@ Transform:
   m_Father: {fileID: 4021026945030432}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50126640754445544
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1831756032662804}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!50 &50172382207911130
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1826915234431478}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!50 &50241479492882070
 Rigidbody2D:
   serializedVersion: 4
@@ -245,6 +260,46 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!50 &50525281842355378
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1613679391320734}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!50 &50820546298045506
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1543330061100646}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!58 &58900381227556266
@@ -491,8 +546,7 @@ MonoBehaviour:
   damageNumber: {fileID: 1501579873616794, guid: b4e102d13a53f9b4aa5317a73bf136ce,
     type: 2}
   basedamage: 9
-  hitPoint: {fileID: 4553217941951510}
-  hitPointburst: {fileID: 4516730159394338}
+  hitPoint: {fileID: 4516730159394338}
 --- !u!114 &114209881917330900
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -510,8 +564,7 @@ MonoBehaviour:
   damageNumber: {fileID: 1501579873616794, guid: b4e102d13a53f9b4aa5317a73bf136ce,
     type: 2}
   basedamage: 9
-  hitPoint: {fileID: 4553217941951510}
-  hitPointburst: {fileID: 4516730159394338}
+  hitPoint: {fileID: 4516730159394338}
 --- !u!114 &114240592178268444
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -529,8 +582,7 @@ MonoBehaviour:
   damageNumber: {fileID: 1501579873616794, guid: b4e102d13a53f9b4aa5317a73bf136ce,
     type: 2}
   basedamage: 9
-  hitPoint: {fileID: 4553217941951510}
-  hitPointburst: {fileID: 4516730159394338}
+  hitPoint: {fileID: 4516730159394338}
 --- !u!114 &114751029615161576
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -548,8 +600,7 @@ MonoBehaviour:
   damageNumber: {fileID: 1501579873616794, guid: b4e102d13a53f9b4aa5317a73bf136ce,
     type: 2}
   basedamage: 9
-  hitPoint: {fileID: 4553217941951510}
-  hitPointburst: {fileID: 4516730159394338}
+  hitPoint: {fileID: 4516730159394338}
 --- !u!212 &212750559352188068
 SpriteRenderer:
   m_ObjectHideFlags: 1
