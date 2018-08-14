@@ -26,7 +26,7 @@ public class EnemyDamageController : MonoBehaviour {
         {
             if (other.CompareTag("Player"))
             {
-                damage = basedamage + (Random.Range(0, 3));
+                damage = basedamage + (Random.Range(0, 4));
                 other.gameObject.GetComponent<PlayerHealthManager>().HurtPlayer(damage);
                 var clone = (GameObject)Instantiate(damageNumber, hitPoint.position, Quaternion.Euler(Vector3.zero));
                 clone.GetComponent<DamageNumbers>().damageNumber = damage;

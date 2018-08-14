@@ -11,15 +11,7 @@ public class CameraController2 : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        if (!cameraExists)
-        {
-            cameraExists = true;
-            DontDestroyOnLoad(transform.gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        
 
     }
 

@@ -23,16 +23,6 @@ public class PlayerMovement2 : MonoBehaviour
         anim = GetComponent<Animator>();
 
 
-        if (!playerExists)
-        {
-            playerExists = true;
-            DontDestroyOnLoad(transform.gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-
     }
 
     // Update is called once per frame

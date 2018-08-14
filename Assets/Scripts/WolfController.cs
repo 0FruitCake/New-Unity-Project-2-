@@ -60,7 +60,7 @@ public class WolfController : MonoBehaviour {
 	void Update () {
         if (isattacking)
         {
-
+            chaseactive = false;
             if(attackInstance > 0)
             {
                 myRigidbody.velocity = Vector2.zero;
