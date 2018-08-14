@@ -22,9 +22,6 @@ public class DialogueManager : MonoBehaviour
     public TextAsset textFile;
     public string[] textLines;
     public int i = 0;
-    public int count = 0;
-    public int lines;
-    public bool ispressed = false;
 
 
 
@@ -36,7 +33,6 @@ public class DialogueManager : MonoBehaviour
         {
             textLines = (textFile.text.Split('\n', ';'));
         }
-        lines = textLines.Length;
     }
 
     // Update is called once per frame
@@ -58,17 +54,8 @@ public class DialogueManager : MonoBehaviour
 
         if (currentLine > textLines.Length / 3 - 1)  // pag wla nay lines
         {
-              if (ispressed)
-            {
-                textLines = new string[lines];
-                textLines = (textFile.text.Split('\n', ';'));
-                dBox.SetActive(false);
-                dialogActive = false;
-                currentLine = 0;
-                count = 0;
-                ispressed = false;
-
-            }
+            dBox.SetActive(false);
+            dialogActive = false;
 
             if (textLines.Length % 3 != 0) // button loop, kay 7 ang naa sa array... nagdagdag kog isa ka line para maidentify na choices sya
             {
@@ -86,16 +73,8 @@ public class DialogueManager : MonoBehaviour
                 }
             }
 
-            count = 0;
-            currentLine = 0;
-        }   
-        if (count == 1)
-        {
-            btn1.SetActive(false);
-            btn2.SetActive(false);
-        
+
         }
-  
 
     }
 
@@ -105,30 +84,4 @@ public class DialogueManager : MonoBehaviour
         dBox.SetActive(true);
         name2 = name1;
     }
-
-
-    public void choice1()
-    {
-        Debug.Log(name);
-        if (name2 == "Assistant")
-        {
-            lna.loadFromDialogue(name2);
-        }
-        count = 1;
-    }
-    public void choice2()
-    {
-        btn1.SetActive(false);
-        btn2.SetActive(false);
-
-        count = 1;
-        textLines = new string[3];
-        textLines[0] = "Maria: ";
-        textLines[1] = "Ok then talk to me when youre ready ";
-        textLines[2] = "1";
-        currentLine = 0;
-        i = 0;
-        ispressed = true;
-    }
-
 }
