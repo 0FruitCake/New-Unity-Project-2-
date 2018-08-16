@@ -5,11 +5,16 @@ ModelImporter:
   fileIDToRecycleName:
     100000: eastJungle_mesh_0001
     100002: //RootNode
+    100004: EastJungle_mesh_0001
     400000: eastJungle_mesh_0001
     400002: //RootNode
+    400004: EastJungle_mesh_0001
     2300000: eastJungle_mesh_0001
+    2300002: EastJungle_mesh_0001
     3300000: eastJungle_mesh_0001
+    3300002: EastJungle_mesh_0001
     4300000: eastJungle_mesh_0001
+    4300002: EastJungle_mesh_0001
   externalObjects: {}
   materials:
     importMaterials: 0

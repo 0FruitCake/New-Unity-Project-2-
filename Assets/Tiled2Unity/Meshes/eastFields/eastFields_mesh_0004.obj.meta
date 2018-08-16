@@ -5,11 +5,16 @@ ModelImporter:
   fileIDToRecycleName:
     100000: eastFields_mesh_0004
     100002: //RootNode
+    100004: EastFields_mesh_0004
     400000: eastFields_mesh_0004
     400002: //RootNode
+    400004: EastFields_mesh_0004
     2300000: eastFields_mesh_0004
+    2300002: EastFields_mesh_0004
     3300000: eastFields_mesh_0004
+    3300002: EastFields_mesh_0004
     4300000: eastFields_mesh_0004
+    4300002: EastFields_mesh_0004
   externalObjects: {}
   materials:
     importMaterials: 0

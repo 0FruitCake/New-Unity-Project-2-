@@ -33,7 +33,10 @@ public class DialogueManager : MonoBehaviour
     public bool choice1;
     public bool replyon;
 
+   
+    public PlayerMovement thePlayer;
 
+    
 
     // Use this for initialization
     void Start()
@@ -127,6 +130,7 @@ public class DialogueManager : MonoBehaviour
                 dBox.SetActive(false);
                 i = 0;
                 currentLine = 0;
+                movePlayer();
                 choice0 = false;
 
             }
@@ -209,5 +213,10 @@ public class DialogueManager : MonoBehaviour
         replyon = true;
         i = 0;
         currentLine = 0;
+    }
+
+    public void movePlayer()
+    {
+        thePlayer.cutscene = true;
     }
 }
