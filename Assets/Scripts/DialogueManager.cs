@@ -25,10 +25,13 @@ public class DialogueManager : MonoBehaviour
     public string[] textLines;
     public string[] textLines2;
     public int i = 0;
-    public int choice = 0;
+    public int lines;
+    public int choice;
     public int j;
     public int k;
-
+    public bool choice0;
+    public bool choice1;
+    public bool replyon;
 
 
 
@@ -45,14 +48,17 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (dialogActive && Input.GetKeyDown(KeyCode.Space))
+        if (dialogActive && Input.GetKeyDown(KeyCode.Q))
         {
             currentLine++;
             i += 3;
-        }
 
-        if (choice == 0)
+
+        }
+        if (!replyon)
         {
+
+
             if (i < textLines.Length - 1)       //put to dialog
             {
                 int pic = int.Parse(textLines[i + 2]);
@@ -61,55 +67,116 @@ public class DialogueManager : MonoBehaviour
 
             }
 
+            if (currentLine > textLines.Length / 3 - 1)  // pag wla nay lines
+            {
+                if (textLines.Length % 3 != 0) // button
+                {
+                    btn1.SetActive(true);
+                    btn2.SetActive(true);
 
+                }
+                else
+                {
+
+                    dialogActive = false;
+                    dBox.SetActive(false);
+                    currentLine = 0;
+                    i = 0;
+                }
+
+            }
         }
-        else if (choice == 1) {
-            if (reply != null)    //file readet
-            {
-                textLines2 = (reply.text.Split('\n', ';'));
-            }
-            else {
-                dialogActive = false;
-                dBox.SetActive(false);
-                choice = 0;
-            }
+       
 
-            if (i < textLines2.Length - 1)       //put to dialog
-            {
-                int pic = int.Parse(textLines2[i + 2]);
-                dText.text = textLines2[i] + ": " + textLines2[i + 1];
-                image.GetComponent<Image>().sprite = images[pic];
-
-            }
-      
-            if (currentLine > textLines2.Length / 3 - 1)  // pag wla nay lines
-            {
-                dialogActive = false;
-                dBox.SetActive(false);
-                choice = 0;
-                i = 0;
-                currentLine = 0;
-            }
-           }
-
-        if (currentLine > textLines.Length / 3 - 1)  // pag wla nay lines
+        else
         {
-            if (textLines.Length % 3 != 0) // button loop, kay 7 ang naa sa array... nagdagdag kog isa ka line para maidentify na choices sya
-            {
-                btn1.SetActive(true);
-                btn2.SetActive(true);
 
-            }
-            else
+            if (choice0 == true)
             {
+                /*if (i < textLines.Length - 1)       //put to dialog
+                {
+                    int pic = int.Parse(textLines[i + 2]);
+                    dText.text = textLines[i] + ": " + textLines[i + 1];
+                    image.GetComponent<Image>().sprite = images[pic];
+
+                }
+
+                if (currentLine > textLines.Length / 3 - 1)  // pag wla nay lines
+                {
+                    if (textLines.Length % 3 != 0) // button
+                    {
+                        btn1.SetActive(true);
+                        btn2.SetActive(true);
+
+                    }
+                    else
+                    {
+
+                        dialogActive = false;
+                        dBox.SetActive(false);
+                        currentLine = 0;
+                        i = 0;
+                    }
+                 }
+
+                */
+                Debug.Log("in");
+
 
                 dialogActive = false;
                 dBox.SetActive(false);
-                currentLine = 0;
                 i = 0;
+                currentLine = 0;
+                choice0 = false;
+
             }
 
+
+            else if (choice1 == true)
+            {
+               
+             
+                if (reply != null)    //file readet
+                {
+                    
+                    textLines2 = (reply.text.Split('\n', ';'));
+                }
+                else
+                {
+                    dialogActive = false;
+                    dBox.SetActive(false);
+
+                }
+
+                if (i < textLines2.Length - 1)       //put to dialog
+                {
+
+                    int pic = int.Parse(textLines2[i + 2]);
+                    dText.text = textLines2[i] + ": " + textLines2[i + 1];
+                    image.GetComponent<Image>().sprite = images[pic];
+
+                }
+                
+                if (currentLine > textLines2.Length / 3 - 1)  // pag wla nay lines
+                {
+                    Debug.Log("yaaay"+ (textLines2.Length / 3 - 1));
+                    dialogActive = false;
+                    dBox.SetActive(false);
+
+                    i = 0;
+                    currentLine = 0;
+                    replyon = false;
+                }
+               
+
+
+               // i = 0;
+                //currentLine = 0;
+                //choice1 = false;
+               
+            }
         }
+
     }
 
     public void showDialogue(string name1)
@@ -117,21 +184,29 @@ public class DialogueManager : MonoBehaviour
         dialogActive = true;
         dBox.SetActive(true);
         name2 = name1;
+        
     }
 
     public void choosebtn() {
 
-        Debug.Log(name);
-        if (name2 == "Assistant")
-        {
-            lna.loadFromDialogue(name2);
-        }
+        // Debug.Log(name);
+        //if (name2 == "Assistant")
+        // {
+        //  lna.loadFromDialogue(name2);
+        //}
+
+        choice0 = true;
+        replyon = true;
+        btn1.SetActive(false);
+        btn2.SetActive(false);
 
     }
     public void choosebtn1() {
-        choice = 1;
+        choice1 = true;
+        //choice = 1;
         btn1.SetActive(false);
         btn2.SetActive(false);
+        replyon = true;
         i = 0;
         currentLine = 0;
     }

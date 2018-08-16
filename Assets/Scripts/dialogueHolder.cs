@@ -4,11 +4,13 @@ using UnityEngine;
 
 
 public class dialogueHolder : MonoBehaviour {
-
-    public string[] dialogueLines;
+    
     private DialogueManager dMan;
     public string name;
+
     private bool playerEnter;
+    public TextAsset text;
+    public TextAsset reply;
     
 
 
@@ -29,9 +31,12 @@ public class dialogueHolder : MonoBehaviour {
             Debug.Log(name);
             if (!dMan.dialogActive)
             {
-                dMan.dialogLines = dialogueLines;
                 dMan.currentLine = 0;
                 dMan.showDialogue(name);
+                dMan.btn1.SetActive(false);
+                dMan.btn2.SetActive(false);
+                dMan.textFile = text;
+                dMan.reply = reply;
 
             }
         }
