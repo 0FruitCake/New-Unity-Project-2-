@@ -7,10 +7,17 @@ public class dialogueHolder : MonoBehaviour {
     
     private DialogueManager dMan;
     public string name;
-
     private bool playerEnter;
-    public TextAsset text;
-    public TextAsset reply;
+    public string[] lines;
+    public string[] charac;
+    public string[] img;
+    public string[] Replines;
+    public string[] Repcharac;
+    public string[] Repimg;
+    public bool isButton;
+    public bool isReply;
+
+  
     
 
 
@@ -18,28 +25,57 @@ public class dialogueHolder : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         
-        dMan = FindObjectOfType<DialogueManager>();  
+        dMan = FindObjectOfType<DialogueManager>();
+        dMan.orgbtn = isButton;
 
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown(KeyCode.F) && playerEnter)
+        dMan.isbtn = isButton;
+      
+        if (!isReply)
         {
-
-            name = gameObject.transform.parent.name;
-            Debug.Log(name);
-            if (!dMan.dialogActive)
+            dMan.textLines = lines;
+            dMan.textimage = img;
+            dMan.textName = charac;
+            if (Input.GetKeyDown(KeyCode.F) && playerEnter)
             {
-                dMan.currentLine = 0;
-                dMan.showDialogue(name);
-                dMan.btn1.SetActive(false);
-                dMan.btn2.SetActive(false);
-                dMan.textFile = text;
-                dMan.reply = reply;
+                name = gameObject.transform.parent.name;
+                Debug.Log(name);
+                if (!dMan.dialogActive)
+                {
 
+                    dMan.showDialogue(name);
+                    dMan.currentLine = 0;
+
+
+
+                }
             }
         }
+        else if (isReply) {
+           
+            dMan.textLines = Replines;
+            dMan.textimage = Repimg;
+            dMan.textName = Repcharac;
+            if (Input.GetKeyDown(KeyCode.F) && playerEnter)
+            {
+                name = gameObject.transform.parent.name;
+                Debug.Log(name);
+                if (!dMan.dialogActive)
+                {
+
+                    dMan.showDialogue(name);
+                    dMan.currentLine = 0;
+
+
+
+                }
+            }
+
+        }
+        
 	}
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -57,5 +93,17 @@ public class dialogueHolder : MonoBehaviour {
         {
             playerEnter = false;
         }
+    }
+    public void choosebtn() {
+
+
+     }
+    public void choosebtn2()
+    {
+        isButton = false;
+        isReply = true;
+        dMan.currentLine = 0;
+        dMan.btn1.SetActive(false);
+        dMan.btn2.SetActive(false);
     }
 }

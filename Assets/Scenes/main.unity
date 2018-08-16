@@ -160,8 +160,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: 
-  text: {fileID: 4900000, guid: d933d295bc3f57946be4cf46a9c37f01, type: 3}
-  reply: {fileID: 4900000, guid: cac51614589384949a38cb3cd4081266, type: 3}
+  lines:
+  - Good Morning Maria are the preparations ready?
+  - Yes sir, the preparations are ready plas use the machine to start your journey.
+  charac:
+  - Pepe
+  - Maria
+  img:
+  - 0
+  - 1
+  Replines:
+  - Ok then just tell me when you're ready
+  - Labyu
+  Repcharac:
+  - Maria
+  - Pepe
+  Repimg:
+  - 1
+  - 0
+  isButton: 1
+  isReply: 0
 --- !u!61 &70342327
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -272,6 +290,11 @@ Prefab:
         type: 2}
       propertyPath: textFile.Array.size
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114147654029057422, guid: b8554a96427b04a44a324806dd870d61,
+        type: 2}
+      propertyPath: textLines.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224877032405418858, guid: b8554a96427b04a44a324806dd870d61,
         type: 2}
@@ -428,6 +451,45 @@ Prefab:
       propertyPath: location
       value: 
       objectReference: {fileID: 1734802546}
+    - target: {fileID: 114147654029057422, guid: b8554a96427b04a44a324806dd870d61,
+        type: 2}
+      propertyPath: textLines.Array.data[0]
+      value: a
+      objectReference: {fileID: 0}
+    - target: {fileID: 114147654029057422, guid: b8554a96427b04a44a324806dd870d61,
+        type: 2}
+      propertyPath: textLines.Array.data[1]
+      value: a
+      objectReference: {fileID: 0}
+    - target: {fileID: 114147654029057422, guid: b8554a96427b04a44a324806dd870d61,
+        type: 2}
+      propertyPath: textLines.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114147654029057422, guid: b8554a96427b04a44a324806dd870d61,
+        type: 2}
+      propertyPath: textLines.Array.data[3]
+      value: a
+      objectReference: {fileID: 0}
+    - target: {fileID: 114147654029057422, guid: b8554a96427b04a44a324806dd870d61,
+        type: 2}
+      propertyPath: textLines.Array.data[4]
+      value: a
+      objectReference: {fileID: 0}
+    - target: {fileID: 114147654029057422, guid: b8554a96427b04a44a324806dd870d61,
+        type: 2}
+      propertyPath: textLines.Array.data[5]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1400983305870438, guid: b8554a96427b04a44a324806dd870d61, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114147654029057422, guid: b8554a96427b04a44a324806dd870d61,
+        type: 2}
+      propertyPath: dh
+      value: 
+      objectReference: {fileID: 70342326}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b8554a96427b04a44a324806dd870d61, type: 2}
   m_IsPrefabParent: 0
@@ -505,48 +567,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 642263032}
---- !u!1001 &664450839
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4970894702813092, guid: 49cb592cefdc64b42ad671754c784ac8, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 6215.9062
-      objectReference: {fileID: 0}
-    - target: {fileID: 4970894702813092, guid: 49cb592cefdc64b42ad671754c784ac8, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 9602.288
-      objectReference: {fileID: 0}
-    - target: {fileID: 4970894702813092, guid: 49cb592cefdc64b42ad671754c784ac8, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 14.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 4970894702813092, guid: 49cb592cefdc64b42ad671754c784ac8, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4970894702813092, guid: 49cb592cefdc64b42ad671754c784ac8, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4970894702813092, guid: 49cb592cefdc64b42ad671754c784ac8, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4970894702813092, guid: 49cb592cefdc64b42ad671754c784ac8, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4970894702813092, guid: 49cb592cefdc64b42ad671754c784ac8, type: 2}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 49cb592cefdc64b42ad671754c784ac8, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &690450418
 GameObject:
   m_ObjectHideFlags: 0
@@ -1248,7 +1268,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1734802547
 BoxCollider2D:
@@ -1437,8 +1457,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012423598}
-        m_MethodName: choosebtn1
+      - m_Target: {fileID: 70342326}
+        m_MethodName: choosebtn2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1673,12 +1693,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 83.552246, y: 33.79428}
   m_EdgeRadius: 0
---- !u!114 &2012423598 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114147654029057422, guid: b8554a96427b04a44a324806dd870d61,
-    type: 2}
-  m_PrefabInternal: {fileID: 573060654}
-  m_Script: {fileID: 11500000, guid: 661bef51864125c438d9a3af26aa9369, type: 3}
 --- !u!1 &2101916412
 GameObject:
   m_ObjectHideFlags: 0
@@ -1755,7 +1769,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012423598}
+      - m_Target: {fileID: 70342326}
         m_MethodName: choosebtn
         m_Mode: 1
         m_Arguments:
