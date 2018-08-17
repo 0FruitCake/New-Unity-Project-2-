@@ -53,10 +53,15 @@ public class DialogueManager : MonoBehaviour
                 isreply = false;
             }
         }
-      
+
+        if (dialogActive)
+        {
+
             int pic = int.Parse(textimage[currentLine]);
             dText.text = textName[currentLine] + ": " + textLines[currentLine];
             image.GetComponent<Image>().sprite = images[pic];
+
+        }
 
       
     }
