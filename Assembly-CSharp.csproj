@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\PlayerMovement2.cs" />
     <Compile Include="Assets\Scripts\PlayerStartPoint.cs" />
     <Compile Include="Assets\Scripts\Range.cs" />
+    <Compile Include="Assets\Scripts\ScreenFader.cs" />
     <Compile Include="Assets\Scripts\TextImporter.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
     <Compile Include="Assets\Scripts\Warp.cs" />
@@ -107,7 +108,9 @@
     <None Include="Assets\Tiled2Unity\Prefabs\_ReadMe.txt" />
     <None Include="Assets\Tiled2Unity\Imported\roommap.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Shaders\Tiled2Unity.cginc" />
+    <None Include="Assets\Tiled2Unity\Imported\WestInnercave.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Tiled2Unity.export.txt" />
+    <None Include="Assets\Tiled2Unity\Imported\WestInnercave2.tiled2unity.xml" />
     <None Include="Assets\CharScripts\reply.txt" />
     <None Include="Assets\Tiled2Unity\Shaders\shaDepth.shader" />
     <None Include="Assets\Tiled2Unity\Shaders\shaDiffuseDepth.shader" />
@@ -119,6 +122,7 @@
     <None Include="Assets\Tiled2Unity\Imported\eastFields.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\SouthGrave.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\SouthFields.tiled2unity.xml" />
+    <None Include="Assets\Tiled2Unity\Imported\Innercave.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\eastJungle.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Materials\_ReadMe.txt" />
     <None Include="Assets\Tiled2Unity\Textures\_ReadMe.txt" />
@@ -126,15 +130,19 @@
     <None Include="Assets\Tiled2Unity\Shaders\shaDefault-Instanced.shader" />
     <None Include="Assets\Tiled2Unity\Imported\SouthJungle.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\westJungle.tiled2unity.xml" />
+    <None Include="Assets\Tiled2Unity\Imported\NorthInnerCaveBoss.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Shaders\shaColorKey-Instanced.shader" />
+    <None Include="Assets\Tiled2Unity\Imported\NorthInnerCave.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Shaders\shaColorKey.shader" />
     <None Include="Assets\Tiled2Unity\Shaders\shaDepthColorKey.shader" />
     <None Include="Assets\Tiled2Unity\Shaders\shaDepthColorKey-Instanced.shader" />
     <None Include="Assets\Tiled2Unity\License.txt" />
     <None Include="Assets\Tiled2Unity\Imported\westJungle2.tiled2unity.xml" />
+    <None Include="Assets\Tiled2Unity\Imported\NorthInnerCave2.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\EastJungle2.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\livingroommap.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\_ReadMe.txt" />
+    <None Include="Assets\Tiled2Unity\Imported\Obedroom.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Meshes\_ReadMe.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/shagi/OneDrive/Documents/GitHub/Thesis1/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>

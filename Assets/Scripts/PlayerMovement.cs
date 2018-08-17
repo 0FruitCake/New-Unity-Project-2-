@@ -13,20 +13,37 @@ public class PlayerMovement : MonoBehaviour
     public Transform location;
     public bool cutscene;
 
+    public bool canMove;
+    private ScreenFader sf;
 
     // Use this for initialization
     void Start()
     {
         anim = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
-
+        sf = FindObjectOfType<ScreenFader>();
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (sf.isFading)
+        {
+            canMove = false;
+        }
+        else
+        {
+            canMove = true;
+        }
+
+
+        if (!canMove)
+        {
+            myRigidbody.velocity = Vector2.zero;
+            anim.SetBool("PlayerMoving", false);
+            return;
+        }
 
         if (cutscene)
         {

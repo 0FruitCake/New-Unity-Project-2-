@@ -14,6 +14,8 @@ public class PlayerMovement2 : MonoBehaviour
     public float attackTime;
     private float attackTimeCounter;
     private DamageController dmgctrl;
+    public bool canMove;
+    private ScreenFader sf;
 
 
     // Use this for initialization
@@ -21,6 +23,7 @@ public class PlayerMovement2 : MonoBehaviour
     {
         myRigidbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        sf = FindObjectOfType<ScreenFader>();
 
 
     }
@@ -28,7 +31,22 @@ public class PlayerMovement2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (sf.isFading)
+        {
+            canMove = false;
+        }
+        else
+        {
+            canMove = true;
+        }
+        
 
+        if (!canMove)
+        {
+            myRigidbody.velocity = Vector2.zero;
+            anim.SetBool("PlayerMoving", false);
+            return;
+        }
         if (!attacking)
         {
 
