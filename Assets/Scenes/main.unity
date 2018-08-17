@@ -159,7 +159,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 417a8634f5788f0489e6905b9559c860, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
   lines:
   - Good Morning Maria are the preparations ready?
   - Yes sir, the preparations are ready plas use the machine to start your journey.
@@ -176,10 +175,19 @@ MonoBehaviour:
   - Maria
   - Pepe
   Repimg:
-  - 1
   - 0
+  - 1
   isButton: 1
   isReply: 0
+  btn1: {fileID: 2101916412}
+  btn2: {fileID: 1841321777}
+  btntext: {fileID: 1776261766}
+  btntext2: {fileID: 642263034}
+  btext: Let's go
+  btext2: Not quite yet
+  images:
+  - {fileID: 21300000, guid: 243460bf07fda974d8546353c9aa4f8b, type: 3}
+  - {fileID: 21300000, guid: 3773550b777d58b45b72dac9e0568b70, type: 3}
 --- !u!61 &70342327
 BoxCollider2D:
   m_ObjectHideFlags: 0

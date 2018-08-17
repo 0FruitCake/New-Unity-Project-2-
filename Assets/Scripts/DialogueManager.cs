@@ -14,20 +14,13 @@ public class DialogueManager : MonoBehaviour
     public Text dtext2;
     public bool dialogActive;
     public Sprite[] images;
-    public Image curimage;
-    public int currentLine = 0;
-    public int charactime;
-    public string name2;
-    public LoadNewArea lna;
+
+    public int currentLine;
     public string[] textLines;
     public string[] textName;
     public string[] textimage;
-    public int i = 0;
-    public int lines;
-    public dialogueHolder dh;
-    public bool isbtn;
-    public bool orgbtn;
-
+    public bool buttonActive;
+    public bool isreply;
 
     public PlayerMovement thePlayer;
 
@@ -36,7 +29,7 @@ public class DialogueManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        lna = new LoadNewArea();
+    
      
     }
 
@@ -44,44 +37,36 @@ public class DialogueManager : MonoBehaviour
     void Update()
     {
 
-        if (dialogActive && Input.GetKeyDown(KeyCode.Q))
+        if (dialogActive && Input.GetKeyDown(KeyCode.Q) && !buttonActive)
         {
             currentLine++;
          
         }
-
-        if (currentLine < textLines.Length)       //put to dialog
+        if(currentLine >= textLines.Length)
         {
+            dBox.SetActive(false);
+            dialogActive = false;
+            currentLine = 0;
+
+            if (isreply)
+            {
+                isreply = false;
+            }
+        }
+      
             int pic = int.Parse(textimage[currentLine]);
             dText.text = textName[currentLine] + ": " + textLines[currentLine];
             image.GetComponent<Image>().sprite = images[pic];
 
-        }
-        else if (isbtn)
-        {
-            btn1.SetActive(true);
-            btn2.SetActive(true);
-        }
-        else
-        {
-            Debug.Log(orgbtn);
-            dh.isButton= orgbtn;         
-            dh.isReply = false;
-            dialogActive = false;
-            dBox.SetActive(false);
-            currentLine = 0;
-        }
+      
     }
 
 
-
-    public void showDialogue(string name1)
+    public void showDialogue()
     {
-        
         dialogActive = true;
         dBox.SetActive(true);
-        name2 = name1;
-
     }
+    
 }
   

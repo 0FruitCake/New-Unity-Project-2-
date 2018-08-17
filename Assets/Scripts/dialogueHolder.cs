@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 
 public class dialogueHolder : MonoBehaviour {
     
     private DialogueManager dMan;
-    public string name;
+
     private bool playerEnter;
     public string[] lines;
     public string[] charac;
@@ -16,65 +16,80 @@ public class dialogueHolder : MonoBehaviour {
     public string[] Repimg;
     public bool isButton;
     public bool isReply;
+    public GameObject btn1;
+    public GameObject btn2;
+    public Text btntext;
+    public Text btntext2;
+    public string btext;
+    public string btext2;
+    public Sprite[] images;
 
-  
-    
 
 
-
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         
         dMan = FindObjectOfType<DialogueManager>();
-        dMan.orgbtn = isButton;
+        
 
     }
 	
 	// Update is called once per frame
 	void Update () {
-        dMan.isbtn = isButton;
-      
-        if (!isReply)
+
+        if (!dMan.isreply)
         {
             dMan.textLines = lines;
             dMan.textimage = img;
             dMan.textName = charac;
+            int pic = int.Parse(dMan.textimage[dMan.currentLine]);
+            dMan.image.GetComponent<Image>().sprite = images[pic];
+
+            if (dMan.currentLine == 1)
+            {
+                dMan.buttonActive = true;
+                btntext.text = btext;
+                btntext2.text = btext2;
+                btn1.SetActive(true);
+                btn2.SetActive(true);
+            }
+
+            
             if (Input.GetKeyDown(KeyCode.F) && playerEnter)
             {
-                name = gameObject.transform.parent.name;
-                Debug.Log(name);
+               
                 if (!dMan.dialogActive)
                 {
 
-                    dMan.showDialogue(name);
+                    dMan.showDialogue();
                     dMan.currentLine = 0;
-
 
 
                 }
             }
         }
-        else if (isReply) {
+        else if (dMan.isreply) {
            
             dMan.textLines = Replines;
             dMan.textimage = Repimg;
             dMan.textName = Repcharac;
             if (Input.GetKeyDown(KeyCode.F) && playerEnter)
             {
-                name = gameObject.transform.parent.name;
-                Debug.Log(name);
+              
                 if (!dMan.dialogActive)
                 {
 
-                    dMan.showDialogue(name);
+                    dMan.showDialogue();
                     dMan.currentLine = 0;
-
-
 
                 }
             }
 
+
+
         }
+
+        
         
 	}
 
@@ -100,10 +115,12 @@ public class dialogueHolder : MonoBehaviour {
      }
     public void choosebtn2()
     {
-        isButton = false;
-        isReply = true;
+        dMan.buttonActive = false;
+        
+        dMan.isreply = true;
         dMan.currentLine = 0;
-        dMan.btn1.SetActive(false);
-        dMan.btn2.SetActive(false);
+        btn1.SetActive(false);
+        btn2.SetActive(false);
+
     }
 }
