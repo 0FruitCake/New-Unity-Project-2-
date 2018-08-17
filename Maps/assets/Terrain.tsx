@@ -31,6 +31,7 @@
   <terrain name="Sewer Water" tile="481"/>
   <terrain name="dirt" tile="0"/>
   <terrain name="island" tile="0"/>
+  <terrain name="plant" tile="0"/>
  </terraintypes>
  <tile id="1" terrain="27,27,27,"/>
  <tile id="2" terrain="27,27,,27"/>
@@ -432,4 +433,20 @@
  <tile id="707" terrain=",17,,"/>
  <tile id="708" terrain="17,17,,"/>
  <tile id="709" terrain="17,,,"/>
+ <tile id="800" terrain=",,29,29"/>
+ <tile id="801" terrain=",,,29"/>
+ <tile id="802" terrain=",,29,29"/>
+ <tile id="803" terrain=",,29,"/>
+ <tile id="832" terrain="29,29,29,29"/>
+ <tile id="833" terrain=",29,,29"/>
+ <tile id="834" terrain="29,29,29,29"/>
+ <tile id="835" terrain="29,,29,"/>
+ <tile id="864" terrain="29,29,29,29"/>
+ <tile id="865" terrain=",29,,29"/>
+ <tile id="866" terrain="29,29,29,29"/>
+ <tile id="867" terrain="29,,29,"/>
+ <tile id="896" terrain="29,29,,"/>
+ <tile id="897" terrain=",29,,"/>
+ <tile id="898" terrain="29,29,,"/>
+ <tile id="899" terrain="29,,,"/>
 </tileset>
