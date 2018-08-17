@@ -118,6 +118,7 @@
     <None Include="Assets\Tiled2Unity\Imported\EastSettlement.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\eastFields.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\SouthGrave.tiled2unity.xml" />
+    <None Include="Assets\Tiled2Unity\Imported\SouthFields.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\eastJungle.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Materials\_ReadMe.txt" />
     <None Include="Assets\Tiled2Unity\Textures\_ReadMe.txt" />
