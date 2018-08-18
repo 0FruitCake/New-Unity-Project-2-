@@ -20,16 +20,17 @@ public class nonQuestDialog : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        dMan.textLines = lines;
-        dMan.textimage = img;
-        dMan.textName = charac;
-        int pic = int.Parse(img[dMan.currentLine]);
-        dMan.image.GetComponent<Image>().sprite = images[pic];
+        
 
 
         if (Input.GetKeyDown(KeyCode.E) && playerEnter)
         {
-        
+
+            dMan.textLines = lines;
+            dMan.textimage = img;
+            dMan.textName = charac;
+            int pic = int.Parse(img[dMan.currentLine]);
+            dMan.image.GetComponent<Image>().sprite = images[pic];
             transform.parent.rotation.z.Equals(0);
 
             if (!dMan.dialogActive)
