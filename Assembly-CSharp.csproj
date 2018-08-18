@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\DamageController.cs" />
     <Compile Include="Assets\Scripts\DamageNumbers.cs" />
     <Compile Include="Assets\Scripts\DestroyOverTime.cs" />
+    <Compile Include="Assets\Scripts\DialogRange.cs" />
     <Compile Include="Assets\Scripts\dialogueHolder.cs" />
     <Compile Include="Assets\Scripts\DialogueManager.cs" />
     <Compile Include="Assets\Scripts\EnemyAttack.cs" />
@@ -74,6 +75,8 @@
     <Compile Include="Assets\Scripts\EnemyDamageController.cs" />
     <Compile Include="Assets\Scripts\EnemyHealthManager.cs" />
     <Compile Include="Assets\Scripts\LoadNewArea.cs" />
+    <Compile Include="Assets\Scripts\nonQuestDialog.cs" />
+    <Compile Include="Assets\Scripts\NPCMoving.cs" />
     <Compile Include="Assets\Scripts\PlayerHealthManager.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement2.cs" />

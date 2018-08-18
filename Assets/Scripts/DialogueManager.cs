@@ -59,7 +59,7 @@ public class DialogueManager : MonoBehaviour
 
             int pic = int.Parse(textimage[currentLine]);
             dText.text = textName[currentLine] + ": " + textLines[currentLine];
-            image.GetComponent<Image>().sprite = images[pic];
+            
 
         }
 

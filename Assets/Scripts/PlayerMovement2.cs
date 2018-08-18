@@ -16,6 +16,7 @@ public class PlayerMovement2 : MonoBehaviour
     private DamageController dmgctrl;
     public bool canMove;
     private ScreenFader sf;
+    private DialogueManager dm;
 
 
     // Use this for initialization
@@ -24,14 +25,14 @@ public class PlayerMovement2 : MonoBehaviour
         myRigidbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sf = FindObjectOfType<ScreenFader>();
-
+        dm = FindObjectOfType<DialogueManager>();
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (sf.isFading)
+        if (sf.isFading || dm.dialogActive)
         {
             canMove = false;
         }
