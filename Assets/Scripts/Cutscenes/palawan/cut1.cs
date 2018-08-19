@@ -16,12 +16,16 @@ public class cut1 : MonoBehaviour {
     private bool dialogOngoing;
     public bool istriggered;
     private CompanionController theCompanion;
+    private CompanionDialogRange cdr;
+
 
     // Use this for initialization
     void Start()
     {
         theCompanion = FindObjectOfType<CompanionController>();
         dMan = FindObjectOfType<DialogueManager>();
+        cdr = FindObjectOfType<CompanionDialogRange>();
+
     }
 
     // Update is called once per frame
@@ -32,8 +36,8 @@ public class cut1 : MonoBehaviour {
             dMan.textLines = lines;
             dMan.textimage = img;
             dMan.textName = charac;
-            int pic = int.Parse(img[dMan.currentLine]);
-            dMan.image.GetComponent<Image>().sprite = images[pic];
+            dMan.img = img;
+            dMan.images = images;
 
             if (!dMan.dialogActive)
             {
@@ -54,7 +58,8 @@ public class cut1 : MonoBehaviour {
             theCompanion.target = target;
             theCompanion.canMove = true;
             theCompanion.isWalking = true;
-
+            cdr.triggeractive = true;
+            
             transform.gameObject.SetActive(false);
         }
 
@@ -65,6 +70,7 @@ public class cut1 : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player")
         {
+            
             playerEnter = true;
            
    

@@ -14,7 +14,7 @@ public class DialogueManager : MonoBehaviour
     public Text dtext2;
     public bool dialogActive;
     public Sprite[] images;
-
+    public string[] img;
     public int currentLine;
     public string[] textLines;
     public string[] textName;
@@ -59,7 +59,8 @@ public class DialogueManager : MonoBehaviour
 
             int pic = int.Parse(textimage[currentLine]);
             dText.text = textName[currentLine] + ": " + textLines[currentLine];
-            
+            image.GetComponent<Image>().sprite = images[pic];
+
 
         }
 

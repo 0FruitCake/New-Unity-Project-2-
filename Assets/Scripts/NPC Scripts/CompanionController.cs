@@ -69,8 +69,6 @@ public class CompanionController : MonoBehaviour {
             moveDirection.y = -(transform.position.y - target.position.y);
             anim.SetBool("isWalking", true);
             return;
-
-
         }
 
         else

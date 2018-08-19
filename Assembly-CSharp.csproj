@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\Cutscenes\main\CutScene1.cs" />
     <Compile Include="Assets\Scripts\Cutscenes\palawan\cut1.cs" />
     <Compile Include="Assets\Scripts\Cutscenes\palawan\cut1loctrigger.cs" />
+    <Compile Include="Assets\Scripts\Dialog Scripts\CompanionDialogRange.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\DialogRange.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\dialogueHolder.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\nonQuestDialog.cs" />

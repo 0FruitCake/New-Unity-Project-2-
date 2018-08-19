@@ -29,9 +29,8 @@ public class nonQuestDialog : MonoBehaviour {
             dMan.textLines = lines;
             dMan.textimage = img;
             dMan.textName = charac;
-            int pic = int.Parse(img[dMan.currentLine]);
-            dMan.image.GetComponent<Image>().sprite = images[pic];
-            transform.parent.rotation.z.Equals(0);
+            dMan.img = img;
+            dMan.images = images;
 
             if (!dMan.dialogActive)
             {
