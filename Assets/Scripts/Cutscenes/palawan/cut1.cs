@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class cut1 : MonoBehaviour {
+public class cut1 : MonoBehaviour
+{
 
     private DialogueManager dMan;
 
@@ -17,6 +18,7 @@ public class cut1 : MonoBehaviour {
     public bool istriggered;
     private CompanionController theCompanion;
     private CompanionDialogRange cdr;
+    public questMainPalawan qmp;
 
 
     // Use this for initialization
@@ -47,7 +49,7 @@ public class cut1 : MonoBehaviour {
                 playerEnter = false;
             }
 
-           
+
 
         }
 
@@ -59,7 +61,7 @@ public class cut1 : MonoBehaviour {
             theCompanion.canMove = true;
             theCompanion.isWalking = true;
             cdr.triggeractive = true;
-            
+            qmp.questActive = true;
             transform.gameObject.SetActive(false);
         }
 
@@ -70,12 +72,12 @@ public class cut1 : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player")
         {
-            
+
             playerEnter = true;
-           
-   
+
+
         }
     }
 
- 
+
 }

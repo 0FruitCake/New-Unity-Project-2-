@@ -89,6 +89,8 @@
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement2.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerStartPoint.cs" />
+    <Compile Include="Assets\Scripts\Quests\questMainPalawan.cs" />
+    <Compile Include="Assets\Scripts\Quests\QuestManager.cs" />
     <Compile Include="Assets\Scripts\Warps\LoadNewArea.cs" />
     <Compile Include="Assets\Scripts\Warps\Warp.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\CircleObject.cs" />
