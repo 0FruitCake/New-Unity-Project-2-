@@ -12,6 +12,7 @@ public class questMainPalawan : MonoBehaviour {
     public bool questActive;
     public int questIndex;
     public QuestManager qm;
+    public Image questupdated;
 
 	// Use this for initialization
 	void Start () {
@@ -24,6 +25,15 @@ public class questMainPalawan : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public void questCompleted()
+    {
+        isCompleted[questIndex] = true;
+        questIndex++;
+        questupdated.gameObject.SetActive(true);
+        Debug.Log(questIndex);
+        
+    }
 
     public void onClickMain()
     {
