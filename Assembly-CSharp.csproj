@@ -77,13 +77,16 @@
     <Compile Include="Assets\Scripts\Dialog Scripts\DialogRange.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\dialogueHolder.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\nonQuestDialog.cs" />
+    <Compile Include="Assets\Scripts\Dialog Scripts\silkAssistant.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\silkTrader.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyAttack.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyAttackRangeTrigger.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyDamageController.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyHealthManager.cs" />
+    <Compile Include="Assets\Scripts\Enemies\enemyRespawn.cs" />
     <Compile Include="Assets\Scripts\Enemies\Range.cs" />
     <Compile Include="Assets\Scripts\Enemies\WolfController.cs" />
+    <Compile Include="Assets\Scripts\Items\potionPickUp.cs" />
     <Compile Include="Assets\Scripts\NPC Scripts\CompanionController.cs" />
     <Compile Include="Assets\Scripts\NPC Scripts\NPCMoving.cs" />
     <Compile Include="Assets\Scripts\Player\DamageController.cs" />
@@ -95,6 +98,7 @@
     <Compile Include="Assets\Scripts\Quests\bananaController.cs" />
     <Compile Include="Assets\Scripts\Quests\questMainPalawan.cs" />
     <Compile Include="Assets\Scripts\Quests\QuestManager.cs" />
+    <Compile Include="Assets\Scripts\Quests\wolf.cs" />
     <Compile Include="Assets\Scripts\Warps\LoadNewArea.cs" />
     <Compile Include="Assets\Scripts\Warps\Warp.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\CircleObject.cs" />

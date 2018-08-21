@@ -14,6 +14,9 @@ public class silkTrader : MonoBehaviour {
     public string[] lines2;
     public string[] charac2;
     public string[] img2;
+    public string[] lines3;
+    public string[] charac3;
+    public string[] img3;
     private bool playerEnter;
     private bool dialogOngoing;
     public bananaController bcont;
@@ -37,6 +40,10 @@ public class silkTrader : MonoBehaviour {
             else if(qmp.questIndex == 1)
             {
                 questInstance2();
+            }
+            else if(qmp.questIndex == 3)
+            {
+                questInstance3();
             }
           
         }
@@ -98,6 +105,23 @@ public class silkTrader : MonoBehaviour {
             dMan.currentLine = 0;
             istriggered = true;
             bcont.setBananaActive();
+        }
+
+    }
+    private void questInstance3()
+    {
+        dMan.textLines = lines3;
+        dMan.textimage = img3;
+        dMan.textName = charac3;
+        dMan.images = images;
+
+        if (!dMan.dialogActive)
+        {
+
+            dMan.showDialogue();
+            dMan.currentLine = 0;
+            istriggered = true;
+        
         }
 
     }

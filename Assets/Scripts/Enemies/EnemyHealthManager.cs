@@ -6,10 +6,14 @@ public class EnemyHealthManager : MonoBehaviour {
 
     public int enemyMaxHealth;
     public int enemyCurrentHealth;
+    public GameObject potion;
+    public bool isDead;
+
     // Use this for initialization
     void Start()
     {
         enemyCurrentHealth = enemyMaxHealth;
+        
     }
 
     // Update is called once per frame
@@ -17,7 +21,15 @@ public class EnemyHealthManager : MonoBehaviour {
     {
         if (enemyCurrentHealth <= 0)
         {
+            int x = Random.Range(0, 5);
+            Debug.Log(x);
+            if(x == 1) {
+                var clone = (GameObject)Instantiate(potion, transform.position, transform.rotation);
+                clone.SetActive(true);
+            }
             gameObject.SetActive(false);
+            isDead = true;
+            
         }
     }
 
@@ -31,4 +43,8 @@ public class EnemyHealthManager : MonoBehaviour {
     {
         enemyCurrentHealth = enemyMaxHealth;
     }
+
+  
+
+   
 }

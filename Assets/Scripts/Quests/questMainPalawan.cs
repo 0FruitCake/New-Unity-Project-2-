@@ -36,9 +36,10 @@ public class questMainPalawan : MonoBehaviour {
 
     public void questCompleted()
     {
+        questupdated.gameObject.SetActive(true);
         isCompleted[questIndex] = true;
         questIndex++;
-        questupdated.gameObject.SetActive(true);
+        
         Debug.Log(questIndex);
         
     }

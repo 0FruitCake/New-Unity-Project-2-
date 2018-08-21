@@ -522,6 +522,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyMaxHealth: 20
   enemyCurrentHealth: 0
+  potion: {fileID: 1079213881350548, guid: 9de9356c914f86242bc02d2b5df6e51b, type: 2}
+  isDead: 0
 --- !u!114 &114321604859645812
 MonoBehaviour:
   m_ObjectHideFlags: 1

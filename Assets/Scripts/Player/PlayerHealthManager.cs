@@ -18,6 +18,10 @@ public class PlayerHealthManager : MonoBehaviour {
         {
             gameObject.SetActive(false);
         }
+        if(playerCurrentHealth > playerMaxHealth)
+        {
+            playerCurrentHealth = playerMaxHealth;
+        }
 	}
 
     public void HurtPlayer(int damage)
