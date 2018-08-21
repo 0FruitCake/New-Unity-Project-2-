@@ -504,6 +504,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyMaxHealth: 23
   enemyCurrentHealth: 0
+  potion: {fileID: 1079213881350548, guid: 9de9356c914f86242bc02d2b5df6e51b, type: 2}
+  isDead: 0
+  expm: {fileID: 114132393527565462, guid: b8554a96427b04a44a324806dd870d61, type: 2}
+  expGiven: 10
 --- !u!114 &114590731995181234
 MonoBehaviour:
   m_ObjectHideFlags: 1

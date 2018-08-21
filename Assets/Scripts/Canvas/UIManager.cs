@@ -9,6 +9,9 @@ public class UIManager : MonoBehaviour {
     public Text hpText;
     public PlayerHealthManager playerHealth;
     public Slider healthBar;
+    public experienceManager experience;
+    public Slider experienceBar;
+    public Text experienceText;
 
 	// Use this for initialization
 	void Start () {
@@ -20,5 +23,8 @@ public class UIManager : MonoBehaviour {
         healthBar.maxValue = playerHealth.playerMaxHealth;
         healthBar.value = playerHealth.playerCurrentHealth;
         hpText.text = playerHealth.playerCurrentHealth + " / " + playerHealth.playerMaxHealth;
+        experienceBar.maxValue = experience.maxExperience;
+        experienceBar.value = experience.currentExperience;
+        experienceText.text = "Lv." + experience.currentLevel + " (" + experience.currentExperience + "/" + experience.maxExperience + ")";
 	}
 }

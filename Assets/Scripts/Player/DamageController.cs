@@ -7,9 +7,11 @@ public class DamageController : MonoBehaviour {
     public int damage;
     public GameObject damageBurst;
     public GameObject damageNumber;
-    public int basedamage;
+    
     public Transform hitPoint;
     public Transform bursthitPoint;
+    public experienceManager xpm;
+    public DamageManager dm;
     // Use this for initialization
     void Start () {
 		
@@ -26,7 +28,7 @@ public class DamageController : MonoBehaviour {
         {
             if (other.CompareTag("Enemy")) 
             {
-                damage = basedamage + (Random.Range(0, 4));
+                damage = dm.basedamage + (Random.Range(0, 3));
                 
                 other.gameObject.GetComponent<EnemyHealthManager>().HurtEnemy(damage);
                 var clone = (GameObject)Instantiate(damageNumber, hitPoint.position, Quaternion.Euler(Vector3.zero));
