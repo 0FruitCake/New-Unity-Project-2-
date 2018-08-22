@@ -14,12 +14,14 @@ public class questMainPalawan : MonoBehaviour {
     public QuestManager qm;
     public Image questupdated;
     public int bananaCount;
+    public int wolfcount;
 
 	// Use this for initialization
 	void Start () {
         
         questProg = new string[questTitle.Length];
         isCompleted = new bool[questTitle.Length];
+        
 	}
 	
 	// Update is called once per frame
@@ -32,7 +34,16 @@ public class questMainPalawan : MonoBehaviour {
                 questCompleted();
             }
         }
-	}
+
+        if(questIndex == 5)
+        {
+
+            if (wolfcount == 3)
+            {
+                questCompleted();
+            }
+        }
+    }
 
     public void questCompleted()
     {

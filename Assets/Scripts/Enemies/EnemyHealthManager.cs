@@ -10,6 +10,9 @@ public class EnemyHealthManager : MonoBehaviour {
     public bool isDead;
     public experienceManager expm;
     public int expGiven;
+    public bool isQuestMonster;
+    public bool isQuestActive;
+    private questMainPalawan qmp;
 
     // Use this for initialization
     void Start()
@@ -23,6 +26,11 @@ public class EnemyHealthManager : MonoBehaviour {
     {
         if (enemyCurrentHealth <= 0)
         {
+            if(isQuestActive && isQuestMonster)
+            {
+                qmp = FindObjectOfType<questMainPalawan>();
+                qmp.wolfcount += 1;
+            }
             int x = Random.Range(0, 4);
             Debug.Log(x);
             if(x == 1) {

@@ -113,17 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!224 &6034614 stripped
-RectTransform:
-  m_PrefabParentObject: {fileID: 224340972917534888, guid: b8554a96427b04a44a324806dd870d61,
-    type: 2}
-  m_PrefabInternal: {fileID: 956982044}
---- !u!114 &6034615 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114309320195499340, guid: b8554a96427b04a44a324806dd870d61,
-    type: 2}
-  m_PrefabInternal: {fileID: 956982044}
-  m_Script: {fileID: 11500000, guid: 1a0766f2f70bfa34d9d6556df42faa4e, type: 3}
 --- !u!1 &8125913
 GameObject:
   m_ObjectHideFlags: 0
@@ -1251,6 +1240,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 556f66fe777bcb34e9090afa9b59938a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ehm: []
+  qmp: {fileID: 0}
 --- !u!1 &171033443
 GameObject:
   m_ObjectHideFlags: 0
@@ -1291,6 +1282,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 556f66fe777bcb34e9090afa9b59938a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ehm: []
+  qmp: {fileID: 0}
 --- !u!1 &175877944
 GameObject:
   m_ObjectHideFlags: 0
@@ -2107,6 +2100,60 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fd38e96749077e444bd606e674991cbf, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &376557677
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 376557678}
+  - component: {fileID: 376557679}
+  m_Layer: 0
+  m_Name: cut2 - port commotion
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &376557678
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 376557677}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 761, y: -1006, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1451880602}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &376557679
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 376557677}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -48.24369, y: -37.15387}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 97.48747, y: 177.34058}
+  m_EdgeRadius: 0
 --- !u!1 &376667184
 GameObject:
   m_ObjectHideFlags: 0
@@ -2295,6 +2342,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 556f66fe777bcb34e9090afa9b59938a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ehm: []
+  qmp: {fileID: 0}
 --- !u!1 &441068292
 GameObject:
   m_ObjectHideFlags: 0
@@ -3637,12 +3686,6 @@ MonoBehaviour:
   ehm: {fileID: 769676707}
   respawntime: 20
   currentrestime: 0
---- !u!114 &726268947 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114540624922682324, guid: b8554a96427b04a44a324806dd870d61,
-    type: 2}
-  m_PrefabInternal: {fileID: 956982044}
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &746769099
 GameObject:
   m_ObjectHideFlags: 0
@@ -4226,65 +4269,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1150022296}
   m_Script: {fileID: 11500000, guid: 3e42c219a2c13d94f981cd1ef916c1a9, type: 3}
---- !u!1 &865240657
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1254232496090236, guid: b8554a96427b04a44a324806dd870d61,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 865240658}
-  - component: {fileID: 865240659}
-  m_Layer: 5
-  m_Name: bananaManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &865240658
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 224866645125136756, guid: b8554a96427b04a44a324806dd870d61,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 865240657}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1981861526}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &865240659
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114363234016611022, guid: b8554a96427b04a44a324806dd870d61,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 865240657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95303eb090ae1324e99e5d9361a846fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bananas:
-  - {fileID: 1849358479}
-  - {fileID: 1414837340}
-  - {fileID: 1467221136}
-  - {fileID: 1908126600}
-  - {fileID: 746769099}
-  - {fileID: 1898856891}
-  - {fileID: 1403959535}
-  - {fileID: 1273155803}
-  - {fileID: 2056584353}
-  - {fileID: 1278067168}
 --- !u!1 &869348861
 GameObject:
   m_ObjectHideFlags: 0
@@ -5365,10 +5349,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dMan: {fileID: 27821133}
-  lines: []
-  charac: []
-  img: []
-  images: []
+  lines:
+  - Help!
+  - Are you the silk trader's assistant?
+  - Yes.
+  - What are you doing here?
+  - I was gathering materials for some repairs but I got cornered by these wolves.
+  - Will you please help me get back to town?
+  - No problem.
+  charac:
+  - Trader's Assistant
+  - Pepe
+  - Trader's Assistant
+  - Pepe
+  - Trader's Assistant
+  - Trader's Assistant
+  - Pepe
+  img:
+  - 1
+  - 0
+  - 1
+  - 0
+  - 1
+  - 1
+  - 0
+  images:
+  - {fileID: 21300000, guid: 3773550b777d58b45b72dac9e0568b70, type: 3}
+  - {fileID: 21300000, guid: ece95d42fe7ac594aa0d41d4c9f183d0, type: 3}
   qmp: {fileID: 1717000893}
 --- !u!61 &1035696848
 BoxCollider2D:
@@ -6867,6 +6874,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fd38e96749077e444bd606e674991cbf, type: 2}
   m_IsPrefabParent: 0
+--- !u!224 &1261492270 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224792476111278460, guid: b8554a96427b04a44a324806dd870d61,
+    type: 2}
+  m_PrefabInternal: {fileID: 956982044}
 --- !u!1 &1265858471
 GameObject:
   m_ObjectHideFlags: 0
@@ -7421,6 +7433,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 556f66fe777bcb34e9090afa9b59938a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ehm: []
+  qmp: {fileID: 0}
 --- !u!1 &1355437637
 GameObject:
   m_ObjectHideFlags: 0
@@ -7942,6 +7956,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1723919922}
+  - {fileID: 376557678}
   m_Father: {fileID: 501588876}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11022,84 +11037,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 63.539795, y: 127.87677}
   m_EdgeRadius: 0
---- !u!1 &1981861525
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1577753549265526, guid: b8554a96427b04a44a324806dd870d61,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1981861526}
-  - component: {fileID: 1981861527}
-  m_Layer: 5
-  m_Name: Main (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1981861526
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 224792476111278460, guid: b8554a96427b04a44a324806dd870d61,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1981861525}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_Children:
-  - {fileID: 865240658}
-  m_Father: {fileID: 6034614}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 282.5, y: 454.5}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1981861527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114605141979048248, guid: b8554a96427b04a44a324806dd870d61,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1981861525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 304375c518c5f6d4996e92053690344d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questTitle:
-  - En Route Silk Road
-  - Haggle Haggle Haggle
-  - Hand me Banana Hands
-  - Unhandy Banana Hands
-  - For Silk, We Must
-  - Safe Passage
-  - My End of the Bargain
-  - Unsheathe
-  - Silky Smooth
-  - Where to next?
-  questDesc:
-  - Find and talk to the silk trader.
-  - Bargain with the trader.
-  - Collect 10 banana hands found in the western and southern forests.
-  - Return to trader.
-  - Find the trader's assistant. He was last seen heading towards the eastern forest.
-  - Defeat 3 wolves in the area.
-  - Return to the trader once more.
-  - Fight off the ravaging pirates.
-  - Talk to trader.
-  - Talk to your companion.
-  questProg: []
-  isCompleted: 
-  questActive: 0
-  questIndex: 0
-  qm: {fileID: 6034615}
-  questupdated: {fileID: 726268947}
-  bananaCount: 0
 --- !u!1 &1985015602
 GameObject:
   m_ObjectHideFlags: 0
@@ -11554,6 +11491,58 @@ Transform:
   m_Father: {fileID: 1151332031}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2065715705
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2065715706}
+  - component: {fileID: 2065715707}
+  m_Layer: 5
+  m_Name: wolves
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2065715706
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2065715705}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1261492270}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2065715707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2065715705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 556f66fe777bcb34e9090afa9b59938a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ehm:
+  - {fileID: 852735973}
+  - {fileID: 558130568}
+  - {fileID: 1616247357}
+  - {fileID: 116616789}
+  - {fileID: 113018702}
+  qmp: {fileID: 1717000893}
 --- !u!114 &2072252318 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114269524601873672, guid: b79c78fa17d46d34ea797fc8e01de191,
@@ -11600,6 +11589,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 556f66fe777bcb34e9090afa9b59938a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ehm: []
+  qmp: {fileID: 0}
 --- !u!1 &2083645857
 GameObject:
   m_ObjectHideFlags: 0
