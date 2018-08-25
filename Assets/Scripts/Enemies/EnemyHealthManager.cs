@@ -13,6 +13,7 @@ public class EnemyHealthManager : MonoBehaviour {
     public bool isQuestMonster;
     public bool isQuestActive;
     private questMainPalawan qmp;
+    public int dropchance;
 
     // Use this for initialization
     void Start()
@@ -31,7 +32,7 @@ public class EnemyHealthManager : MonoBehaviour {
                 qmp = FindObjectOfType<questMainPalawan>();
                 qmp.wolfcount += 1;
             }
-            int x = Random.Range(0, 4);
+            int x = Random.Range(0, dropchance);
             Debug.Log(x);
             if(x == 1) {
                 var clone = (GameObject)Instantiate(potion, transform.position, transform.rotation);
