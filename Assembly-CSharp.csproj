@@ -86,6 +86,7 @@
     <Compile Include="Assets\Scripts\Enemies\EnemyHealthManager.cs" />
     <Compile Include="Assets\Scripts\Enemies\enemyRespawn.cs" />
     <Compile Include="Assets\Scripts\Enemies\pirateController.cs" />
+    <Compile Include="Assets\Scripts\Enemies\pirateRange.cs" />
     <Compile Include="Assets\Scripts\Enemies\Range.cs" />
     <Compile Include="Assets\Scripts\Enemies\WolfController.cs" />
     <Compile Include="Assets\Scripts\Items\potionPickUp.cs" />
