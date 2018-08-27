@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\Cutscenes\palawan\cut1loctrigger.cs" />
     <Compile Include="Assets\Scripts\Cutscenes\palawan\cut2.cs" />
     <Compile Include="Assets\Scripts\Cutscenes\palawan\cut2loctrigger.cs" />
+    <Compile Include="Assets\Scripts\Cutscenes\palawan\cut3.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\CompanionDialogRange.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\DialogRange.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\dialogueHolder.cs" />
@@ -102,9 +103,11 @@
     <Compile Include="Assets\Scripts\Player\PlayerStartPoint.cs" />
     <Compile Include="Assets\Scripts\Quests\banana.cs" />
     <Compile Include="Assets\Scripts\Quests\bananaController.cs" />
+    <Compile Include="Assets\Scripts\Quests\npcController.cs" />
     <Compile Include="Assets\Scripts\Quests\questMainPalawan.cs" />
     <Compile Include="Assets\Scripts\Quests\QuestManager.cs" />
     <Compile Include="Assets\Scripts\Quests\wolf.cs" />
+    <Compile Include="Assets\Scripts\Quests\zoneController.cs" />
     <Compile Include="Assets\Scripts\Warps\LoadNewArea.cs" />
     <Compile Include="Assets\Scripts\Warps\Warp.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\CircleObject.cs" />

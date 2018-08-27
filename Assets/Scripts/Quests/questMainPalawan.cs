@@ -40,6 +40,11 @@ public class questMainPalawan : MonoBehaviour {
 
             if (wolfcount == 3)
             {
+                npcController npCont = GameObject.FindObjectOfType<npcController>().GetComponent<npcController>();
+                npCont.set1State(false);
+                npCont.set2State(true);
+                zoneController zCont = GameObject.FindObjectOfType<zoneController>().GetComponent<zoneController>();
+                zCont.zone1State(true);
                 questCompleted();
             }
         }
