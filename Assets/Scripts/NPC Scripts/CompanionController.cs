@@ -68,6 +68,10 @@ public class CompanionController : MonoBehaviour {
             moveDirection.x = -(transform.position.x - target.position.x);
             moveDirection.y = -(transform.position.y - target.position.y);
             anim.SetBool("isWalking", true);
+            anim.SetFloat("MoveX", moveDirection.x);
+            anim.SetFloat("MoveY", moveDirection.y);
+            anim.SetFloat("LastMoveX", moveDirection.x);
+            anim.SetFloat("LastMoveY", moveDirection.y);
             return;
         }
 

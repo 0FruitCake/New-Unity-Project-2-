@@ -6,7 +6,7 @@ public class PlayerMovement2 : MonoBehaviour
 {
     private Rigidbody2D myRigidbody;
     public float moveSpeed;
-    private Animator anim;
+    public Animator anim;
     private bool playerMoving;
     private Vector2 lastMove;
     private static bool playerExists;
@@ -17,6 +17,7 @@ public class PlayerMovement2 : MonoBehaviour
     public bool canMove;
     private ScreenFader sf;
     private DialogueManager dm;
+    public bool incutscene;
 
 
     // Use this for initialization
@@ -32,7 +33,7 @@ public class PlayerMovement2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (sf.isFading || dm.dialogActive)
+        if (sf.isFading || dm.dialogActive || incutscene)
         {
             canMove = false;
         }

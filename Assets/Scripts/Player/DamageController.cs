@@ -31,7 +31,7 @@ public class DamageController : MonoBehaviour {
                 damage = dm.basedamage + (Random.Range(0, 3));
                 
                 other.gameObject.GetComponent<EnemyHealthManager>().HurtEnemy(damage);
-                var clone = (GameObject)Instantiate(damageNumber, hitPoint.position, Quaternion.Euler(Vector3.zero));
+                var clone = (GameObject)Instantiate(damageNumber, other.transform.position, Quaternion.Euler(Vector3.zero));
                 clone.GetComponent<DamageNumbers>().damageNumber = damage;
                 Instantiate(damageBurst, bursthitPoint.position, transform.rotation);
                 
