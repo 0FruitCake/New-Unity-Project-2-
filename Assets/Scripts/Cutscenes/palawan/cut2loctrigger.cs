@@ -13,7 +13,7 @@ public class cut2loctrigger : MonoBehaviour {
     public CompanionController theCompanion;
     public PlayerMovement2 thePlayer;
     public questMainPalawan qmp;
-    public Transform cwarptarget;
+   
     public Transform pwarptarget;
     public bool istriggered;
 
@@ -71,11 +71,9 @@ public class cut2loctrigger : MonoBehaviour {
       
       yield return StartCoroutine(sf.FadeToBlack());
 
-         theCompanion.gameObject.transform.position = cwarptarget.position;
+        theCompanion.gameObject.SetActive(false);
          thePlayer.gameObject.transform.position = pwarptarget.position;
-         //theCompanion.canMove = false;
-         theCompanion.anim.SetFloat("LastMoveX", 0f);
-         theCompanion.anim.SetFloat("LastMoveY", 1f);
+       
          thePlayer.anim.SetFloat("LastMoveX", 0f);
          thePlayer.anim.SetFloat("LastMoveY", 1f);
         

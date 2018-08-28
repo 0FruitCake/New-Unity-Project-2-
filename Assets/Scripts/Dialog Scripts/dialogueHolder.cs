@@ -42,8 +42,7 @@ public class dialogueHolder : MonoBehaviour {
             dMan.textLines = lines;
             dMan.textimage = img;
             dMan.textName = charac;
-            int pic = int.Parse(dMan.textimage[dMan.currentLine]);
-            dMan.image.GetComponent<Image>().sprite = images[pic];
+            dMan.images = images;
 
             if (dMan.currentLine == 1)
             {

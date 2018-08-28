@@ -17,7 +17,23 @@ public class cut3 : MonoBehaviour
     public CompanionController theCompanion;
     public questMainPalawan qmp;
     public PlayerMovement2 thePlayer;
+    public string[] Replines;
+    public string[] Repcharac;
+    public string[] Repimg;
+    public string[] Replines2;
+    public string[] Repcharac2;
+    public string[] Repimg2;
+    public bool isButton;
+    public bool isReply;
+    public GameObject btn1;
+    public GameObject btn2;
+    public Text btntext;
+    public Text btntext2;
+    public string btext;
+    public string btext2;
 
+    public pirateController[] piratesc;
+    public EnemyDamageController[] edc;
 
     // Use this for initialization
     void Start()
@@ -32,33 +48,61 @@ public class cut3 : MonoBehaviour
     {
         if (playerEnter)
         {
-            dMan.textLines = lines;
-            dMan.textimage = img;
-            dMan.textName = charac;
-            dMan.img = img;
-            dMan.images = images;
-
-            if (!dMan.dialogActive)
+            if (!dMan.isreply)
             {
-                dMan.showDialogue();
-                dMan.currentLine = 0;
+                dMan.textLines = lines;
+                dMan.textimage = img;
+                dMan.textName = charac;
+                dMan.images = images;
+
+
+                if (dMan.currentLine == 3)
+                {
+                    dMan.buttonActive = true;
+                    btntext.text = btext;
+                    btntext2.text = btext2;
+                    btn1.SetActive(true);
+                    btn2.SetActive(true);
+                }
+
+            
+
+                    if (!dMan.dialogActive)
+                    {
+
+                        dMan.showDialogue();
+                        dMan.currentLine = 0;
+                       
+
+                    }
+                
+            }
+            else if (dMan.isreply)
+            {
+
+                dMan.textLines = Replines;
+                dMan.textimage = Repimg;
+                dMan.textName = Repcharac;
                 istriggered = true;
                 playerEnter = false;
+
+
+
             }
-
-
-
         }
-
+       
 
         if (!dMan.dialogActive && istriggered)
         {
             zoneController zCont = GameObject.FindObjectOfType<zoneController>().GetComponent<zoneController>();
             zCont.zone1State(false);
             zCont.battleOn(true);
-            theCompanion.canMove = true;
             thePlayer.incutscene = false;
             qmp.questCompleted();
+            for (int x = 0; x < piratesc.Length; x++)
+            {
+                piratesc[x].canMove = true;
+            }
         }
 
 
@@ -73,6 +117,33 @@ public class cut3 : MonoBehaviour
 
 
         }
+    }
+
+    public void choosebtn()
+    {
+        Replines = Replines2;
+        Repimg = Repimg2;
+        Repcharac = Repcharac2;
+        dMan.isreply = true;
+        dMan.currentLine = 0;
+        dMan.buttonActive = false;
+        btn1.SetActive(false);
+        btn2.SetActive(false);
+        qmp.piratemax = 6;
+
+    }
+    public void choosebtn2()
+    {
+        for(int x = 0; x<edc.Length; x++)
+        {
+            edc[x].basedamage += 5;
+        }
+        dMan.isreply = true;
+        dMan.currentLine = 0;
+        dMan.buttonActive = false;
+        btn1.SetActive(false);
+        btn2.SetActive(false);
+        qmp.piratemax = 100;
     }
 
 

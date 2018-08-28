@@ -23,7 +23,7 @@ public class pirateController : MonoBehaviour {
     public bool isattacking;
 
     public int attackInstance;
-
+    public bool canMove;
 
     private bool backtoinit;
 
@@ -55,11 +55,20 @@ public class pirateController : MonoBehaviour {
 
         timeBetweenMoveCounter = Random.Range(timeBetweenMove * 0.75f, timeBetweenMove * 1.25f);
         timeToMoveCounter = Random.Range(timeToMove * 0.75f, timeToMove * 1.25f);
+       
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!canMove)
+        {
+
+            myRigidbody.velocity = Vector2.zero;
+            anim.SetBool("isMoving", false);
+            return;
+
+        }
         if (isattacking)
         {
             chaseactive = false;

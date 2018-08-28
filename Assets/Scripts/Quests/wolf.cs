@@ -17,7 +17,7 @@ public class wolf : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (qmp.questIndex == 5)
+        if (qmp.questIndex == 5 || qmp.questIndex ==7)
         {
             for (int x = 0; x < ehm.Length; x++)
             {

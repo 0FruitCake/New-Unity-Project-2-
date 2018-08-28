@@ -15,9 +15,12 @@ public class questMainPalawan : MonoBehaviour {
     public Image questupdated;
     public int bananaCount;
     public int wolfcount;
+    public int piratemax;
+    public pirateController[] piratesc;
 
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start () {
         
         questProg = new string[questTitle.Length];
         isCompleted = new bool[questTitle.Length];
@@ -45,6 +48,17 @@ public class questMainPalawan : MonoBehaviour {
                 npCont.set2State(true);
                 zoneController zCont = GameObject.FindObjectOfType<zoneController>().GetComponent<zoneController>();
                 zCont.zone1State(true);
+                wolfcount = 0;
+                questCompleted();
+
+                
+            }
+        }
+        if (questIndex == 7)
+        {
+
+            if (wolfcount == piratemax)
+            {
                 questCompleted();
             }
         }
