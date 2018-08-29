@@ -16,12 +16,24 @@ public class questMainPalawan : MonoBehaviour {
     public int bananaCount;
     public int wolfcount;
     public int piratemax;
+    
+    private DialogueManager dMan;
+    public string[] lines;
+    public string[] charac;
+    public string[] img;
+    public Sprite[] images;
+    public bool istriggered;
+    public CompanionController theCompanion;
+    public GameObject theTrader;
+    public Transform cposition;
+    public Transform tposition;
     public pirateController[] piratesc;
 
 
     // Use this for initialization
     void Start () {
-        
+        dMan = FindObjectOfType<DialogueManager>();
+
         questProg = new string[questTitle.Length];
         isCompleted = new bool[questTitle.Length];
         
@@ -59,7 +71,31 @@ public class questMainPalawan : MonoBehaviour {
 
             if (wolfcount == piratemax)
             {
-                questCompleted();
+                Debug.Log("in");
+                for (int x = 0; x < piratesc.Length; x++)
+                {
+                    piratesc[x].canMove = false;
+                }
+                dMan.textLines = lines;
+                dMan.textimage = img;
+                dMan.textName = charac;
+                dMan.img = img;
+                dMan.images = images;
+
+                if (!dMan.dialogActive && !istriggered)
+                {
+                    dMan.showDialogue();
+                    dMan.currentLine = 0;  
+                    istriggered = true;
+                    wolfcount = 0;
+                }
+  
+                
+            }
+            if (!dMan.dialogActive && istriggered)
+            {
+                
+                StartCoroutine("restoretownstate");
             }
         }
     }
@@ -97,5 +133,25 @@ public class questMainPalawan : MonoBehaviour {
             }
         }
     }
+    IEnumerator restoretownstate()
+    {
+        questCompleted();
+        ScreenFader sf = GameObject.FindGameObjectWithTag("Fader").GetComponent<ScreenFader>();
 
+        
+        yield return StartCoroutine(sf.FadeToBlack());
+
+        theCompanion.gameObject.SetActive(true);
+        theCompanion.transform.position = cposition.position;
+        theCompanion.canMove = false;
+        npcController npCont = GameObject.FindObjectOfType<npcController>().GetComponent<npcController>();
+        npCont.set1State(true);
+        npCont.set2State(false);
+        zoneController zCont = GameObject.FindObjectOfType<zoneController>().GetComponent<zoneController>();
+        zCont.zone1State(false);
+        theTrader.transform.position = tposition.position;
+        
+        yield return StartCoroutine(sf.FadeToClear());
+
+    }
 }

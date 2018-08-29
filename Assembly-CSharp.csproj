@@ -100,6 +100,7 @@
     <Compile Include="Assets\Scripts\Player\PlayerHealthManager.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement2.cs" />
+    <Compile Include="Assets\Scripts\Player\playerRespawn.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerStartPoint.cs" />
     <Compile Include="Assets\Scripts\Quests\banana.cs" />
     <Compile Include="Assets\Scripts\Quests\bananaController.cs" />

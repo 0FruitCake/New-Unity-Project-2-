@@ -326,13 +326,14 @@ MonoBehaviour:
   moveSpeed: 60
   myRigidbody: {fileID: 0}
   moving: 0
-  timeBetweenMove: 1
-  timeToMove: 3
+  timeBetweenMove: 2
+  timeToMove: 1
   waitToReload: 0
   initial: {x: 0, y: 0, z: 0}
   chaseactive: 0
   isattacking: 0
   attackInstance: 1
+  canMove: 0
 --- !u!114 &114463318843531186
 MonoBehaviour:
   m_ObjectHideFlags: 1

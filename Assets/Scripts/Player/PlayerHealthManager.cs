@@ -7,9 +7,11 @@ public class PlayerHealthManager : MonoBehaviour {
 
     public int playerMaxHealth;
     public int playerCurrentHealth;
-	// Use this for initialization
-	void Start () {
+   
+    // Use this for initialization
+    void Start () {
         playerCurrentHealth = playerMaxHealth;
+        
 	}
 	
 	// Update is called once per frame
@@ -17,6 +19,7 @@ public class PlayerHealthManager : MonoBehaviour {
 		if(playerCurrentHealth <= 0)
         {
             gameObject.SetActive(false);
+
         }
         if(playerCurrentHealth > playerMaxHealth)
         {

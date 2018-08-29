@@ -31,7 +31,7 @@ public class cut3 : MonoBehaviour
     public Text btntext2;
     public string btext;
     public string btext2;
-
+    public playerRespawn pr;
     public pirateController[] piratesc;
     public EnemyDamageController[] edc;
 
@@ -103,7 +103,11 @@ public class cut3 : MonoBehaviour
             {
                 piratesc[x].canMove = true;
             }
+
+            istriggered = false;
+           
         }
+        
 
 
     }
@@ -144,6 +148,7 @@ public class cut3 : MonoBehaviour
         btn1.SetActive(false);
         btn2.SetActive(false);
         qmp.piratemax = 100;
+        pr.respawnon = false;
     }
 
 
