@@ -13,6 +13,7 @@ public class playerRespawn : MonoBehaviour {
     // Use this for initialization
     void Start () {
         respawnon = true;
+        currentrestime = respawntime;
 	}
 	
 	// Update is called once per frame
@@ -20,7 +21,7 @@ public class playerRespawn : MonoBehaviour {
         targetPos = new Vector3(player.transform.position.x, player.transform.position.y, transform.position.z);
         transform.position = Vector3.Lerp(transform.position, targetPos, moveSpeed * Time.deltaTime);
 
-        if (phm.playerCurrentHealth <= 0)
+        if (!phm.isactive)
         {
 
 
@@ -36,6 +37,7 @@ public class playerRespawn : MonoBehaviour {
 
                     phm.playerCurrentHealth = phm.playerMaxHealth / 3;
                     player.SetActive(true);
+                    phm.isactive = true;
 
                     currentrestime = respawntime;
                 }

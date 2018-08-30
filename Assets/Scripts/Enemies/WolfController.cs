@@ -66,6 +66,7 @@ public class WolfController : MonoBehaviour {
                 myRigidbody.velocity = Vector2.zero;
                 anim.SetBool("WolfMoving", false);
                 anim.SetBool("WolfAttacking", true);
+                myRigidbody.bodyType = RigidbodyType2D.Kinematic;
      
             }
 
@@ -73,6 +74,7 @@ public class WolfController : MonoBehaviour {
             {
                 anim.SetBool("WolfAttacking", false);
                 isattacking = false;
+                myRigidbody.bodyType = RigidbodyType2D.Dynamic;
                 
                 
             }

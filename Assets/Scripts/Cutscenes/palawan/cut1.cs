@@ -19,6 +19,7 @@ public class cut1 : MonoBehaviour
     private CompanionController theCompanion;
     private CompanionDialogRange cdr;
     public questMainPalawan qmp;
+    public QuestManager qm;
 
 
     // Use this for initialization
@@ -41,6 +42,7 @@ public class cut1 : MonoBehaviour
             dMan.img = img;
             dMan.images = images;
 
+
             if (!dMan.dialogActive)
             {
                 dMan.showDialogue();
@@ -48,8 +50,6 @@ public class cut1 : MonoBehaviour
                 istriggered = true;
                 playerEnter = false;
             }
-
-
 
         }
 
@@ -61,6 +61,9 @@ public class cut1 : MonoBehaviour
             theCompanion.canMove = true;
             theCompanion.isWalking = true;
             cdr.triggeractive = true;
+            qm.mainqactive = true;
+            qm.questActivated();
+            qm.buttonMain.gameObject.SetActive(true);
             qmp.questActive = true;
             transform.gameObject.SetActive(false);
         }

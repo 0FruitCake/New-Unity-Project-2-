@@ -77,6 +77,7 @@ public class pirateController : MonoBehaviour {
                 myRigidbody.velocity = Vector2.zero;
                 anim.SetBool("isMoving", false);
                 anim.SetBool("isAttacking", true);
+                myRigidbody.bodyType = RigidbodyType2D.Kinematic;
 
             }
 
@@ -84,6 +85,7 @@ public class pirateController : MonoBehaviour {
             {
                 anim.SetBool("isAttacking", false);
                 isattacking = false;
+                myRigidbody.bodyType = RigidbodyType2D.Dynamic;
 
 
             }

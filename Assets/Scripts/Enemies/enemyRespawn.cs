@@ -24,8 +24,8 @@ public class enemyRespawn : MonoBehaviour {
 
             if (currentrestime <= 0)
             {
-                ehm.transform.position = transform.position;
                 ehm.enemyCurrentHealth = ehm.enemyMaxHealth;
+                ehm.transform.position = transform.position;
                 ehm.gameObject.SetActive(true);
                 ehm.isDead = false;
                 currentrestime = respawntime;

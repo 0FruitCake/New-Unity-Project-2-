@@ -19,6 +19,11 @@ public class QuestManager : MonoBehaviour {
     public int side1index;
     public int side2index;
     public int side3index;
+    public GameObject buttonMain;
+    public GameObject side1btn;
+    public GameObject side2btn;
+    public GameObject side3btn;
+    public Image qactivate;
 
     // Use this for initialization
     void Start () {
@@ -28,7 +33,7 @@ public class QuestManager : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-
+       
         if (!qlogactive)
         {
 
@@ -49,6 +54,12 @@ public class QuestManager : MonoBehaviour {
                 qlogactive = false;
             }
         }
+
+    }
+
+    public void questActivated()
+    {
+        qactivate.gameObject.SetActive(true);
 
     }
 

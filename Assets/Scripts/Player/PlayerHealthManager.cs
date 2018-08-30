@@ -7,9 +7,11 @@ public class PlayerHealthManager : MonoBehaviour {
 
     public int playerMaxHealth;
     public int playerCurrentHealth;
+    public bool isactive;
    
     // Use this for initialization
     void Start () {
+    	isactive = true;
         playerCurrentHealth = playerMaxHealth;
         
 	}
@@ -18,6 +20,7 @@ public class PlayerHealthManager : MonoBehaviour {
 	void Update () {
 		if(playerCurrentHealth <= 0)
         {
+        	isactive = false;
             gameObject.SetActive(false);
 
         }
