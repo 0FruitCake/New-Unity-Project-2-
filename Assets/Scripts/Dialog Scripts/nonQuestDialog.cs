@@ -29,7 +29,7 @@ public class nonQuestDialog : MonoBehaviour {
             dMan.textLines = lines;
             dMan.textimage = img;
             dMan.textName = charac;
-            dMan.img = img;
+            
             dMan.images = images;
 
             if (!dMan.dialogActive)

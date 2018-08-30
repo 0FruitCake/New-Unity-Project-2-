@@ -20,6 +20,10 @@ public class cut1 : MonoBehaviour
     private CompanionDialogRange cdr;
     public questMainPalawan qmp;
     public QuestManager qm;
+    public GameObject tips;
+    public Text tip;
+    [TextArea]
+    public string tiptext;
 
 
     // Use this for initialization
@@ -39,7 +43,6 @@ public class cut1 : MonoBehaviour
             dMan.textLines = lines;
             dMan.textimage = img;
             dMan.textName = charac;
-            dMan.img = img;
             dMan.images = images;
 
 
@@ -56,6 +59,8 @@ public class cut1 : MonoBehaviour
 
         if (!dMan.dialogActive && istriggered)
         {
+            tip.text = tiptext;
+            tips.SetActive(true);
             theCompanion.incutscene = true;
             theCompanion.target = target;
             theCompanion.canMove = true;
@@ -66,6 +71,7 @@ public class cut1 : MonoBehaviour
             qm.buttonMain.gameObject.SetActive(true);
             qmp.questActive = true;
             transform.gameObject.SetActive(false);
+
         }
 
 

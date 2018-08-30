@@ -60,6 +60,7 @@
      <Compile Include="Assets\Scripts\Canvas\DialogueManager.cs" />
      <Compile Include="Assets\Scripts\Canvas\experienceManager.cs" />
      <Compile Include="Assets\Scripts\Canvas\hideOverTime.cs" />
+     <Compile Include="Assets\Scripts\Canvas\hideOverTime1.cs" />
      <Compile Include="Assets\Scripts\Canvas\ScreenFader.cs" />
      <Compile Include="Assets\Scripts\Canvas\TextImporter.cs" />
      <Compile Include="Assets\Scripts\Canvas\UIManager.cs" />
@@ -101,6 +102,7 @@
      <Compile Include="Assets\Scripts\Quests\QuestManager.cs" />
      <Compile Include="Assets\Scripts\Quests\wolf.cs" />
      <Compile Include="Assets\Scripts\Quests\zoneController.cs" />
+     <Compile Include="Assets\Scripts\Tips\tipManager.cs" />
      <Compile Include="Assets\Scripts\Warps\LoadNewArea.cs" />
      <Compile Include="Assets\Scripts\Warps\Warp.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\CircleObject.cs" />

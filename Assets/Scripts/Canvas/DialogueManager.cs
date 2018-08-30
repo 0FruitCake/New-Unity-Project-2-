@@ -56,10 +56,11 @@ public class DialogueManager : MonoBehaviour
 
         if (dialogActive)
         {
-
+            
             int pic = int.Parse(textimage[currentLine]);
-            dText.text = textName[currentLine] + ": " + textLines[currentLine];
             image.GetComponent<Image>().sprite = images[pic];
+            dText.text = textName[currentLine] + ": " + textLines[currentLine];
+            
 
 
         }
