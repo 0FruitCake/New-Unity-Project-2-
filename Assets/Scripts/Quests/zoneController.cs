@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class zoneController : MonoBehaviour {
     public GameObject[] zoneSet1;
-    public GameObject battleRestriction;
+    public GameObject[] battleRestriction;
     // Use this for initialization
     public void zone1State(bool b)
     {
@@ -16,6 +16,10 @@ public class zoneController : MonoBehaviour {
 
     public void battleOn(bool b)
     {
-        battleRestriction.SetActive(b);
+        for (int x = 0; x < battleRestriction.Length; x++)
+        {
+            battleRestriction[x].SetActive(b);
+        }
+       
     }
 }

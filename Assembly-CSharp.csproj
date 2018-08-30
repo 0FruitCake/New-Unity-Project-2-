@@ -100,6 +100,7 @@
      <Compile Include="Assets\Scripts\Quests\npcController.cs" />
      <Compile Include="Assets\Scripts\Quests\questMainPalawan.cs" />
      <Compile Include="Assets\Scripts\Quests\QuestManager.cs" />
+     <Compile Include="Assets\Scripts\Quests\side1Palawan.cs" />
      <Compile Include="Assets\Scripts\Quests\wolf.cs" />
      <Compile Include="Assets\Scripts\Quests\zoneController.cs" />
      <Compile Include="Assets\Scripts\Tips\tipManager.cs" />

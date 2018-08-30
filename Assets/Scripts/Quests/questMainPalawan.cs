@@ -131,6 +131,18 @@ public class questMainPalawan : MonoBehaviour {
                 qm.questProg.text = questProg[questIndex];
            
             }
+            else if (questIndex == 5)
+            {
+                questProg[questIndex] = "Wolves Eliminated : " + wolfcount + "/3";
+                qm.questProg.text = questProg[questIndex];
+           
+            }
+            else if (questIndex == 7)
+            {
+                questProg[questIndex] = "Pirates Eliminated : " + wolfcount + "/" +piratemax;
+                qm.questProg.text = questProg[questIndex];
+           
+            }
         }
     }
     IEnumerator restoretownstate()
@@ -149,6 +161,7 @@ public class questMainPalawan : MonoBehaviour {
         npCont.set2State(false);
         zoneController zCont = GameObject.FindObjectOfType<zoneController>().GetComponent<zoneController>();
         zCont.zone1State(false);
+        zCont.battleOn(false);
         theTrader.transform.position = tposition.position;
         
         yield return StartCoroutine(sf.FadeToClear());

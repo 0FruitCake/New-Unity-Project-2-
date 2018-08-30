@@ -931,11 +931,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4003442359062978, guid: 804198fcb75602f4694ecdf8a03c3856, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -359.74353
+      value: 5300
       objectReference: {fileID: 0}
     - target: {fileID: 4003442359062978, guid: 804198fcb75602f4694ecdf8a03c3856, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2541.5894
+      value: -2279
       objectReference: {fileID: 0}
     - target: {fileID: 4003442359062978, guid: 804198fcb75602f4694ecdf8a03c3856, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1916,11 +1916,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4588974878821698, guid: a2117780770f9f94eb425f075d80108a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 999.2565
+      value: 2180
       objectReference: {fileID: 0}
     - target: {fileID: 4588974878821698, guid: a2117780770f9f94eb425f075d80108a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -785.41064
+      value: -715
       objectReference: {fileID: 0}
     - target: {fileID: 4588974878821698, guid: a2117780770f9f94eb425f075d80108a, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2031,6 +2031,10 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4056178286664960, guid: a2117780770f9f94eb425f075d80108a, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2117780770f9f94eb425f075d80108a, type: 2}
   m_IsPrefabAsset: 0
@@ -2104,11 +2108,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4898592848358670, guid: 5de8c60c4f9a0cb45a8a94305f016401, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -5295.7437
+      value: -6230
       objectReference: {fileID: 0}
     - target: {fileID: 4898592848358670, guid: 5de8c60c4f9a0cb45a8a94305f016401, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2393.4106
+      value: -2350
       objectReference: {fileID: 0}
     - target: {fileID: 4898592848358670, guid: 5de8c60c4f9a0cb45a8a94305f016401, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2664,19 +2668,14 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 0
-    m_MaxSize: 54
+    m_MaxSize: 30
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Additional Controls :
-
-
-    F - Attack
-
-    U - Quest Log'
+  m_Text: 
 --- !u!222 &383586747
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2798,7 +2797,11 @@ MonoBehaviour:
   - {fileID: 682010767}
   - {fileID: 1821965083}
   - {fileID: 2031084531}
-  battleRestriction: {fileID: 1815206540}
+  battleRestriction:
+  - {fileID: 1815206540}
+  - {fileID: 1850931478}
+  - {fileID: 1222385895}
+  - {fileID: 1267687389}
 --- !u!1 &431468473
 GameObject:
   m_ObjectHideFlags: 0
@@ -3128,11 +3131,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4132562062198210, guid: a2b414bef9efa7e4ab1c00d5f2296349, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 777.0062
+      value: 7564
       objectReference: {fileID: 0}
     - target: {fileID: 4132562062198210, guid: a2b414bef9efa7e4ab1c00d5f2296349, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1740.2639
+      value: -5550
       objectReference: {fileID: 0}
     - target: {fileID: 4132562062198210, guid: a2b414bef9efa7e4ab1c00d5f2296349, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3310,11 +3313,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4306089189745722, guid: b1045b7db4cccb34b894abc9c474f47a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1015.7435
+      value: -681
       objectReference: {fileID: 0}
     - target: {fileID: 4306089189745722, guid: b1045b7db4cccb34b894abc9c474f47a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3925.4106
+      value: -4930
       objectReference: {fileID: 0}
     - target: {fileID: 4306089189745722, guid: b1045b7db4cccb34b894abc9c474f47a, type: 2}
       propertyPath: m_LocalPosition.z
@@ -5119,11 +5122,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4322241431359598, guid: cd783d279c3732d43b6a49e7ddae00b2, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -922.7435
+      value: -553
       objectReference: {fileID: 0}
     - target: {fileID: 4322241431359598, guid: cd783d279c3732d43b6a49e7ddae00b2, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2525.4106
+      value: -2931
       objectReference: {fileID: 0}
     - target: {fileID: 4322241431359598, guid: cd783d279c3732d43b6a49e7ddae00b2, type: 2}
       propertyPath: m_LocalPosition.z
@@ -5890,7 +5893,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4633380459468562, guid: 324461471c295474098b5570788eabe8, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4051.4106
+      value: -4996
       objectReference: {fileID: 0}
     - target: {fileID: 4633380459468562, guid: 324461471c295474098b5570788eabe8, type: 2}
       propertyPath: m_LocalPosition.z
@@ -7697,11 +7700,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4393853961191140, guid: a4c41785df5fad843b662e8f92b49fe7, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1068.1871
+      value: 7783
       objectReference: {fileID: 0}
     - target: {fileID: 4393853961191140, guid: a4c41785df5fad843b662e8f92b49fe7, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2817.9531
+      value: -2002
       objectReference: {fileID: 0}
     - target: {fileID: 4393853961191140, guid: a4c41785df5fad843b662e8f92b49fe7, type: 2}
       propertyPath: m_LocalPosition.z
@@ -7811,11 +7814,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4827821817192548, guid: 30f796550e49c754d9e8b6441849eb10, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -5316.7437
+      value: -6244
       objectReference: {fileID: 0}
     - target: {fileID: 4827821817192548, guid: 30f796550e49c754d9e8b6441849eb10, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -853.41064
+      value: -276
       objectReference: {fileID: 0}
     - target: {fileID: 4827821817192548, guid: 30f796550e49c754d9e8b6441849eb10, type: 2}
       propertyPath: m_LocalPosition.z
@@ -8724,11 +8727,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4581517088033722, guid: d181aa37758029240acfb4d586881a2c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3340.7437
+      value: -3297
       objectReference: {fileID: 0}
     - target: {fileID: 4581517088033722, guid: d181aa37758029240acfb4d586881a2c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2443.4106
+      value: -2856
       objectReference: {fileID: 0}
     - target: {fileID: 4581517088033722, guid: d181aa37758029240acfb4d586881a2c, type: 2}
       propertyPath: m_LocalPosition.z
@@ -9058,7 +9061,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1222385896
 Transform:
   m_ObjectHideFlags: 0
@@ -9078,7 +9081,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1222385895}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 26b1e74716a34bb4fb3ed2799a4f1d7a, type: 3}
   m_Name: 
@@ -9305,7 +9308,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1267687390
 Transform:
   m_ObjectHideFlags: 0
@@ -9919,11 +9922,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4224037806995842, guid: 701f6b1993cbe7e4988ff9a41576e0bd, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -920.7435
+      value: -604
       objectReference: {fileID: 0}
     - target: {fileID: 4224037806995842, guid: 701f6b1993cbe7e4988ff9a41576e0bd, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -740.41064
+      value: -705
       objectReference: {fileID: 0}
     - target: {fileID: 4224037806995842, guid: 701f6b1993cbe7e4988ff9a41576e0bd, type: 2}
       propertyPath: m_LocalPosition.z
@@ -11777,11 +11780,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4622351023542212, guid: 16d284cbf69c03e48891a969e0becb9c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1080.1852
+      value: 7715
       objectReference: {fileID: 0}
     - target: {fileID: 4622351023542212, guid: 16d284cbf69c03e48891a969e0becb9c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3933.7603
+      value: 863
       objectReference: {fileID: 0}
     - target: {fileID: 4622351023542212, guid: 16d284cbf69c03e48891a969e0becb9c, type: 2}
       propertyPath: m_LocalPosition.z
@@ -11994,11 +11997,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4754260356798604, guid: 9cbfc968ec89af3438facef90682ce72, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -5196.7437
+      value: -6033
       objectReference: {fileID: 0}
     - target: {fileID: 4754260356798604, guid: 9cbfc968ec89af3438facef90682ce72, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3951.4106
+      value: -4896
       objectReference: {fileID: 0}
     - target: {fileID: 4754260356798604, guid: 9cbfc968ec89af3438facef90682ce72, type: 2}
       propertyPath: m_LocalPosition.z
@@ -12421,7 +12424,8 @@ MonoBehaviour:
   qm: {fileID: 510864946}
   tips: {fileID: 529563908}
   tip: {fileID: 383586746}
-  tiptext: "Press U:\nView / Unview \nQuest Log"
+  tiptext: "Feature : Certain NPCs give out certain quests. \nPress Q to view the
+    quest log and keep track of your progess."
 --- !u!61 &1723919924
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12973,11 +12977,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4272995770881854, guid: d77f1b460a763bc408f7f098f448e4f9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -503.74353
+      value: 5084
       objectReference: {fileID: 0}
     - target: {fileID: 4272995770881854, guid: d77f1b460a763bc408f7f098f448e4f9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1666.5894
+      value: -5935
       objectReference: {fileID: 0}
     - target: {fileID: 4272995770881854, guid: d77f1b460a763bc408f7f098f448e4f9, type: 2}
       propertyPath: m_LocalPosition.z
@@ -13660,7 +13664,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1850931479
 Transform:
   m_ObjectHideFlags: 0
@@ -14817,11 +14821,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4101207511747274, guid: bdc48916eda509f4aa61de57429d9269, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1368.2565
+      value: 7909
       objectReference: {fileID: 0}
     - target: {fileID: 4101207511747274, guid: bdc48916eda509f4aa61de57429d9269, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 4569.5894
+      value: 3514
       objectReference: {fileID: 0}
     - target: {fileID: 4101207511747274, guid: bdc48916eda509f4aa61de57429d9269, type: 2}
       propertyPath: m_LocalPosition.z
@@ -15685,11 +15689,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4170682380693708, guid: 73bf7f3304c0b17439775299bc88d366, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3200.7437
+      value: -3222
       objectReference: {fileID: 0}
     - target: {fileID: 4170682380693708, guid: 73bf7f3304c0b17439775299bc88d366, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -5644.4106
+      value: -6947
       objectReference: {fileID: 0}
     - target: {fileID: 4170682380693708, guid: 73bf7f3304c0b17439775299bc88d366, type: 2}
       propertyPath: m_LocalPosition.z
@@ -15910,7 +15914,6 @@ MonoBehaviour:
   tiptext: 'Remember to talk to NPCs.
 
     They provide information and context about the gameworld.
-
 
 '
 --- !u!61 &2140083971
