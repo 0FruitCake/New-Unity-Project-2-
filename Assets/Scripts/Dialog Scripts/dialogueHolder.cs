@@ -27,6 +27,7 @@ public class dialogueHolder : MonoBehaviour {
     public string btext2;
     public Sprite[] images;
     public GameObject boxTrigger;
+    public bool istriggered;
 
 
 
@@ -41,7 +42,7 @@ public class dialogueHolder : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (!dMan.isreply)
+        if (!dMan.isreply && !istriggered)
         {
             dMan.textLines = lines;
             dMan.textimage = img;
@@ -102,13 +103,23 @@ public class dialogueHolder : MonoBehaviour {
         }
     }
     public void choosebtn() {
+
         Replines = Replines2;
         Repimg = Repimg2;
         Repcharac = Repcharac2;
         boxTrigger.SetActive(true);
+        istriggered = true;
+        dMan.buttonActive = false;
+       
+        dMan.isreply = true;
+        dMan.currentLine = 0;
+        btn1.SetActive(false);
+        btn2.SetActive(false);
 
 
-     }
+
+
+    }
     public void choosebtn2()
     {
         dMan.buttonActive = false;

@@ -10,8 +10,8 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 lastMove;
     public Rigidbody2D myRigidbody;
 
-    public Transform location;
-    public bool cutscene;
+  
+   
 
     public bool canMove;
     private ScreenFader sf;
@@ -45,15 +45,7 @@ public class PlayerMovement : MonoBehaviour
             myRigidbody.velocity = Vector2.zero;
             anim.SetBool("PlayerMoving", false);
             return;
-        }
-
-        if (cutscene)
-        {
-            transform.position = Vector2.MoveTowards(transform.position, location.position, moveSpeed * Time.deltaTime);
-            playerMoving = true;
-            lastMove.x = -((transform.position.x - location.position.x)+1f);
-            lastMove.y = -(transform.position.y - location.position.y);
-        }
+        }  
 
         else
         {
