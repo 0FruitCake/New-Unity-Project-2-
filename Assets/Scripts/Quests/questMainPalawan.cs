@@ -28,6 +28,7 @@ public class questMainPalawan : MonoBehaviour {
     public Transform cposition;
     public Transform tposition;
     public pirateController[] piratesc;
+    public experienceManager xpm;
 
 
     // Use this for initialization
@@ -103,6 +104,7 @@ public class questMainPalawan : MonoBehaviour {
     public void questCompleted()
     {
         questupdated.gameObject.SetActive(true);
+        xpm.currentExperience += 10;
         isCompleted[questIndex] = true;
         questIndex++;
         

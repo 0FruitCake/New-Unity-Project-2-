@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
 
     public bool canMove;
     private ScreenFader sf;
+    private DialogueManager dm;
 
     // Use this for initialization
     void Start()
@@ -22,13 +23,14 @@ public class PlayerMovement : MonoBehaviour
         anim = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
         sf = FindObjectOfType<ScreenFader>();
+        dm = FindObjectOfType<DialogueManager>();
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (sf.isFading)
+        if (sf.isFading || dm.dialogActive)
         {
             canMove = false;
         }

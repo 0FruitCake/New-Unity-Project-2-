@@ -2,10 +2,10 @@
 # Wavefront file for 'WestFields_mesh_0005.obj'
 
 # Vertices (Count = 4)
-v 0 -448 0
+v -32 -480 0
+v -64 -480 0
+v -64 -448 0
 v -32 -448 0
-v -32 -416 0
-v 0 -416 0
 
 # Texture cooridinates (Count = 4)
 vt 0.90625 0.5

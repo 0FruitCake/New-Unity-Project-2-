@@ -14,6 +14,9 @@ public class dialogueHolder : MonoBehaviour {
     public string[] Replines;
     public string[] Repcharac;
     public string[] Repimg;
+    public string[] Replines2;
+    public string[] Repcharac2;
+    public string[] Repimg2;
     public bool isButton;
     public bool isReply;
     public GameObject btn1;
@@ -23,6 +26,7 @@ public class dialogueHolder : MonoBehaviour {
     public string btext;
     public string btext2;
     public Sprite[] images;
+    public GameObject boxTrigger;
 
 
 
@@ -44,7 +48,7 @@ public class dialogueHolder : MonoBehaviour {
             dMan.textName = charac;
             dMan.images = images;
 
-            if (dMan.currentLine == 1)
+            if (dMan.currentLine == 7)
             {
                 dMan.buttonActive = true;
                 btntext.text = btext;
@@ -54,7 +58,7 @@ public class dialogueHolder : MonoBehaviour {
             }
 
             
-            if (Input.GetKeyDown(KeyCode.F) && playerEnter)
+            if (Input.GetKeyDown(KeyCode.E) && playerEnter)
             {
                
                 if (!dMan.dialogActive)
@@ -72,19 +76,8 @@ public class dialogueHolder : MonoBehaviour {
             dMan.textLines = Replines;
             dMan.textimage = Repimg;
             dMan.textName = Repcharac;
-            if (Input.GetKeyDown(KeyCode.F) && playerEnter)
-            {
-              
-                if (!dMan.dialogActive)
-                {
 
-                    dMan.showDialogue();
-                    dMan.currentLine = 0;
-
-                }
-            }
-
-
+            isReply = false;
 
         }
 
@@ -109,6 +102,10 @@ public class dialogueHolder : MonoBehaviour {
         }
     }
     public void choosebtn() {
+        Replines = Replines2;
+        Repimg = Repimg2;
+        Repcharac = Repcharac2;
+        boxTrigger.SetActive(true);
 
 
      }

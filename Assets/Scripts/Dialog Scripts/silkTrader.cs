@@ -98,8 +98,8 @@ public class silkTrader : MonoBehaviour {
         if (!dMan.dialogActive)
         {
 
-            dMan.showDialogue();
             dMan.currentLine = 0;
+            dMan.showDialogue();
             istriggered = true;
 
         }
@@ -114,9 +114,9 @@ public class silkTrader : MonoBehaviour {
 
         if (!dMan.dialogActive)
         {
-
-            dMan.showDialogue();
             dMan.currentLine = 0;
+            dMan.showDialogue();
+            
             istriggered = true;
             bcont.setBananaActive();
         }
@@ -131,9 +131,9 @@ public class silkTrader : MonoBehaviour {
 
         if (!dMan.dialogActive)
         {
-
-            dMan.showDialogue();
             dMan.currentLine = 0;
+            dMan.showDialogue();
+           
             istriggered = true;
         
         }
@@ -149,9 +149,9 @@ public class silkTrader : MonoBehaviour {
 
         if (!dMan.dialogActive)
         {
-
-            dMan.showDialogue();
             dMan.currentLine = 0;
+            dMan.showDialogue();
+            
             istriggered = true;
 
         }
@@ -166,9 +166,9 @@ public class silkTrader : MonoBehaviour {
 
         if (!dMan.dialogActive)
         {
-
-            dMan.showDialogue();
             dMan.currentLine = 0;
+            dMan.showDialogue();
+           
 
         }
 

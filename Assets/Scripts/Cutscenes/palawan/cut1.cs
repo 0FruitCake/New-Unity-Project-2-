@@ -48,8 +48,9 @@ public class cut1 : MonoBehaviour
 
             if (!dMan.dialogActive)
             {
-                dMan.showDialogue();
                 dMan.currentLine = 0;
+                dMan.showDialogue();
+                
                 istriggered = true;
                 playerEnter = false;
             }
@@ -59,8 +60,7 @@ public class cut1 : MonoBehaviour
 
         if (!dMan.dialogActive && istriggered)
         {
-            tip.text = tiptext;
-            tips.SetActive(true);
+            
             theCompanion.incutscene = true;
             theCompanion.target = target;
             theCompanion.canMove = true;
@@ -70,6 +70,8 @@ public class cut1 : MonoBehaviour
             qm.questActivated();
             qm.buttonMain.gameObject.SetActive(true);
             qmp.questActive = true;
+            tip.text = tiptext;
+            tips.SetActive(true);
             transform.gameObject.SetActive(false);
 
         }

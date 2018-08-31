@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class side1Palawan : MonoBehaviour {
-	public string[] questTitle;
+public class side1Palawan : MonoBehaviour
+{
+    public string[] questTitle;
     public string[] questDesc;
     public string[] questProg;
     public bool[] isCompleted;
@@ -13,13 +14,66 @@ public class side1Palawan : MonoBehaviour {
     public QuestManager qm;
     public Image questupdated;
     public int mangoCount;
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    private DialogueManager dMan;
+    public experienceManager xpm;
+    // Use this for initialization
+    void Start()
+    {
+        dMan = FindObjectOfType<DialogueManager>();
+
+        questProg = new string[questTitle.Length];
+        isCompleted = new bool[questTitle.Length];
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (questIndex == 0)
+        {
+
+            if (mangoCount == 5)
+            {
+                questCompleted();
+            }
+        }
+
+      
+    }
+
+    public void questCompleted()
+    {
+       
+        questupdated.gameObject.SetActive(true);
+        xpm.currentExperience += 10;
+        isCompleted[questIndex] = true;
+        questIndex++;
+
+        Debug.Log(questIndex);
+
+    }
+
+    public void onClickSide1()
+    {
+        Debug.Log("clicked");
+        if (!questActive)
+        {
+            qm.questTitle.text = "";
+            qm.questDesc.text = "Quest currently inactive";
+            qm.questProg.text = "";
+        }
+        else
+        {
+            qm.questTitle.text = questTitle[questIndex];
+            qm.questDesc.text = questDesc[questIndex];
+            qm.questProg.text = questProg[questIndex];
+
+            if (questIndex == 0)
+            {
+                questProg[questIndex] = "Mangoes Collected : " + mangoCount + "/5";
+                qm.questProg.text = questProg[questIndex];
+
+            }
+           
+        }
+    }
 }
