@@ -54,8 +54,11 @@ public class side1trader : MonoBehaviour {
                     {
                         dMan.currentLine = 0;
                         dMan.showDialogue();
+                        istriggered = true;
+                        s1p.questCompleted();
 
                     }
+                   
                 }
                 else
                 {

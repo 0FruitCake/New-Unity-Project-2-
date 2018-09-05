@@ -16,6 +16,7 @@ public class side1Palawan : MonoBehaviour
     public int mangoCount;
     private DialogueManager dMan;
     public experienceManager xpm;
+    public PlayerHealthManager phm;
     // Use this for initialization
     void Start()
     {
@@ -48,7 +49,12 @@ public class side1Palawan : MonoBehaviour
         isCompleted[questIndex] = true;
         questIndex++;
 
-        Debug.Log(questIndex);
+        if(questIndex == questTitle.Length)
+        {
+            xpm.currentExperience += questTitle.Length * 10 / 2;
+            phm.playerCurrentHealth = phm.playerMaxHealth;
+            
+        }
 
     }
 
@@ -63,15 +69,25 @@ public class side1Palawan : MonoBehaviour
         }
         else
         {
-            qm.questTitle.text = questTitle[questIndex];
-            qm.questDesc.text = questDesc[questIndex];
-            qm.questProg.text = questProg[questIndex];
-
-            if (questIndex == 0)
+            if(questIndex < questTitle.Length)
             {
-                questProg[questIndex] = "Mangoes Collected : " + mangoCount + "/5";
+                qm.questTitle.text = questTitle[questIndex];
+                qm.questDesc.text = questDesc[questIndex];
                 qm.questProg.text = questProg[questIndex];
 
+                if (questIndex == 0)
+                {
+                    questProg[questIndex] = "Mangoes Collected : " + mangoCount + "/5";
+                    qm.questProg.text = questProg[questIndex];
+
+                }
+            }
+           
+            else if (questIndex == questTitle.Length)
+            {
+                qm.questTitle.text = "";
+                qm.questDesc.text = "Quest Completed";
+                qm.questProg.text = "";
             }
            
         }

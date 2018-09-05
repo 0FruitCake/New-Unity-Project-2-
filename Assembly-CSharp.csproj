@@ -84,6 +84,7 @@
     <Compile Include="Assets\Scripts\Dialog Scripts\dialogueHolder.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\nonQuestDialog.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\side1trader.cs" />
+    <Compile Include="Assets\Scripts\Dialog Scripts\side2Trader.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\silkAssistant.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\silkTrader.cs" />
     <Compile Include="Assets\Scripts\Enemies\batController.cs" />
@@ -115,6 +116,7 @@
     <Compile Include="Assets\Scripts\Quests\questMainPalawan.cs" />
     <Compile Include="Assets\Scripts\Quests\QuestManager.cs" />
     <Compile Include="Assets\Scripts\Quests\side1Palawan.cs" />
+    <Compile Include="Assets\Scripts\Quests\side2Palawan.cs" />
     <Compile Include="Assets\Scripts\Quests\wolf.cs" />
     <Compile Include="Assets\Scripts\Quests\zoneController.cs" />
     <Compile Include="Assets\Scripts\Tips\tipManager.cs" />
