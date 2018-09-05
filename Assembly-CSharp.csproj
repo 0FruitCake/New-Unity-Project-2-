@@ -85,6 +85,8 @@
     <Compile Include="Assets\Scripts\Dialog Scripts\side1trader.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\silkAssistant.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\silkTrader.cs" />
+    <Compile Include="Assets\Scripts\Enemies\batController.cs" />
+    <Compile Include="Assets\Scripts\Enemies\batControllerReverse.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyAttack.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyAttackRangeTrigger.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyDamageController.cs" />
