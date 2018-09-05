@@ -16,6 +16,7 @@ public class cgManager : MonoBehaviour
     public string[] textLines;
     public string[] textName;
     public string[] textimage;
+   
 
     // Use this for initialization
     void Start()
@@ -46,7 +47,14 @@ public class cgManager : MonoBehaviour
 
             int pic = int.Parse(textimage[currentLine]);
             CG.GetComponent<Image>().sprite = images[pic];
-            dText.text = textName[currentLine] + ": " + textLines[currentLine];
+            if(textName[currentLine] != "")
+            {
+                dText.text = textName[currentLine] + ": " + textLines[currentLine];
+            }
+            else
+            {
+                dText.text = textLines[currentLine];
+            }
 
         }
 

@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\Canvas\ScreenFader.cs" />
     <Compile Include="Assets\Scripts\Canvas\TextImporter.cs" />
     <Compile Include="Assets\Scripts\Canvas\UIManager.cs" />
+    <Compile Include="Assets\Scripts\CG - VN\mainpalawan_transition.cs" />
     <Compile Include="Assets\Scripts\Cutscenes\palawan\cut1.cs" />
     <Compile Include="Assets\Scripts\Cutscenes\palawan\cut1loctrigger.cs" />
     <Compile Include="Assets\Scripts\Cutscenes\palawan\cut2.cs" />
