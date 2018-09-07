@@ -8,7 +8,7 @@ public class mainpalawan_transition : MonoBehaviour {
     public cgManager cgman;
     private bool istriggered;
     public string[] lines;
-    public string[] charac;
+    
     public string[] img;
     public Sprite[] images;
     private LoadNewArea lna;
@@ -21,28 +21,37 @@ public class mainpalawan_transition : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetKeyDown(KeyCode.E) && playerEnter)
+     
+        	 if (Input.GetKeyDown(KeyCode.E) && playerEnter)
         {
-            cgman.textLines = lines;
+        	
+			cgman.textLines = lines;
             cgman.textimage = img;
-            cgman.textName = charac;
+            
             cgman.images = images;
+            
 
             if (!cgman.cgActive)
             {
-
                 cgman.currentLine = 0;
                 cgman.showDialogue();
                 istriggered = true;
-
+                
             }
+        }
 
-        }
-        if (!cgman.cgActive && istriggered)
-        {
+            
+            if (cgman.currentLine == 12 && istriggered)
+        	{
+        	Debug.Log("IIIINNNNNN");
             lna.loadFromDialogue("palawan");
-        }
-    }
+            istriggered = false;
+            playerEnter =false;                  
+            cgman.currentLine++;
+       	 	}
+     
+   		
+   	}
 
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -64,4 +73,8 @@ public class mainpalawan_transition : MonoBehaviour {
 
         }
     }
+
+
+
 }
+

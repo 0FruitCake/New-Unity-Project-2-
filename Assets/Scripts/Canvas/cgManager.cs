@@ -47,14 +47,8 @@ public class cgManager : MonoBehaviour
 
             int pic = int.Parse(textimage[currentLine]);
             CG.GetComponent<Image>().sprite = images[pic];
-            if(textName[currentLine] != "")
-            {
-                dText.text = textName[currentLine] + ": " + textLines[currentLine];
-            }
-            else
-            {
+           
                 dText.text = textLines[currentLine];
-            }
 
         }
 
