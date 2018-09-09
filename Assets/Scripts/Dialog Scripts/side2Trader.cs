@@ -93,7 +93,7 @@ public class side2Trader : MonoBehaviour {
             }
 
         }
-        if (dMan.currentLine == 8 && playerEnter)
+        if (dMan.currentLine == 9 && playerEnter)
         {
 
             dMan.buttonActive = true;

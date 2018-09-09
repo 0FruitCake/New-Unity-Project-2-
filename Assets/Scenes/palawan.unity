@@ -309,7 +309,7 @@ MonoBehaviour:
   - 0
   - 1
   images:
-  - {fileID: 21300000, guid: 0eb10fc1ad93450488f6e598c22f3da1, type: 3}
+  - {fileID: 21300000, guid: 5ce413214854e4e4dbe9d506b72dab1a, type: 3}
   - {fileID: 21300000, guid: bb7bc553f6f495242906155a232d4e8a, type: 3}
   lines2:
   - You again? What now kid?
@@ -5821,9 +5821,9 @@ MonoBehaviour:
   - 1
   - 0
   images:
-  - {fileID: 21300000, guid: 3773550b777d58b45b72dac9e0568b70, type: 3}
+  - {fileID: 21300000, guid: 5ce413214854e4e4dbe9d506b72dab1a, type: 3}
   - {fileID: 21300220, guid: a09453e9818132a4e833958eb2fc6766, type: 3}
-  - {fileID: 21300348, guid: e0eb724eb1a52624b91c82f6a51abf85, type: 3}
+  - {fileID: 21300000, guid: bb7bc553f6f495242906155a232d4e8a, type: 3}
   istriggered: 0
   theCompanion: {fileID: 871849576}
   qmp: {fileID: 1717000893}
@@ -7629,13 +7629,67 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dMan: {fileID: 27821133}
-  lines: []
-  charac: []
-  img: []
-  images: []
-  lines2: []
-  charac2: []
-  img2: []
+  lines:
+  - ~mumbles~ ... Where could they be? ...
+  - Excuse me?
+  - .. How could they be this late?
+  - Uhh. Excuse me.
+  - Oh yes! Sorry about that! What can I do for you?
+  - You seem troubled, what's going on?
+  - 'Ahh. You see, the delivery I''m expecting hasn''t arrived yet, and it''s been
+    2 hours since the agreed time. '
+  - Say, you wouldn't mind, would you?
+  - Mind what?
+  - Well.. If you find out anything about the delay, I would be gladly grateful.
+  charac:
+  - Trader
+  - Jose
+  - Trader
+  - Jose
+  - Trader
+  - Jose
+  - Trader
+  - Trader
+  - Jose
+  - Trader
+  img:
+  - 1
+  - 0
+  - 1
+  - 0
+  - 1
+  - 0
+  - 1
+  - 1
+  - 0
+  - 1
+  images:
+  - {fileID: 21300000, guid: 5ce413214854e4e4dbe9d506b72dab1a, type: 3}
+  - {fileID: 21300000, guid: 23317dcecad7a4c4998449d123bde2a2, type: 3}
+  lines2:
+  - I have some information for you.
+  - Yes?
+  - There's been a commotion by the settlement, rice thief and all.
+  - It's been fixed however, nothing to worry about.
+  - Ah.. Yes yes, and the delivery?
+  - It should arrive shortly.
+  - Wonderful, thank you very much trader!
+  charac2:
+  - Jose
+  - Trader
+  - Jose
+  - Jose
+  - Trader
+  - Jose
+  - Trader
+  img2:
+  - 0
+  - 1
+  - 0
+  - 0
+  - 1
+  - 0
+  - 1
   lines3: []
   charac3: []
   img3: []
@@ -8624,7 +8678,7 @@ MonoBehaviour:
   - 1
   - 0
   images:
-  - {fileID: 21300000, guid: 0eb10fc1ad93450488f6e598c22f3da1, type: 3}
+  - {fileID: 21300000, guid: 5ce413214854e4e4dbe9d506b72dab1a, type: 3}
   - {fileID: 21300000, guid: 7b77e3b3a06552a4786c3ada647d66ad, type: 3}
 --- !u!61 &968321524
 BoxCollider2D:
@@ -11893,8 +11947,8 @@ MonoBehaviour:
   - 1
   - 1
   images:
-  - {fileID: 21300000, guid: 0eb10fc1ad93450488f6e598c22f3da1, type: 3}
-  - {fileID: 21300166, guid: c14e79f774bae794bb5cdfa57b3c40a1, type: 3}
+  - {fileID: 21300000, guid: 5ce413214854e4e4dbe9d506b72dab1a, type: 3}
+  - {fileID: 21300000, guid: fbcc65f1733763d4aa79fca8220cdb20, type: 3}
   lines2:
   - Thank you! Thank you very much for this.
   - Here, have one on the house.
@@ -14172,7 +14226,7 @@ MonoBehaviour:
   - 1
   - 1
   images:
-  - {fileID: 21300000, guid: 0eb10fc1ad93450488f6e598c22f3da1, type: 3}
+  - {fileID: 21300000, guid: 5ce413214854e4e4dbe9d506b72dab1a, type: 3}
   - {fileID: 21300000, guid: 397eefb53063864489d5f69bf00584d3, type: 3}
 --- !u!1 &1574187255
 GameObject:
@@ -15364,7 +15418,7 @@ MonoBehaviour:
   - 0
   images:
   - {fileID: 21300000, guid: c8319bfea950413498e28173f2fc6a41, type: 3}
-  - {fileID: 21300000, guid: 0eb10fc1ad93450488f6e598c22f3da1, type: 3}
+  - {fileID: 21300000, guid: 5ce413214854e4e4dbe9d506b72dab1a, type: 3}
   target: {fileID: 1883034102}
   istriggered: 0
   qmp: {fileID: 1717000893}
@@ -16853,7 +16907,7 @@ MonoBehaviour:
   - 1
   - 0
   images:
-  - {fileID: 21300000, guid: 3773550b777d58b45b72dac9e0568b70, type: 3}
+  - {fileID: 21300000, guid: 5ce413214854e4e4dbe9d506b72dab1a, type: 3}
   - {fileID: 21300030, guid: f6b944f3a6fbacf489f17b49b88918a2, type: 3}
   theCompanion: {fileID: 871849576}
   thePlayer: {fileID: 662011119}
@@ -18663,7 +18717,7 @@ MonoBehaviour:
   - 1
   - 0
   images:
-  - {fileID: 21300000, guid: 3773550b777d58b45b72dac9e0568b70, type: 3}
+  - {fileID: 21300000, guid: 5ce413214854e4e4dbe9d506b72dab1a, type: 3}
   - {fileID: 21300030, guid: f6b944f3a6fbacf489f17b49b88918a2, type: 3}
   theCompanion: {fileID: 871849576}
   thePlayer: {fileID: 662011119}
@@ -18902,7 +18956,7 @@ MonoBehaviour:
   - 1
   - 0
   images:
-  - {fileID: 21300000, guid: 3773550b777d58b45b72dac9e0568b70, type: 3}
+  - {fileID: 21300000, guid: 5ce413214854e4e4dbe9d506b72dab1a, type: 3}
   - {fileID: 21300030, guid: f6b944f3a6fbacf489f17b49b88918a2, type: 3}
   theCompanion: {fileID: 871849576}
   thePlayer: {fileID: 662011119}
@@ -19389,8 +19443,8 @@ MonoBehaviour:
   - 0
   - 1
   images:
-  - {fileID: 21300000, guid: 5c10e2a4b59d46c488451048094b8c4f, type: 3}
-  - {fileID: 21300000, guid: 3773550b777d58b45b72dac9e0568b70, type: 3}
+  - {fileID: 21300000, guid: f8f60f89b1f7eb34ca4961935ef944fd, type: 3}
+  - {fileID: 21300000, guid: 5ce413214854e4e4dbe9d506b72dab1a, type: 3}
 --- !u!1 &2086014432
 GameObject:
   m_ObjectHideFlags: 0
