@@ -110,9 +110,9 @@ public class dialogueHolder : MonoBehaviour {
         boxTrigger.SetActive(true);
         istriggered = true;
         dMan.buttonActive = false;
-       
         dMan.isreply = true;
-        dMan.currentLine = 0;
+        dMan.currentLine = -1;
+        dMan.SkipToNextText();
         btn1.SetActive(false);
         btn2.SetActive(false);
 
@@ -125,7 +125,8 @@ public class dialogueHolder : MonoBehaviour {
         dMan.buttonActive = false;
         
         dMan.isreply = true;
-        dMan.currentLine = 0;
+        dMan.currentLine = -1;
+        dMan.SkipToNextText();
         btn1.SetActive(false);
         btn2.SetActive(false);
 

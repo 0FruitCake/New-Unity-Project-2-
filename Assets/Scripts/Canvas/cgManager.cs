@@ -30,7 +30,7 @@ public class cgManager : MonoBehaviour
 
         if (cgActive && Input.GetKeyDown(KeyCode.Space))
         {
-            currentLine++;
+            SkipToNextText();
 
         }
         if (currentLine >= textLines.Length)
@@ -47,8 +47,8 @@ public class cgManager : MonoBehaviour
 
             int pic = int.Parse(textimage[currentLine]);
             CG.GetComponent<Image>().sprite = images[pic];
-           
-                dText.text = textLines[currentLine];
+   
+               
 
         }
 
@@ -60,6 +60,29 @@ public class cgManager : MonoBehaviour
     {
         cgActive = true;
         cgBox.SetActive(true);
+        StartCoroutine(AnimateText());
+    }
+
+    IEnumerator AnimateText()
+    {
+
+        for (int i = 0; i < (textLines[currentLine].Length + 1); i++)
+        {
+            dText.text = textLines[currentLine].Substring(0, i);
+            yield return new WaitForSeconds(.03f);
+        }
+    }
+
+    public void SkipToNextText()
+    {
+        StopAllCoroutines();
+        currentLine++;
+        //If we've reached the end of the array, do anything you want. I just restart the example text
+        if (currentLine > textLines.Length)
+        {
+            currentLine = 0;
+        }
+        StartCoroutine(AnimateText());
     }
 }
 

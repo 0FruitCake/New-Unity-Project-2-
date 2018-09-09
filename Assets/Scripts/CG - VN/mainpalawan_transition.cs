@@ -41,13 +41,13 @@ public class mainpalawan_transition : MonoBehaviour {
         }
 
             
-            if (cgman.currentLine == 12 && istriggered)
+            if (cgman.currentLine == 13 && istriggered)
         	{
-        	Debug.Log("IIIINNNNNN");
+        	
             lna.loadFromDialogue("palawan");
             istriggered = false;
             playerEnter =false;                  
-            cgman.currentLine++;
+            
        	 	}
      
    		
