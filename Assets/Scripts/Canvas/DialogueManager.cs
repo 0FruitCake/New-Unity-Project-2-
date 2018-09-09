@@ -15,7 +15,7 @@ public class DialogueManager : MonoBehaviour
     public bool dialogActive;
     public Sprite[] images;
     public string[] img;
-    public int currentLine;
+    public int currentLine = 0;
     public string[] textLines;
     public string[] textName;
     public string[] textimage;
@@ -24,7 +24,11 @@ public class DialogueManager : MonoBehaviour
 
     public PlayerMovement thePlayer;
 
-
+   
+   // void Awake()
+    //{
+        //StartCoroutine(AnimateText());
+   // }
 
     // Use this for initialization
     void Start()
@@ -39,7 +43,7 @@ public class DialogueManager : MonoBehaviour
 
         if (dialogActive && Input.GetKeyDown(KeyCode.Space) && !buttonActive)
         {
-            currentLine++;
+            SkipToNextText();
          
         }
         if(currentLine >= textLines.Length)
@@ -59,7 +63,7 @@ public class DialogueManager : MonoBehaviour
             
             int pic = int.Parse(textimage[currentLine]);
             image.GetComponent<Image>().sprite = images[pic];
-            dText.text = textName[currentLine] + ": " + textLines[currentLine];
+            // dText.text = textName[currentLine] + ": " + textLines[currentLine];
             
 
 
@@ -73,7 +77,33 @@ public class DialogueManager : MonoBehaviour
     {
         dialogActive = true;
         dBox.SetActive(true);
+        StartCoroutine(AnimateText());
+
     }
-    
+
+  
+
+    IEnumerator AnimateText()
+    {
+
+        for (int i = 0; i < (textLines[currentLine].Length + 1); i++)
+        {
+            dText.text= textName[currentLine] + ": " +  textLines[currentLine].Substring(0, i);
+            yield return new WaitForSeconds(.03f);
+        }
+    }
+
+    public void SkipToNextText()
+    {
+        StopAllCoroutines();
+        currentLine++;
+        //If we've reached the end of the array, do anything you want. I just restart the example text
+        if (currentLine > textLines.Length)
+        {
+            currentLine = 0;
+        }
+        StartCoroutine(AnimateText());
+    }
+
 }
   
