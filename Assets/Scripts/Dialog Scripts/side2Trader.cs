@@ -42,7 +42,7 @@ public class side2Trader : MonoBehaviour {
         {
             if (s2p.questActive == true)
             {
-                if (s2p.questIndex == 1)
+                if (s2p.questIndex == 6)
                 {
                     dMan.textLines = lines2;
                     dMan.textimage = img2;
@@ -122,5 +122,32 @@ public class side2Trader : MonoBehaviour {
             playerEnter = false;
             Debug.Log("Bye");
         }
+    }
+
+    public void choosebtn()
+    {
+
+        qm.side2active = true;
+        s2p.questActive = true;
+        qm.questActivated();
+        qm.side2btn.gameObject.SetActive(true);
+        dMan.buttonActive = false;
+        btn1.SetActive(false);
+        btn2.SetActive(false);
+        dMan.currentLine++;
+        tip.text = tiptext;
+        tips.SetActive(true);
+       
+
+    }
+    public void choosebtn2()
+    {
+
+
+        dMan.buttonActive = false;
+        btn1.SetActive(false);
+        btn2.SetActive(false);
+        dMan.currentLine++;
+
     }
 }

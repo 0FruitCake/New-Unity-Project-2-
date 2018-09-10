@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\Dialog Scripts\CompanionDialogRange.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\DialogRange.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\dialogueHolder.cs" />
+    <Compile Include="Assets\Scripts\Dialog Scripts\headMerchant.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\nonQuestDialog.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\side1trader.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\side2Trader.cs" />
