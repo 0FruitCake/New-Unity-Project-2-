@@ -7601,7 +7601,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -1.3606567, y: -0.00021362305}
@@ -8606,6 +8606,12 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 224810606443736700, guid: b8554a96427b04a44a324806dd870d61,
     type: 2}
   m_PrefabInternal: {fileID: 956982044}
+--- !u!114 &956982046 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114540624922682324, guid: b8554a96427b04a44a324806dd870d61,
+    type: 2}
+  m_PrefabInternal: {fileID: 956982044}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!114 &959028950 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114582944127755454, guid: f158f8b16a275d24581dd91252473625,
@@ -19150,15 +19156,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15da708ea727d4c428a02e4fb524ffc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questTitle: []
-  questDesc: []
+  questTitle:
+  - A Sticky Situation
+  - Rice Trail 1
+  - Rice Trail 2
+  - Rice Trail 3
+  - No More Mr.Rice Guy
+  - Crice-is Averted
+  - Have a Rice Day
+  questDesc:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   questProg: []
   isCompleted: 
   questActive: 0
   questIndex: 0
-  qm: {fileID: 0}
-  questupdated: {fileID: 0}
-  xpm: {fileID: 0}
+  qm: {fileID: 510864946}
+  questupdated: {fileID: 956982046}
+  xpm: {fileID: 1410672833}
 --- !u!1001 &2054197120
 Prefab:
   m_ObjectHideFlags: 0

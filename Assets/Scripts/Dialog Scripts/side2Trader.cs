@@ -103,4 +103,24 @@ public class side2Trader : MonoBehaviour {
             btn2.SetActive(true);
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            playerEnter = true;
+
+
+
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            playerEnter = false;
+            Debug.Log("Bye");
+        }
+    }
 }

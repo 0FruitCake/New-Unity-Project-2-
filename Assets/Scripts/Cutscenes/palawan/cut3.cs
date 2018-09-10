@@ -129,7 +129,8 @@ public class cut3 : MonoBehaviour
         Repimg = Repimg2;
         Repcharac = Repcharac2;
         dMan.isreply = true;
-        dMan.currentLine = 0;
+        dMan.currentLine = -1;
+        dMan.SkipToNextText();
         dMan.buttonActive = false;
         btn1.SetActive(false);
         btn2.SetActive(false);
@@ -143,7 +144,8 @@ public class cut3 : MonoBehaviour
             edc[x].basedamage += 5;
         }
         dMan.isreply = true;
-        dMan.currentLine = 0;
+        dMan.currentLine = -1;
+        dMan.SkipToNextText();
         dMan.buttonActive = false;
         btn1.SetActive(false);
         btn2.SetActive(false);
