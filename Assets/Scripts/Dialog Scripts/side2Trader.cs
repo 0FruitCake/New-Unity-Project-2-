@@ -47,6 +47,7 @@ public class side2Trader : MonoBehaviour {
                     dMan.textLines = lines2;
                     dMan.textimage = img2;
                     dMan.textName = charac2;
+                    dMan.images = images;
                     Debug.Log(dMan.currentLine);
 
                     if (!dMan.dialogActive)
@@ -64,6 +65,7 @@ public class side2Trader : MonoBehaviour {
                     dMan.textLines = lines3;
                     dMan.textimage = img3;
                     dMan.textName = charac3;
+                    dMan.images = images;
                     Debug.Log(dMan.currentLine);
 
                     if (!dMan.dialogActive)
