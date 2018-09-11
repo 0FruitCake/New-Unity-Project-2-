@@ -1752,7 +1752,7 @@ MonoBehaviour:
   - Well we do have a witness, claims to have seen the suspect himself.
   - This witness, can I speak with him?
   - Sure, he's just across the path.
-  - Good enough. See you later.
+  - Alright. See you later.
   charac:
   - Jose
   - Head Farmer
@@ -4058,6 +4058,105 @@ Transform:
   m_Father: {fileID: 1265858472}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &434049617
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 434049618}
+  - component: {fileID: 434049620}
+  - component: {fileID: 434049619}
+  m_Layer: 0
+  m_Name: dialogueZone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &434049618
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 434049617}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2127846835}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &434049619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 434049617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b02b0752c0ca6d45ace181811397a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dMan: {fileID: 27821133}
+  lines:
+  - Excuse me ma'am, did you happen to see a man wearing a red bandana carrying, a
+    sack of rice?
+  - I actually did.. Suspicious fellow, to be frank.
+  - Truth be told ma'am that man was a thief.
+  - A thief? Goodness..
+  - Anyway, could you point me towards the direction he went?
+  - Of course. He hurried off to the forest just north of here.
+  - Copy. Thanks for the information.
+  charac:
+  - Jose
+  - Witness
+  - Jose
+  - Witness
+  - Jose
+  - Witness
+  - Jose
+  img:
+  - 0
+  - 1
+  - 0
+  - 1
+  - 0
+  - 1
+  - 0
+  images:
+  - {fileID: 21300000, guid: 5ce413214854e4e4dbe9d506b72dab1a, type: 3}
+  - {fileID: 21300000, guid: 4c46d09ad7f71834a9bfb5d6836d9f73, type: 3}
+  lines2: []
+  charac2: []
+  img2: []
+  qmp: {fileID: 2053604352}
+--- !u!61 &434049620
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 434049617}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -3.045929, y: 0.5083008}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 56.091858, y: 94.92285}
+  m_EdgeRadius: 0
 --- !u!114 &435723279 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114582944127755454, guid: f158f8b16a275d24581dd91252473625,
@@ -7046,6 +7145,46 @@ Prefab:
       propertyPath: m_SortingLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 23148438511415740, guid: cd783d279c3732d43b6a49e7ddae00b2,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23368094907767774, guid: cd783d279c3732d43b6a49e7ddae00b2,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23368094907767774, guid: cd783d279c3732d43b6a49e7ddae00b2,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -1926842615
+      objectReference: {fileID: 0}
+    - target: {fileID: 23368094907767774, guid: cd783d279c3732d43b6a49e7ddae00b2,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23497843569918736, guid: cd783d279c3732d43b6a49e7ddae00b2,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -1926842615
+      objectReference: {fileID: 0}
+    - target: {fileID: 23497843569918736, guid: cd783d279c3732d43b6a49e7ddae00b2,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23148438511415740, guid: cd783d279c3732d43b6a49e7ddae00b2,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -1926842615
+      objectReference: {fileID: 0}
+    - target: {fileID: 23148438511415740, guid: cd783d279c3732d43b6a49e7ddae00b2,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd783d279c3732d43b6a49e7ddae00b2, type: 2}
   m_IsPrefabAsset: 0
@@ -7358,7 +7497,7 @@ GameObject:
   - component: {fileID: 844076975}
   - component: {fileID: 844076974}
   m_Layer: 0
-  m_Name: White_Female_102_6350_00_00_00_00_00_10198_00_ 00_50_XP_0
+  m_Name: witness2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7464,7 +7603,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -139.74353, y: -5798.4106, z: 35.12402}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1029309839}
   m_Father: {fileID: 2045059254}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9142,6 +9282,87 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 122.60571, y: 19.872559}
   m_EdgeRadius: 0
+--- !u!1 &988303718
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 988303719}
+  - component: {fileID: 988303721}
+  - component: {fileID: 988303720}
+  m_Layer: 0
+  m_Name: dialogueZone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &988303719
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 988303718}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1948387560}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &988303720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 988303718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00161076373ec544693c656b3d808b96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - Sir, did you happen to see a man wearing a red bandana, carrying a sack of rice?
+  - Actually just got out of bed. So no, sorry.
+  - No matter. Thanks anyway.
+  charac:
+  - Jose
+  - Man
+  - Jose
+  img:
+  - 0
+  - 1
+  - 0
+  images:
+  - {fileID: 21300000, guid: 5ce413214854e4e4dbe9d506b72dab1a, type: 3}
+  - {fileID: 21300000, guid: 7b77e3b3a06552a4786c3ada647d66ad, type: 3}
+--- !u!61 &988303721
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 988303718}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.015686035, y: -5.3079987}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 65.22522, y: 64.92752}
+  m_EdgeRadius: 0
 --- !u!1 &997807822
 GameObject:
   m_ObjectHideFlags: 0
@@ -9310,6 +9531,88 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 956982044}
   m_Script: {fileID: 11500000, guid: 72d6f06d527048a468d5034948048943, type: 3}
+--- !u!1 &1029309838
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1029309839}
+  - component: {fileID: 1029309841}
+  - component: {fileID: 1029309840}
+  m_Layer: 0
+  m_Name: dialogueZone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1029309839
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1029309838}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 844076977}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1029309840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1029309838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00161076373ec544693c656b3d808b96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - Excuse me ma'am, did you happen to see a man wearing a red bandana, carrying a
+    sack of rice?
+  - Sorry, but I don't believe I did.
+  - Okay. Thank you, and sorry for the bother.
+  charac:
+  - Jose
+  - Woman
+  - Jose
+  img:
+  - 0
+  - 1
+  - 0
+  images:
+  - {fileID: 21300000, guid: 5ce413214854e4e4dbe9d506b72dab1a, type: 3}
+  - {fileID: 21300000, guid: f8f60f89b1f7eb34ca4961935ef944fd, type: 3}
+--- !u!61 &1029309841
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1029309838}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 4.8814697, y: 2.628662}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 59.76294, y: 105.257324}
+  m_EdgeRadius: 0
 --- !u!1 &1035696845
 GameObject:
   m_ObjectHideFlags: 0
@@ -9451,33 +9754,33 @@ MonoBehaviour:
   - I heard you saw the thief?
   - Yes I did.
   - I was headed to the fields so as to start working.
-  - Then that's when I saw someone hurriedly dragging a sack of rice.
+  - Then that's when I saw someone hurriedly carrying a sack of rice.
   - You didn't stop him?
-  - No. Didn't really think of it much then. I thought it was one of the boys getting
+  - No. Didn't really think much of it then. I thought it was one of the boys getting
     ready for delivery.
   - Did you recognize the suspect?
   - Didn't get to see the face sorry.
   - Hmm...
   - All I know is that it was a man, wearing a red bandana.
-  - Where did he go?
-  - Last I saw, he was heading towards the settlement.
+  - Do you know where he went?
+  - Last I saw, he was heading towards the settlement just east.
   - All right, that's good enough. Thanks.
   - No problem. Do catch him!
   charac:
   - Jose
-  - Farmer
-  - Farmer
-  - Farmer
+  - Witness
+  - Witness
+  - Witness
   - Jose
-  - Farmer
+  - Witness
   - Jose
-  - Farmer
+  - Witness
   - Jose
-  - Farmer
+  - Witness
   - Jose
-  - Farmer
+  - Witness
   - Jose
-  - Farmer
+  - Witness
   img:
   - 0
   - 1
@@ -9496,6 +9799,9 @@ MonoBehaviour:
   images:
   - {fileID: 21300000, guid: 5ce413214854e4e4dbe9d506b72dab1a, type: 3}
   - {fileID: 21300000, guid: 16a83c03b64d78b4fbe9e1d9ce98742c, type: 3}
+  lines2: []
+  charac2: []
+  img2: []
   qmp: {fileID: 2053604352}
 --- !u!61 &1040681436
 BoxCollider2D:
@@ -18762,6 +19068,129 @@ Transform:
   m_Father: {fileID: 240927902}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1948387559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1948387560}
+  - component: {fileID: 1948387563}
+  - component: {fileID: 1948387562}
+  - component: {fileID: 1948387561}
+  m_Layer: 0
+  m_Name: witness3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1948387560
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1948387559}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 232, y: -5446, z: 35.12402}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 988303719}
+  m_Father: {fileID: 2045059254}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1948387561
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1948387559}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!61 &1948387562
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1948387559}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 32, y: 48}
+    newSize: {x: 32, y: 48}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 32, y: 48}
+  m_EdgeRadius: 0
+--- !u!212 &1948387563
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1948387559}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1209692353
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: ece95d42fe7ac594aa0d41d4c9f183d0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 32, y: 48}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1960962665
 GameObject:
   m_ObjectHideFlags: 0
@@ -19686,6 +20115,7 @@ Transform:
   - {fileID: 1790663444}
   - {fileID: 2127846835}
   - {fileID: 844076977}
+  - {fileID: 1948387560}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20427,7 +20857,7 @@ GameObject:
   - component: {fileID: 2127846833}
   - component: {fileID: 2127846832}
   m_Layer: 0
-  m_Name: witness1_71
+  m_Name: suspect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20533,7 +20963,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -576.7435, y: -5226.4106, z: 35.12402}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 434049618}
   m_Father: {fileID: 2045059254}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -10,6 +10,10 @@ public class witnessDialogue : MonoBehaviour {
     public string[] charac;
     public string[] img;
     public Sprite[] images;
+    public string[] lines2;
+    public string[] charac2;
+    public string[] img2;
+   
     private bool istriggered;
     private bool playerEnter;
     public side2Palawan qmp;
@@ -26,6 +30,13 @@ public class witnessDialogue : MonoBehaviour {
             if (gameObject.transform.parent.name == "witness1")
             {
                 if (qmp.questIndex == 1)
+                {
+                    questInstance1();
+                }
+            }
+            else if (gameObject.transform.parent.name == "suspect")
+            {
+                if (qmp.questIndex == 2)
                 {
                     questInstance1();
                 }
