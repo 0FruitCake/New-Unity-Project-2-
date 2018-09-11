@@ -283,18 +283,18 @@ MonoBehaviour:
   - (a monopoly huh?).. Well..I'm about 800 silver short.
   - Well then beat it!
   charac:
-  - Pepe
-  - Trader
-  - Pepe
-  - Trader
-  - Pepe
-  - Pepe
-  - Trader
-  - Pepe
-  - Trader
-  - Trader
-  - Pepe
-  - Trader
+  - Jose
+  - Silk Trader
+  - Jose
+  - Silk Trader
+  - Jose
+  - Jose
+  - Silk Trader
+  - Jose
+  - Silk Trader
+  - Silk Trader
+  - Jose
+  - Silk Trader
   img:
   - 0
   - 1
@@ -321,14 +321,14 @@ MonoBehaviour:
   - I seriously don't have time for this..
   - But if it's get you off my back, bring me 10 banana hands. Then we'll talk.
   charac2:
-  - Trader
-  - Pepe
-  - Trader
-  - Pepe
-  - Trader
-  - Pepe
-  - Trader
-  - Trader
+  - Silk Trader
+  - Jose
+  - Silk Trader
+  - Jose
+  - Silk Trader
+  - Jose
+  - Silk Trader
+  - Silk Trader
   img2:
   - 1
   - 0
@@ -350,16 +350,16 @@ MonoBehaviour:
   - And the bananas?
   - Nevermind the bananas! Find him, then we'll talk.
   charac3:
-  - Pepe
-  - Trader
-  - Trader
-  - Pepe
-  - Trader
-  - Trader
-  - Pepe
-  - Trader
-  - Pepe
-  - Trader
+  - Jose
+  - Silk Trader
+  - Silk Trader
+  - Jose
+  - Silk Trader
+  - Silk Trader
+  - Jose
+  - Silk Trader
+  - Jose
+  - Silk Trader
   img3:
   - 0
   - 1
@@ -378,11 +378,11 @@ MonoBehaviour:
   - I thank you for saving my life.
   - Here take this silk as a token of my gratitude. Again, thank you.
   charac4:
-  - Trader
-  - Trader
-  - Trader
-  - Trader
-  - Trader
+  - Silk Trader
+  - Silk Trader
+  - Silk Trader
+  - Silk Trader
+  - Silk Trader
   img4:
   - 1
   - 1
@@ -680,7 +680,7 @@ Transform:
   - {fileID: 2140083969}
   - {fileID: 266121795}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &49798782 stripped
 MonoBehaviour:
@@ -1395,7 +1395,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 8379, y: 3351.6, z: 35.12402}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 929836652}
   m_Father: {fileID: 2045059254}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1641,7 +1642,7 @@ Transform:
   - {fileID: 195962495}
   - {fileID: 139765705}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &189185397
 Animator:
@@ -1728,16 +1729,97 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dMan: {fileID: 27821133}
-  lines: []
-  charac: []
-  img: []
-  images: []
-  lines2: []
-  charac2: []
-  img2: []
-  lines3: []
-  charac3: []
-  img3: []
+  lines:
+  - Would you be the head farmer?
+  - Indeed, what can I do for you?
+  - Just looking for an update on the delivery..
+  - Ahh. Did the trader send you?
+  - You could put it that way.
+  - Well you see.. There's been a bit of an issue this morning.
+  - Issue?
+  - Thief. The goods for delivery were stolen, at least some of it.
+  - Stolen?.. We should report this to the guards.
+  - No.. No guards. We hope to settle this quietly, we've enough problems.
+  - Hmm.. And is it being settled?
+  - Well, most of my men are busy...
+  - But.. we are making our move.
+  - You seem unsure. What is the matter.
+  - Well we are investigating at snail's pace right now. We might just let this go
+    soon enough.
+  - You let it go, and it will happen again.
+  - I hope not..
+  - It can't be helped then.. Any leads?
+  - Well we do have a witness, claims to have seen the suspect himself.
+  - Good enough. See you later.
+  charac:
+  - Jose
+  - Head Farmer
+  - Jose
+  - Head Farmer
+  - Jose
+  - Head Farmer
+  - Jose
+  - Head Farmer
+  - Jose
+  - Head Farmer
+  - Jose
+  - Head Farmer
+  - Head Farmer
+  - Jose
+  - Head Farmer
+  - Jose
+  - Head Farmer
+  - Jose
+  - Head Farmer
+  - Jose
+  img:
+  - 0
+  - 1
+  - 0
+  - 1
+  - 0
+  - 1
+  - 0
+  - 1
+  - 0
+  - 1
+  - 0
+  - 1
+  - 1
+  - 0
+  - 1
+  - 0
+  - 1
+  - 0
+  - 1
+  - 0
+  images:
+  - {fileID: 21300000, guid: 5ce413214854e4e4dbe9d506b72dab1a, type: 3}
+  - {fileID: 21300000, guid: 16a83c03b64d78b4fbe9e1d9ce98742c, type: 3}
+  lines2:
+  - I found your culprit.
+  - You did? Wonderful work!
+  - She promised to return the stolen goods, you should expect her soon.
+  - Thank you. We shall immediately process the delivery once it is returned.
+  - Again, you have my thanks.
+  charac2:
+  - Jose
+  - Head Farmer
+  - Jose
+  - Head Farmer
+  - Head Farmer
+  img2:
+  - 0
+  - 1
+  - 0
+  - 1
+  - 1
+  lines3:
+  - Who could have done such a thing?
+  charac3:
+  - Head Farmer
+  img3:
+  - 1
   s2p: {fileID: 2053604352}
 --- !u!61 &194018249
 BoxCollider2D:
@@ -4472,7 +4554,7 @@ Transform:
   - {fileID: 1806169166}
   - {fileID: 575989483}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &502403072
 GameObject:
@@ -7329,7 +7411,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &848494507
 GameObject:
@@ -7720,16 +7802,16 @@ MonoBehaviour:
   - Mind what?
   - Well.. If you find out anything about the delay, I would be gladly grateful.
   charac:
-  - Trader
+  - Rice Trader
   - Jose
-  - Trader
+  - Rice Trader
   - Jose
-  - Trader
+  - Rice Trader
   - Jose
-  - Trader
-  - Trader
+  - Rice Trader
+  - Rice Trader
   - Jose
-  - Trader
+  - Rice Trader
   img:
   - 1
   - 0
@@ -7754,12 +7836,12 @@ MonoBehaviour:
   - Wonderful, thank you very much trader!
   charac2:
   - Jose
-  - Trader
+  - Rice Trader
   - Jose
   - Jose
-  - Trader
+  - Rice Trader
   - Jose
-  - Trader
+  - Rice Trader
   img2:
   - 0
   - 1
@@ -7771,7 +7853,7 @@ MonoBehaviour:
   lines3:
   - ~mumbles~ ... I Wonder ...
   charac3:
-  - Trader
+  - Rice Trader
   img3:
   - 1
   qm: {fileID: 510864946}
@@ -7784,7 +7866,8 @@ MonoBehaviour:
   btext2: None of my business.
   tips: {fileID: 529563908}
   tip: {fileID: 383586746}
-  tiptext: 
+  tiptext: "Feature : Certain NPCs give out certain quests. \nPress U to view the
+    quest log and keep track of your progess."
 --- !u!1 &881368714
 GameObject:
   m_ObjectHideFlags: 0
@@ -8103,15 +8186,15 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 148187386}
     m_Modifications:
     - target: {fileID: 4021026945030432, guid: df922be613c126446a8aead4a080d94f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1849.5
+      value: -11428.244
       objectReference: {fileID: 0}
     - target: {fileID: 4021026945030432, guid: df922be613c126446a8aead4a080d94f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 456
+      value: -3590.0107
       objectReference: {fileID: 0}
     - target: {fileID: 4021026945030432, guid: df922be613c126446a8aead4a080d94f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -8135,7 +8218,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4021026945030432, guid: df922be613c126446a8aead4a080d94f, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114198591741567012, guid: df922be613c126446a8aead4a080d94f,
         type: 2}
@@ -8165,6 +8248,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df922be613c126446a8aead4a080d94f, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &929836652 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4021026945030432, guid: df922be613c126446a8aead4a080d94f,
+    type: 2}
+  m_PrefabInternal: {fileID: 929836651}
 --- !u!1 &934670406
 GameObject:
   m_ObjectHideFlags: 0
@@ -11467,7 +11555,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1222385895
 GameObject:
@@ -11682,7 +11770,7 @@ Transform:
   - {fileID: 951676061}
   - {fileID: 1632564603}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1265881706
 GameObject:
@@ -14733,7 +14821,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4592184056940246, guid: 9de9356c914f86242bc02d2b5df6e51b, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 114146007254335940, guid: 9de9356c914f86242bc02d2b5df6e51b,
         type: 2}
@@ -20040,7 +20128,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2133863475
 Prefab:

@@ -77,7 +77,6 @@ public class headMerchant : MonoBehaviour {
         {
             dMan.currentLine = 0;
             dMan.showDialogue();
-
             istriggered = true;
             
         }
@@ -99,5 +98,24 @@ public class headMerchant : MonoBehaviour {
 
         }
 
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            playerEnter = true;
+
+
+
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            playerEnter = false;
+            Debug.Log("Bye");
+        }
     }
 }
