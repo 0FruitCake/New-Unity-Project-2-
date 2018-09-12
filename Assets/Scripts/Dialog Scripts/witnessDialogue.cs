@@ -13,7 +13,9 @@ public class witnessDialogue : MonoBehaviour {
     public string[] lines2;
     public string[] charac2;
     public string[] img2;
-   
+    public string[] lines3;
+    public string[] charac3;
+    public string[] img3;
     private bool istriggered;
     private bool playerEnter;
     public side2Palawan qmp;
@@ -33,12 +35,53 @@ public class witnessDialogue : MonoBehaviour {
                 {
                     questInstance1();
                 }
+                else
+                {
+                    genericDialogue();
+                }
             }
             else if (gameObject.transform.parent.name == "suspect")
             {
                 if (qmp.questIndex == 2)
                 {
                     questInstance1();
+                }
+            }
+            else if (gameObject.transform.parent.name == "suspect1")
+            {
+                if (qmp.questIndex == 3)
+                {
+                    witnessDialog();
+                }
+                else if (qmp.questIndex == 5)
+                {
+                    witnessDialog2();
+                }
+                else{
+                    genericDialogue();
+                }
+            }
+
+            else if(gameObject.transform.parent.tag == "s_witness")
+            {
+                if (qmp.questIndex == 2)
+                {
+                    witnessDialog();
+                }
+                else
+                {
+                    genericDialogue();
+                }
+            }
+            else if (gameObject.transform.parent.tag == "ef_witness")
+            {
+                if (qmp.questIndex == 3)
+                {
+                    witnessDialog();
+                }
+                else
+                {
+                    genericDialogue();
                 }
             }
 
@@ -86,5 +129,70 @@ public class witnessDialogue : MonoBehaviour {
             istriggered = true;
 
         }
+    }
+    private void questInstance2()
+    {
+        dMan.textLines = lines2;
+        dMan.textimage = img2;
+        dMan.textName = charac2;
+        dMan.images = images;
+
+        if (!dMan.dialogActive)
+        {
+
+            dMan.showDialogue();
+            dMan.currentLine = 0;
+            istriggered = true;
+
+        }
+    }
+    private void genericDialogue()
+    {
+        dMan.textLines = lines3;
+        dMan.textimage = img3;
+        dMan.textName = charac3;
+        dMan.images = images;
+
+        if (!dMan.dialogActive)
+        {
+            dMan.currentLine = 0;
+            dMan.showDialogue();
+
+
+        }
+
+    }
+
+    private void witnessDialog()
+    {
+        dMan.textLines = lines;
+        dMan.textimage = img;
+        dMan.textName = charac;
+        dMan.images = images;
+
+        if (!dMan.dialogActive)
+        {
+            dMan.currentLine = 0;
+            dMan.showDialogue();
+
+
+        }
+
+    }
+    private void witnessDialog2()
+    {
+        dMan.textLines = lines2;
+        dMan.textimage = img2;
+        dMan.textName = charac2;
+        dMan.images = images;
+
+        if (!dMan.dialogActive)
+        {
+            dMan.currentLine = 0;
+            dMan.showDialogue();
+
+
+        }
+
     }
 }
