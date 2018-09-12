@@ -85,8 +85,8 @@ public class side1Palawan : MonoBehaviour
            
             else if (questIndex == questTitle.Length)
             {
-                qm.questTitle.text = "";
-                qm.questDesc.text = "Quest Completed";
+                qm.questTitle.text = "Quest Completed";
+                qm.questDesc.text = "Rewards: " + "\n" + questTitle.Length * 10 / 2 + " xp" + "\n" + "Fruit(HP Max)";
                 qm.questProg.text = "";
             }
            
