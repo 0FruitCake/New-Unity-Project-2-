@@ -107,9 +107,14 @@ public class questMainPalawan : MonoBehaviour {
         xpm.currentExperience += 10;
         isCompleted[questIndex] = true;
         questIndex++;
-        
-        Debug.Log(questIndex);
-        
+
+        if (questIndex == questTitle.Length)
+        {
+            xpm.currentExperience += questTitle.Length * 10 / 2;
+            
+
+        }
+
     }
 
     public void onClickMain()
@@ -144,6 +149,12 @@ public class questMainPalawan : MonoBehaviour {
                 questProg[questIndex] = "Pirates Eliminated : " + wolfcount + "/" +piratemax;
                 qm.questProg.text = questProg[questIndex];
            
+            }
+            else if (questIndex == questTitle.Length)
+            {
+                qm.questTitle.text = "Quest Completed";
+                qm.questDesc.text = "Rewards: " + "\n" + questTitle.Length * 10 / 2 + " xp";
+                qm.questProg.text = "";
             }
         }
     }
