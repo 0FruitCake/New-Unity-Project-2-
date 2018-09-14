@@ -23,6 +23,8 @@ GameObject:
   - component: {fileID: 95797551809542602}
   - component: {fileID: 58450654302341286}
   - component: {fileID: 114351070991560898}
+  - component: {fileID: 114939290449525622}
+  - component: {fileID: 114507966363673686}
   m_Layer: 0
   m_Name: fireball
   m_TagString: Untagged
@@ -121,6 +123,31 @@ MonoBehaviour:
     type: 2}
   basedamage: 2
   hitPoint: {fileID: 4662588711821668}
+--- !u!114 &114507966363673686
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1880483997052306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c37d002a6414caa41be53b9dda0aeb00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thePlayer: {fileID: 0}
+  speed: 50
+--- !u!114 &114939290449525622
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1880483997052306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc289923058d116429a01897f327ab80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToDestroy: 1.5
 --- !u!212 &212682809028655172
 SpriteRenderer:
   m_ObjectHideFlags: 1

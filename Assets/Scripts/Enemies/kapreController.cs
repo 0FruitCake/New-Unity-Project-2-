@@ -13,6 +13,9 @@ public class kapreController : MonoBehaviour {
     public bool cancast;
     public bool casted;
     private Animator anim;
+    public GameObject spell1;
+    public GameObject fireball;
+    public Transform shotPoint;
 
     // Use this for initialization
     void Start () {
@@ -67,20 +70,25 @@ public class kapreController : MonoBehaviour {
 
     public void cast()
     {
-        anim.SetBool("isCasting", true);
-        Debug.Log("Casted");
+        anim.SetBool("isCasting", true); 
         castdelaytimer = aftercastdelay;
-        
         casted = true;
         cancast = true;
         
 
     }
-    public void castdelay()
+    public void spell()
     {
-
+        if(area1 == true)
+        {
+            spell1.SetActive(true);
+        }
+        else
+        {
+            var clone = (GameObject)Instantiate(fireball, shotPoint.position, transform.rotation);
+            clone.SetActive(true);
+        }
     }
-
 
 
 }
