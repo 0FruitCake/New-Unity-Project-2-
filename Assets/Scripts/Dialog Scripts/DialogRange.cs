@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class DialogRange : MonoBehaviour {
     private NPCMoving npcmove;
+    private Vector3 playerPos;
 
     // Use this for initialization
     void Start () {
@@ -19,10 +20,19 @@ public class DialogRange : MonoBehaviour {
 
     private void OnTriggerStay2D(Collider2D other)
     {
+        playerPos = other.transform.position;
         if (other.gameObject.tag == "Player")
         {
             npcmove.canMove = false;
             npcmove.myRigidbody.bodyType = RigidbodyType2D.Kinematic;
+            if (playerPos.y > transform.parent.position.y)
+            {
+                GetComponentInParent<SpriteRenderer>().sortingOrder = 1;
+            }
+            else
+            {
+                GetComponentInParent<SpriteRenderer>().sortingOrder = 0;
+            }
         }
     }
 

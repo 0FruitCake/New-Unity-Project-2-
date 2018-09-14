@@ -6,6 +6,7 @@ public class npcController : MonoBehaviour {
 
     public GameObject[] npcSet1;
     public GameObject[] npcSet2;
+  
     // Use this for initialization
     public void set1State(bool b)
     {
@@ -20,7 +21,12 @@ public class npcController : MonoBehaviour {
         for (int x = 0; x < npcSet2.Length; x++)
         {
             npcSet2[x].SetActive(b);
+            
         }
+
+        
+
+
     }
 
 }

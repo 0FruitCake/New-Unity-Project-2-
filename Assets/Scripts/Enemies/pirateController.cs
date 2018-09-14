@@ -26,6 +26,7 @@ public class pirateController : MonoBehaviour {
     public bool canMove;
 
     private bool backtoinit;
+    public bool isQuestPirate;
 
     private Transform target;
 
@@ -52,7 +53,14 @@ public class pirateController : MonoBehaviour {
         //timeBetweenMoveCounter = timeBetweenMove;
         //timeToMoveCounter = timeToMove;
         anim = GetComponent<Animator>();
-
+        if (isQuestPirate)
+        {
+            canMove = false;    
+        }
+        else
+        {
+            canMove = true;
+        }
         timeBetweenMoveCounter = Random.Range(timeBetweenMove * 0.75f, timeBetweenMove * 1.25f);
         timeToMoveCounter = Random.Range(timeToMove * 0.75f, timeToMove * 1.25f);
        

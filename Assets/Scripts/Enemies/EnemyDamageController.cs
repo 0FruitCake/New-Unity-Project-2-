@@ -24,10 +24,10 @@ public class EnemyDamageController : MonoBehaviour {
     {
 
         {
-            if (other.CompareTag("Player"))
+            if (other.CompareTag("Player_HitBox"))
             {
                 damage = basedamage + (Random.Range(0, 3));
-                other.gameObject.GetComponent<PlayerHealthManager>().HurtPlayer(damage);
+                other.gameObject.GetComponentInParent<PlayerHealthManager>().HurtPlayer(damage);
                 var clone = (GameObject)Instantiate(damageNumber, hitPoint.position, Quaternion.Euler(Vector3.zero));
                 clone.GetComponent<DamageNumbers>().damageNumber = damage;
             }

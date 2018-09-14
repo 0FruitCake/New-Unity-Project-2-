@@ -9,6 +9,8 @@ TagManager:
   - Companion
   - s_witness
   - ef_witness
+  - Player_HitBox
+  - Enemy_HitBox
   layers:
   - Default
   - TransparentFX

@@ -97,6 +97,8 @@
     <Compile Include="Assets\Scripts\Enemies\EnemyHealthManager.cs" />
     <Compile Include="Assets\Scripts\Enemies\enemyRespawn.cs" />
     <Compile Include="Assets\Scripts\Enemies\kapreController.cs" />
+    <Compile Include="Assets\Scripts\Enemies\kapreRange1.cs" />
+    <Compile Include="Assets\Scripts\Enemies\kapreRange2.cs" />
     <Compile Include="Assets\Scripts\Enemies\pirateController.cs" />
     <Compile Include="Assets\Scripts\Enemies\pirateRange.cs" />
     <Compile Include="Assets\Scripts\Enemies\projectile.cs" />
@@ -105,6 +107,7 @@
     <Compile Include="Assets\Scripts\Items\potionPickUp.cs" />
     <Compile Include="Assets\Scripts\NPC Scripts\CompanionController.cs" />
     <Compile Include="Assets\Scripts\NPC Scripts\NPCMoving.cs" />
+    <Compile Include="Assets\Scripts\NPC Scripts\sortingLayerChange.cs" />
     <Compile Include="Assets\Scripts\Player\DamageController.cs" />
     <Compile Include="Assets\Scripts\Player\DamageManager.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerHealthManager.cs" />
