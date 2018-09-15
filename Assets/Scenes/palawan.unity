@@ -6000,6 +6000,94 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b79c78fa17d46d34ea797fc8e01de191, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &366077603
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1596645237954380, guid: b8554a96427b04a44a324806dd870d61,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 366077604}
+  - component: {fileID: 366077607}
+  - component: {fileID: 366077606}
+  - component: {fileID: 366077605}
+  m_Layer: 5
+  m_Name: Quest Completed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &366077604
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 224551830548550450, guid: b8554a96427b04a44a324806dd870d61,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 366077603}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1797763951}
+  m_Father: {fileID: 734052056}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.30433103, y: 0.69738317}
+  m_AnchorMax: {x: 0.70326763, y: 0.83400005}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &366077605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114897364023251774, guid: b8554a96427b04a44a324806dd870d61,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 366077603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a58f430851468ed459fcf1833b970a32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToHide: 1
+--- !u!114 &366077606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114540624922682324, guid: b8554a96427b04a44a324806dd870d61,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 366077603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300064, guid: 30be139d90b4cf64191464e993101906, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &366077607
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 222120247498332358, guid: b8554a96427b04a44a324806dd870d61,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 366077603}
+  m_CullTransparentMesh: 0
 --- !u!114 &368662469 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114582944127755454, guid: f158f8b16a275d24581dd91252473625,
@@ -14611,6 +14699,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8554a96427b04a44a324806dd870d61, type: 2}
   m_IsPrefabAsset: 0
+--- !u!224 &734052056 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 224877032405418858, guid: b8554a96427b04a44a324806dd870d61,
+    type: 2}
+  m_PrefabInternal: {fileID: 734052055}
 --- !u!1 &741389213 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1532596964017820, guid: 720722954dbcb434e9d13d53ff4b6c79,
@@ -29937,7 +30030,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dMan: {fileID: 27821133}
-  lines: []
+  lines:
+  - Did a man with a red bandana walk this way?
+  - Yes I did. Looked exhausted an in a hurry.
+  - Why? Is something the matter?
+  - 
+  - 
   charac: []
   img: []
   images: []
@@ -34732,6 +34830,85 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1797763950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1700096521437234, guid: b8554a96427b04a44a324806dd870d61,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1797763951}
+  - component: {fileID: 1797763953}
+  - component: {fileID: 1797763952}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1797763951
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 224923087876370538, guid: b8554a96427b04a44a324806dd870d61,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1797763950}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 366077604}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.10768405, y: 0.15186882}
+  m_AnchorMax: {x: 0.89231604, y: 0.9088759}
+  m_AnchoredPosition: {x: 0, y: -0.00006484985}
+  m_SizeDelta: {x: -0.000030518, y: -0.00017548}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1797763952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114486510571276028, guid: b8554a96427b04a44a324806dd870d61,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1797763950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: 6df9691fed946fd46b601747a2352ef8, type: 3}
+  m_Color: {r: 0.9433962, g: 0.7735836, b: 0.25364897, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 6df9691fed946fd46b601747a2352ef8, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Quest Completed
+--- !u!222 &1797763953
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 222159955472058684, guid: b8554a96427b04a44a324806dd870d61,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1797763950}
+  m_CullTransparentMesh: 0
 --- !u!1 &1798445319
 GameObject:
   m_ObjectHideFlags: 0
@@ -38728,10 +38905,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dMan: {fileID: 27821133}
   lines:
-  - Excuse me ma'am, did you happen to see a man wearing a red bandana, carrying a
-    sack of rice?
-  - Sorry, but I don't believe I did.
-  - Okay. Thank you, and sorry for the bother.
+  - Excuse me ma'am, did you happen to see a man wearing a red bandana?
+  - Oh yes, he passed by me. Went north. Why, if I may ask?
+  - Man was a thief ma'am.
+  - Goodness, to think I've had such a close encounter with a criminal.
+  - Sends chills down my spine!!
+  - Goodness, to think I've had such a close encounter with a criminal.
   charac:
   - Jose
   - Woman
@@ -38747,7 +38926,7 @@ MonoBehaviour:
   charac2: []
   img2: []
   lines3:
-  - I wonder what will happen today...
+  - I wonder what else will happen today..
   charac3:
   - Woman
   img3:
