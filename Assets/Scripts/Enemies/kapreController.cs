@@ -16,10 +16,12 @@ public class kapreController : MonoBehaviour {
     public GameObject spell1;
     public GameObject fireball;
     public Transform shotPoint;
+    private sfxManager sfMan;
 
     // Use this for initialization
     void Start () {
         anim = GetComponent<Animator>();
+        sfMan = FindObjectOfType<sfxManager>();
         area1 = false;
         area2 = false;
         cancast = false;
@@ -81,13 +83,20 @@ public class kapreController : MonoBehaviour {
     {
         if(area1 == true)
         {
+            sfMan.fireExplosion.Play();
             spell1.SetActive(true);
+            
         }
         else
         {
             var clone = (GameObject)Instantiate(fireball, shotPoint.position, transform.rotation);
             clone.SetActive(true);
         }
+    }
+
+    public void castAudio()
+    {
+        sfMan.fireCrackle.Play();
     }
 
 

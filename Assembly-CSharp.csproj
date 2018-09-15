@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\Canvas\hideOverTime.cs" />
     <Compile Include="Assets\Scripts\Canvas\hideOverTime1.cs" />
     <Compile Include="Assets\Scripts\Canvas\ScreenFader.cs" />
+    <Compile Include="Assets\Scripts\Canvas\sfxManager.cs" />
     <Compile Include="Assets\Scripts\Canvas\TextImporter.cs" />
     <Compile Include="Assets\Scripts\Canvas\UIManager.cs" />
     <Compile Include="Assets\Scripts\CG - VN\mainpalawan_transition.cs" />

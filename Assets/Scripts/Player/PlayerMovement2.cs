@@ -18,6 +18,7 @@ public class PlayerMovement2 : MonoBehaviour
     private ScreenFader sf;
     private DialogueManager dm;
     public bool incutscene;
+    private sfxManager sfxMan;
 
 
     // Use this for initialization
@@ -27,6 +28,7 @@ public class PlayerMovement2 : MonoBehaviour
         anim = GetComponent<Animator>();
         sf = FindObjectOfType<ScreenFader>();
         dm = FindObjectOfType<DialogueManager>();
+        sfxMan = FindObjectOfType<sfxManager>();
 
     }
 
@@ -85,6 +87,7 @@ public class PlayerMovement2 : MonoBehaviour
                 attacking = true;
                 myRigidbody.velocity = Vector2.zero;
                 anim.SetBool("PlayerAttacking", true);
+                sfxMan.swordSwing.Play();
             }
 
 
