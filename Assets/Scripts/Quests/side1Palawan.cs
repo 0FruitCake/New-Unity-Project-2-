@@ -13,6 +13,7 @@ public class side1Palawan : MonoBehaviour
     public int questIndex;
     public QuestManager qm;
     public Image questupdated;
+    public Image questcomp;
     public int mangoCount;
     private DialogueManager dMan;
     public experienceManager xpm;
@@ -43,8 +44,15 @@ public class side1Palawan : MonoBehaviour
 
     public void questCompleted()
     {
-       
-        questupdated.gameObject.SetActive(true);
+       if(questIndex == questTitle.Length)
+        {
+            questcomp.gameObject.SetActive(true);
+        }
+        else
+        {
+            questupdated.gameObject.SetActive(true);
+        }
+        
         xpm.currentExperience += 10;
         isCompleted[questIndex] = true;
         questIndex++;

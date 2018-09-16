@@ -9,6 +9,7 @@ public class experienceManager : MonoBehaviour {
     public int currentLevel;
     public int currentExperience;
     public int maxExperience;
+    private sfxManager sfxman;
    
 
 
@@ -17,6 +18,7 @@ public class experienceManager : MonoBehaviour {
         currentLevel = 1;
         currentExperience = 0;
         maxExperience = currentLevel * 100;
+        sfxman = FindObjectOfType<sfxManager>();
 		
 	}
 	
@@ -24,6 +26,7 @@ public class experienceManager : MonoBehaviour {
 	void Update () {
 		if(currentExperience >= maxExperience)
         {
+            sfxman.levelUP.Play();
             dm.levelUp();
             phm.playerMaxHealth += 10;
             phm.playerCurrentHealth = phm.playerMaxHealth;

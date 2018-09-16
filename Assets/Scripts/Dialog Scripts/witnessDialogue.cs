@@ -46,6 +46,14 @@ public class witnessDialogue : MonoBehaviour {
                 {
                     questInstance1();
                 }
+                else if (qmp.questIndex == 4)
+                {
+                    questInstance2();
+                }
+                else
+                {
+                    genericDialogue();
+                }
             }
             else if (gameObject.transform.parent.name == "suspect1")
             {
@@ -53,7 +61,7 @@ public class witnessDialogue : MonoBehaviour {
                 {
                     witnessDialog();
                 }
-                else if (qmp.questIndex == 5)
+                else if (qmp.questIndex == 4)
                 {
                     witnessDialog2();
                 }
@@ -78,6 +86,17 @@ public class witnessDialogue : MonoBehaviour {
                 if (qmp.questIndex == 3)
                 {
                     witnessDialog();
+                }
+                else
+                {
+                    genericDialogue();
+                }
+            }
+            else if (gameObject.transform.parent.name == "witness4")
+            {
+                if (qmp.questIndex == 3)
+                {
+                    questInstance1();
                 }
                 else
                 {

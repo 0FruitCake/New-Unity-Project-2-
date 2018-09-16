@@ -522,7 +522,7 @@ MonoBehaviour:
   potion: {fileID: 0}
   isDead: 0
   expm: {fileID: 0}
-  expGiven: 10
+  expGiven: 12
   isQuestMonster: 0
   isQuestActive: 0
   dropchance: 4

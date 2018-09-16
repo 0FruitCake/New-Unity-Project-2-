@@ -8,6 +8,8 @@ public class sfxManager : MonoBehaviour {
     public AudioSource fireCrackle;
     public AudioSource fireExplosion;
     public AudioSource itemPick;
+    public AudioSource potionPick;
+    public AudioSource levelUP;
     // Use this for initialization
     void Start () {
 		
