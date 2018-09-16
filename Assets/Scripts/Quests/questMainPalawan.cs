@@ -176,6 +176,8 @@ public class questMainPalawan : MonoBehaviour {
         theCompanion.gameObject.SetActive(true);
         theCompanion.transform.position = cposition.position;
         theCompanion.canMove = false;
+        theCompanion.incutscene = true;
+        theCompanion.moveDirection.y = 1;
         npcController npCont = GameObject.FindObjectOfType<npcController>().GetComponent<npcController>();
         npCont.set1State(true);
         npCont.set2State(false);

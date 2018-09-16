@@ -26,7 +26,7 @@ public class CompanionController : MonoBehaviour {
     public Collider2D walkZone;
 
     public bool incutscene;
-    private Vector3 moveDirection;
+    public Vector3 moveDirection;
 
 
     // Use this for initialization
