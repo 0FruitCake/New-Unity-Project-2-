@@ -10,7 +10,12 @@ public class DialogRange : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		npcmove = GetComponentInParent<NPCMoving>();
+        if(GetComponentInParent<NPCMoving>() != null)
+        {
+
+            npcmove = GetComponentInParent<NPCMoving>();
+        }
+		
     }
 	
 	// Update is called once per frame
@@ -23,8 +28,12 @@ public class DialogRange : MonoBehaviour {
         playerPos = other.transform.position;
         if (other.gameObject.tag == "Player")
         {
-            npcmove.canMove = false;
-            npcmove.myRigidbody.bodyType = RigidbodyType2D.Kinematic;
+            if (npcmove != null)
+            {
+                npcmove.canMove = false;
+                npcmove.myRigidbody.bodyType = RigidbodyType2D.Kinematic;
+            }
+            
             if (playerPos.y > transform.parent.position.y)
             {
                 GetComponentInParent<SpriteRenderer>().sortingOrder = 1;
@@ -40,8 +49,12 @@ public class DialogRange : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player")
         {
-            npcmove.canMove = true;
-            npcmove.myRigidbody.bodyType = RigidbodyType2D.Dynamic;
+            if (npcmove != null)
+            {
+                npcmove.canMove = true;
+                npcmove.myRigidbody.bodyType = RigidbodyType2D.Dynamic;
+            }
+            
         }
     }
 }
