@@ -28,13 +28,16 @@ public class headMerchant : MonoBehaviour {
 	void Update () {
         if (Input.GetKeyDown(KeyCode.E) && playerEnter)
         {
-            if (s2p.questIndex == 0)
+            if(s2p.questActive== true)
             {
-                questInstance1();
-            }
-            else if (s2p.questIndex == 5)
-            {
-                questInstance2();
+                if (s2p.questIndex == 0)
+                {
+                    questInstance1();
+                }
+                else if (s2p.questIndex == 5)
+                {
+                    questInstance2();
+                }
             }
             else
             {
