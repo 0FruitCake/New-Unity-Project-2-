@@ -8,17 +8,19 @@ public class EnemyHealthManager : MonoBehaviour {
     public int enemyCurrentHealth;
     public GameObject potion;
     public bool isDead;
-    public experienceManager expm;
+    private experienceManager expm;
     public int expGiven;
     public bool isQuestMonster;
     public bool isQuestActive;
     private questMainPalawan qmp;
+    private questMainl2 qml2;
     private side3Palawan s3p;
     public int dropchance;
 
     // Use this for initialization
     void Start()
     {
+        expm = FindObjectOfType<experienceManager>();
         enemyCurrentHealth = enemyMaxHealth;
         
     }
@@ -30,8 +32,18 @@ public class EnemyHealthManager : MonoBehaviour {
         {
             if(isQuestActive && isQuestMonster)
             {
-                qmp = FindObjectOfType<questMainPalawan>();
-                qmp.wolfcount += 1;
+                if(FindObjectOfType<questMainPalawan>() != null)
+                {
+                    qmp = FindObjectOfType<questMainPalawan>();
+                    qmp.wolfcount += 1;
+                }
+                else if (FindObjectOfType<questMainl2>() != null)
+                {
+                    qml2 = FindObjectOfType<questMainl2>();
+                    qml2.wolfcount += 1;
+                }
+                
+                
             }
 
             if(gameObject.transform.parent.name == "Kapre")

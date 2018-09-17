@@ -7,15 +7,17 @@ public class UIManager : MonoBehaviour {
 
     
     public Text hpText;
-    public PlayerHealthManager playerHealth;
+    private PlayerHealthManager playerHealth;
     public Slider healthBar;
-    public experienceManager experience;
+    private experienceManager experience;
     public Slider experienceBar;
     public Text experienceText;
 
 	// Use this for initialization
 	void Start () {
-        
+        playerHealth = FindObjectOfType<PlayerHealthManager>();
+        experience = FindObjectOfType<experienceManager>();
+
 	}
 	
 	// Update is called once per frame

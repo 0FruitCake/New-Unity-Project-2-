@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class experienceManager : MonoBehaviour {
 
-    public DamageManager dm;
-    public PlayerHealthManager phm;
+    private DamageManager dm;
+    private PlayerHealthManager phm;
     public int currentLevel;
     public int currentExperience;
     public int maxExperience;
@@ -19,6 +19,8 @@ public class experienceManager : MonoBehaviour {
         currentExperience = 0;
         maxExperience = currentLevel * 100;
         sfxman = FindObjectOfType<sfxManager>();
+        dm = FindObjectOfType<DamageManager>();
+        phm = FindObjectOfType<PlayerHealthManager>();
         DontDestroyOnLoad(transform.gameObject);
 		
 	}
