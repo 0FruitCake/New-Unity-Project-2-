@@ -30,6 +30,7 @@ public class questMainPalawan : MonoBehaviour {
     public pirateController[] piratesc;
     public experienceManager xpm;
     public Image questcomp;
+    public zoneController zCont;
 
     // Use this for initialization
     void Start () {
@@ -59,7 +60,7 @@ public class questMainPalawan : MonoBehaviour {
                 npcController npCont = GameObject.FindObjectOfType<npcController>().GetComponent<npcController>();
                 npCont.set1State(false);
                 npCont.set2State(true);
-                zoneController zCont = GameObject.FindObjectOfType<zoneController>().GetComponent<zoneController>();
+                
                 zCont.zone1State(true);
                 wolfcount = 0;
                 questCompleted();
@@ -181,7 +182,6 @@ public class questMainPalawan : MonoBehaviour {
         npcController npCont = GameObject.FindObjectOfType<npcController>().GetComponent<npcController>();
         npCont.set1State(true);
         npCont.set2State(false);
-        zoneController zCont = GameObject.FindObjectOfType<zoneController>().GetComponent<zoneController>();
         zCont.zone1State(false);
         zCont.battleOn(false);
         theTrader.transform.position = tposition.position;

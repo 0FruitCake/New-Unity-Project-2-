@@ -81,6 +81,8 @@
     <Compile Include="Assets\Scripts\Cutscenes\palawan\cut2loctrigger.cs" />
     <Compile Include="Assets\Scripts\Cutscenes\palawan\cut3.cs" />
     <Compile Include="Assets\Scripts\Cutscenes\palawan\cutside3.cs" />
+    <Compile Include="Assets\Scripts\Cutscenes\palawan\cutSide3Trigger.cs" />
+    <Compile Include="Assets\Scripts\Cutscenes\palawan\cutside3v2.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\CompanionDialogRange.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\companionDialogue.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\DialogRange.cs" />
@@ -89,6 +91,7 @@
     <Compile Include="Assets\Scripts\Dialog Scripts\nonQuestDialog.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\side1trader.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\side2Trader.cs" />
+    <Compile Include="Assets\Scripts\Dialog Scripts\side3Brother.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\side3man.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\silkAssistant.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\silkTrader.cs" />
@@ -129,6 +132,7 @@
     <Compile Include="Assets\Scripts\Quests\side1Palawan.cs" />
     <Compile Include="Assets\Scripts\Quests\side2Palawan.cs" />
     <Compile Include="Assets\Scripts\Quests\side3Palawan.cs" />
+    <Compile Include="Assets\Scripts\Quests\spawnSpiders.cs" />
     <Compile Include="Assets\Scripts\Quests\wolf.cs" />
     <Compile Include="Assets\Scripts\Quests\zoneController.cs" />
     <Compile Include="Assets\Scripts\Tips\tipManager.cs" />

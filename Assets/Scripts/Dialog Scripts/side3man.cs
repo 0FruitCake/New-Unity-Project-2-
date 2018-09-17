@@ -12,6 +12,9 @@ public class side3man : MonoBehaviour {
     public string[] lines2;
     public string[] charac2;
     public string[] img2;
+    public string[] lines3;
+    public string[] charac3;
+    public string[] img3;
     public Sprite[] images;
     private bool istriggered;
     private bool playerEnter;
@@ -26,14 +29,22 @@ public class side3man : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && playerEnter)
+
+        if (Input.GetKeyDown(KeyCode.E) && playerEnter &&qmp.questActive == true)
         {
-            if (qmp.questIndex == 4)
+            if (qmp.questIndex == 3)
             {
                 questInstance1();
             }
+            else
+            {
+                questInstance2();
+            }
 
-
+        }
+        else if(Input.GetKeyDown(KeyCode.E) && playerEnter && qmp.questActive == false)
+        {
+            genDialogue();
         }
         if (!dMan.dialogActive && istriggered)
         {
@@ -91,6 +102,22 @@ public class side3man : MonoBehaviour {
             dMan.showDialogue();
             dMan.currentLine = 0;
            
+
+        }
+    }
+    private void genDialogue()
+    {
+        dMan.textLines = lines3;
+        dMan.textimage = img3;
+        dMan.textName = charac3;
+        dMan.images = images;
+
+        if (!dMan.dialogActive)
+        {
+
+            dMan.showDialogue();
+            dMan.currentLine = 0;
+
 
         }
     }

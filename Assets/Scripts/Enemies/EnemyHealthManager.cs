@@ -13,6 +13,7 @@ public class EnemyHealthManager : MonoBehaviour {
     public bool isQuestMonster;
     public bool isQuestActive;
     private questMainPalawan qmp;
+    private side3Palawan s3p;
     public int dropchance;
 
     // Use this for initialization
@@ -31,6 +32,13 @@ public class EnemyHealthManager : MonoBehaviour {
             {
                 qmp = FindObjectOfType<questMainPalawan>();
                 qmp.wolfcount += 1;
+            }
+
+            if(gameObject.transform.parent.name == "Kapre")
+            {
+                s3p = FindObjectOfType<side3Palawan>();
+                s3p.kapDefeated = true;
+
             }
             int x = Random.Range(0, dropchance);
             Debug.Log(x);

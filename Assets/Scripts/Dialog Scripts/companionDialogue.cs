@@ -31,6 +31,10 @@ public class companionDialogue : MonoBehaviour
 
     public string[] cgimg;
     public Sprite[] cgimages;
+    public string[] cglines2;
+
+    public string[] cgimg2;
+    public Sprite[] cgimages2;
     private LoadNewArea lna;
 
     // Use this for initialization
@@ -147,7 +151,7 @@ public class companionDialogue : MonoBehaviour
         btn2.SetActive(false);
         btn3.SetActive(false);
         dMan.currentLine++;
-        
+        runCG2();
     }
 
     public void runCG()
@@ -170,15 +174,41 @@ public class companionDialogue : MonoBehaviour
         //if (cgman.currentLine == 13)
         //{
 
-           // lna.loadFromDialogue("palawan");
-            //istriggered = false;
-           // playerEnter = false;
+        // lna.loadFromDialogue("palawan");
+        //istriggered = false;
+        // playerEnter = false;
 
         //}
+    }
+
+        public void runCG2()
+        {
+            Debug.Log("CGGGG");
+            cgman.textLines = cglines2;
+            cgman.textimage = cgimg2;
+            cgman.images = cgimages2;
+
+
+            if (!cgman.cgActive)
+            {
+                cgman.currentLine = 0;
+                cgman.showDialogue();
+                istriggered = true;
+
+            }
+
+
+            //if (cgman.currentLine == 13)
+            //{
+
+            // lna.loadFromDialogue("palawan");
+            //istriggered = false;
+            // playerEnter = false;
+
+            //}
+
+        }
 
     }
-    
 
-        
-}
 

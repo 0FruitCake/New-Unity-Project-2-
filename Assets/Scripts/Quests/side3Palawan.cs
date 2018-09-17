@@ -17,6 +17,9 @@ public class side3Palawan : MonoBehaviour {
     private DialogueManager dMan;
     public experienceManager xpm;
     public Image questcomp;
+    public bool kapDefeated;
+    public zoneController zct;
+    public GameObject sct;
     // Use this for initialization
     void Start()
     {
@@ -24,12 +27,17 @@ public class side3Palawan : MonoBehaviour {
 
         questProg = new string[questTitle.Length];
         isCompleted = new bool[questTitle.Length];
+        kapDefeated = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if(kapDefeated == true)
+        {
+            sct.SetActive(false);
+            zct.zone1State(true);
+        }
 
     }
 

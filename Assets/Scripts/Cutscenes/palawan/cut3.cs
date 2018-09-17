@@ -34,6 +34,7 @@ public class cut3 : MonoBehaviour
     public playerRespawn pr;
     public pirateController[] piratesc;
     public EnemyDamageController[] edc;
+    public zoneController zCont;
 
     // Use this for initialization
     void Start()
@@ -94,7 +95,7 @@ public class cut3 : MonoBehaviour
 
         if (!dMan.dialogActive && istriggered)
         {
-            zoneController zCont = GameObject.FindObjectOfType<zoneController>().GetComponent<zoneController>();
+            
             zCont.zone1State(false);
             zCont.battleOn(true);
             thePlayer.incutscene = false;
