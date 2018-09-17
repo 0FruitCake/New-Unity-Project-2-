@@ -19,6 +19,7 @@ public class experienceManager : MonoBehaviour {
         currentExperience = 0;
         maxExperience = currentLevel * 100;
         sfxman = FindObjectOfType<sfxManager>();
+        DontDestroyOnLoad(transform.gameObject);
 		
 	}
 	

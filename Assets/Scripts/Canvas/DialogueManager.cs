@@ -21,7 +21,7 @@ public class DialogueManager : MonoBehaviour
     public string[] textimage;
     public bool buttonActive;
     public bool isreply;
-   
+    public Image background;
 
     public PlayerMovement thePlayer;
 
@@ -91,7 +91,7 @@ public class DialogueManager : MonoBehaviour
 
         for (int i = 0; i < (textLines[currentLine].Length + 1); i++)
         {
-            Debug.Log(i + " ," + currentLine);
+            
             dText.text= textName[currentLine] + ": " +  textLines[currentLine].Substring(0, i);
             yield return new WaitForSeconds(.03f);
         }

@@ -8,7 +8,7 @@ public class PlayerMovement2 : MonoBehaviour
     public float moveSpeed;
     public Animator anim;
     private bool playerMoving;
-    private Vector2 lastMove;
+    public Vector2 lastMove;
     private static bool playerExists;
     private bool attacking;
     public float attackTime;
@@ -29,7 +29,7 @@ public class PlayerMovement2 : MonoBehaviour
         sf = FindObjectOfType<ScreenFader>();
         dm = FindObjectOfType<DialogueManager>();
         sfxMan = FindObjectOfType<sfxManager>();
-
+        DontDestroyOnLoad(transform.gameObject);
     }
 
     // Update is called once per frame

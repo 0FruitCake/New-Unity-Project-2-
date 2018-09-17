@@ -11,7 +11,7 @@ public class CameraController2 : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        
+        DontDestroyOnLoad(transform.gameObject);
 
     }
 
