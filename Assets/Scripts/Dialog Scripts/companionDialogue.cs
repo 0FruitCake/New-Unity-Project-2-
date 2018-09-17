@@ -13,6 +13,7 @@ public class companionDialogue : MonoBehaviour
     public string[] img;
     public Sprite[] images;
     private bool istriggered;
+   private bool cgistriggered;
     private bool playerEnter;
     public questMainPalawan qmp;
     public GameObject btn1;
@@ -25,6 +26,11 @@ public class companionDialogue : MonoBehaviour
     public string btext2;
     public string btext3;
 
+
+    public string[] lines2;
+    public string[] charac2;
+    public string[] img2;
+    public Sprite[] images2;
     public cgManager cgman;
    
     public string[] cglines;
@@ -36,11 +42,12 @@ public class companionDialogue : MonoBehaviour
     public string[] cgimg2;
     public Sprite[] cgimages2;
     private LoadNewArea lna;
+    private bool load;
 
     // Use this for initialization
     void Start()
     {
-
+        lna = new LoadNewArea();
     }
 
     // Update is called once per frame
@@ -72,10 +79,36 @@ public class companionDialogue : MonoBehaviour
             btn2.SetActive(true);
             btn3.SetActive(true);
         }
-        if (!dMan.dialogActive && istriggered)
+
+
+        if (!dMan.dialogActive && istriggered && !load)
         {
             
             istriggered = false;
+        }
+
+ 
+
+        if (cgman.currentLine == 18 && cgistriggered == true)
+        {
+            
+            dMan.background.gameObject.SetActive(true);
+            cgistriggered = false;
+            playerEnter = false;
+            questInstance2();
+           
+
+        }
+
+        if (!dMan.dialogActive && istriggered && load)
+        {
+            
+            lna.loadFromDialogue("Level2");
+            
+            istriggered = false;
+            //dMan.background.gameObject.SetActive(false);
+
+
         }
     }
 
@@ -112,6 +145,25 @@ public class companionDialogue : MonoBehaviour
             dMan.showDialogue();
             dMan.currentLine = 0;
             istriggered = true;
+
+        }
+    }
+
+    private void questInstance2()
+    {
+        
+        dMan.textLines = lines2;
+        dMan.textimage = img2;
+        dMan.textName = charac2;
+        dMan.images = images2;
+
+        if (!dMan.dialogActive)
+        {
+
+            dMan.showDialogue();
+            dMan.currentLine = 0;
+            istriggered = true;
+            load = true;
 
         }
     }
@@ -166,19 +218,12 @@ public class companionDialogue : MonoBehaviour
         {
             cgman.currentLine = 0;
             cgman.showDialogue();
-            istriggered = true;
+            cgistriggered = true;
 
         }
 
 
-        //if (cgman.currentLine == 13)
-        //{
-
-        // lna.loadFromDialogue("palawan");
-        //istriggered = false;
-        // playerEnter = false;
-
-        //}
+     
     }
 
         public void runCG2()
@@ -193,19 +238,12 @@ public class companionDialogue : MonoBehaviour
             {
                 cgman.currentLine = 0;
                 cgman.showDialogue();
-                istriggered = true;
+                cgistriggered = true;
 
             }
 
 
-            //if (cgman.currentLine == 13)
-            //{
-
-            // lna.loadFromDialogue("palawan");
-            //istriggered = false;
-            // playerEnter = false;
-
-            //}
+            
 
         }
 
