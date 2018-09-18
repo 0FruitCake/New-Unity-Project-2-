@@ -9,30 +9,47 @@ public class wolf : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        for (int x = 0; x < ehm.Length; x++){
-            ehm[x].isQuestMonster = true;
+        
+        if(ehm != null)
+        {
+            for (int x = 0; x < ehm.Length; x++)
+            {
+
+                ehm[x].isQuestMonster = true;
+            }
         }
+       
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-        if (qmp.questIndex == 5 || qmp.questIndex ==7)
+        if (ehm != null)
         {
             for (int x = 0; x < ehm.Length; x++)
             {
-                ehm[x].isQuestActive = true;
+
+                ehm[x].isQuestMonster = true;
             }
-            
-        }
-        else{
-  
+            if (qmp.questIndex == 5 || qmp.questIndex == 7)
+            {
+                for (int x = 0; x < ehm.Length; x++)
+                {
+                    ehm[x].isQuestActive = true;
+                }
+
+            }
+            else
+            {
+
                 for (int x = 0; x < ehm.Length; x++)
                 {
                     ehm[x].isQuestActive = false;
                 }
-            
+
+            }
         }
+        
 
 	}
 }

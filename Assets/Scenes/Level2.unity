@@ -156,6 +156,41 @@ Prefab:
       propertyPath: m_Name
       value: pirate_saber_79 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114956753737429596, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: expGiven
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 114956753737429596, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: enemyMaxHealth
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 114078577308328904, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: basedamage
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114547754105346386, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: isQuestPirate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114956753737429596, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: isQuestActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114956753737429596, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: isQuestMonster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114956753737429596, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: potion
+      value: 
+      objectReference: {fileID: 1882957520}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2870e5214df1584baaa4b00153ca2ce, type: 2}
   m_IsPrefabAsset: 0
@@ -261,12 +296,22 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1733287932239622, guid: b8554a96427b04a44a324806dd870d61, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8554a96427b04a44a324806dd870d61, type: 2}
   m_IsPrefabAsset: 0
 --- !u!114 &101872218 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114190353480315774, guid: b8554a96427b04a44a324806dd870d61,
+    type: 2}
+  m_PrefabInternal: {fileID: 101872217}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &101872219 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114540624922682324, guid: b8554a96427b04a44a324806dd870d61,
     type: 2}
   m_PrefabInternal: {fileID: 101872217}
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -313,6 +358,41 @@ Prefab:
       propertyPath: m_Name
       value: pirate_saber_79 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 114956753737429596, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: expGiven
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 114956753737429596, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: enemyMaxHealth
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 114078577308328904, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: basedamage
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114547754105346386, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: isQuestPirate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114956753737429596, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: isQuestActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114956753737429596, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: isQuestMonster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114956753737429596, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: potion
+      value: 
+      objectReference: {fileID: 1882957520}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2870e5214df1584baaa4b00153ca2ce, type: 2}
   m_IsPrefabAsset: 0
@@ -355,9 +435,119 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 114956753737429596, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: expGiven
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 114956753737429596, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: enemyMaxHealth
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 114078577308328904, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: basedamage
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114547754105346386, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: isQuestPirate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114956753737429596, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: isQuestActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114956753737429596, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: isQuestMonster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114956753737429596, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: potion
+      value: 
+      objectReference: {fileID: 1882957520}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2870e5214df1584baaa4b00153ca2ce, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &193522035
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1454610148752498, guid: d5a8ab78df1dd2346942cf3e516df926,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 193522036}
+  - component: {fileID: 1759214218}
+  m_Layer: 5
+  m_Name: Quest Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &193522036
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 224978750939633052, guid: d5a8ab78df1dd2346942cf3e516df926,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 193522035}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1759214221}
+  - {fileID: 239247293}
+  - {fileID: 1772967701}
+  - {fileID: 1441601716}
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 312.5, y: 329.5}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &239247292
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1000065142546442, guid: d5a8ab78df1dd2346942cf3e516df926,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 239247293}
+  m_Layer: 5
+  m_Name: Side1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &239247293
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 224372890871054040, guid: d5a8ab78df1dd2346942cf3e516df926,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 239247292}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 193522036}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &392817869
 Prefab:
   m_ObjectHideFlags: 0
@@ -458,6 +648,92 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dfe044d3e8258649a83013bf0261aff, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &412664854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 412664855}
+  m_Layer: 0
+  m_Name: warp_entrance
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &412664855
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 412664854}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 485904178}
+  - {fileID: 1728301404}
+  m_Father: {fileID: 1850595402}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &485904177
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 485904178}
+  m_Layer: 0
+  m_Name: from_west2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &485904178
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 485904177}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 65, y: -493, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 412664855}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &561456479
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 561456480}
+  m_Layer: 0
+  m_Name: from_town
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &561456480
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 561456479}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 438, y: -82, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2137801717}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &576373263
 Prefab:
   m_ObjectHideFlags: 0
@@ -501,6 +777,41 @@ Prefab:
       propertyPath: m_Name
       value: pirate_saber_79 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114956753737429596, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: expGiven
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 114956753737429596, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: enemyMaxHealth
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 114078577308328904, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: basedamage
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114547754105346386, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: isQuestPirate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114956753737429596, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: isQuestActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114956753737429596, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: isQuestMonster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114956753737429596, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: potion
+      value: 
+      objectReference: {fileID: 1882957520}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2870e5214df1584baaa4b00153ca2ce, type: 2}
   m_IsPrefabAsset: 0
@@ -513,11 +824,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4609813555306646, guid: 5c694cbfb55e64b46b47b19b46cefa2d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 2320
+      value: 2559
       objectReference: {fileID: 0}
     - target: {fileID: 4609813555306646, guid: 5c694cbfb55e64b46b47b19b46cefa2d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1297
+      value: -1972
       objectReference: {fileID: 0}
     - target: {fileID: 4609813555306646, guid: 5c694cbfb55e64b46b47b19b46cefa2d, type: 2}
       propertyPath: m_LocalPosition.z
@@ -561,6 +872,101 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4609813555306646, guid: 5c694cbfb55e64b46b47b19b46cefa2d,
     type: 2}
   m_PrefabInternal: {fileID: 648439313}
+--- !u!1 &673886266
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 673886267}
+  m_Layer: 0
+  m_Name: from_east
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &673886267
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 673886266}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1253.9, y: -484.2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1199831179}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &701870522
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 701870523}
+  - component: {fileID: 701870525}
+  - component: {fileID: 701870524}
+  m_Layer: 0
+  m_Name: to_town
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &701870523
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 701870522}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 22.5, y: -459, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1661979735}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &701870524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 701870522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dada8cd0d93bdd46bdbf5a2f0c11117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warpTarget: {fileID: 673886267}
+--- !u!61 &701870525
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 701870522}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -4.511032}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 20, y: 83.64761}
+  m_EdgeRadius: 0
 --- !u!1 &708484334
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,6 +976,7 @@ GameObject:
   m_Component:
   - component: {fileID: 708484335}
   - component: {fileID: 708484336}
+  - component: {fileID: 708484337}
   m_Layer: 0
   m_Name: to_wjungle
   m_TagString: Untagged
@@ -599,7 +1006,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 7.9665527}
@@ -615,6 +1022,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 20, y: 205.13782}
   m_EdgeRadius: 0
+--- !u!114 &708484337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 708484334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dada8cd0d93bdd46bdbf5a2f0c11117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warpTarget: {fileID: 485904178}
 --- !u!1 &738971155
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,6 +1111,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &749776336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 749776337}
+  m_Layer: 0
+  m_Name: warp_exits
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &749776337
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 749776336}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1974553269}
+  - {fileID: 1169701468}
+  m_Father: {fileID: 1850595402}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &872974262
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,6 +1194,140 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 130.06885, y: 221.41864}
+  m_EdgeRadius: 0
+--- !u!1 &937811807
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 937811808}
+  - component: {fileID: 937811810}
+  - component: {fileID: 937811809}
+  m_Layer: 0
+  m_Name: to_town
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &937811808
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 937811807}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 435.8, y: -22.2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2066769226}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &937811809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 937811807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dada8cd0d93bdd46bdbf5a2f0c11117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warpTarget: {fileID: 1624602479}
+--- !u!61 &937811810
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 937811807}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.7011719, y: -0.06317139}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 78.98584, y: 20.126343}
+  m_EdgeRadius: 0
+--- !u!1 &955324681
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 955324682}
+  - component: {fileID: 955324684}
+  - component: {fileID: 955324683}
+  m_Layer: 0
+  m_Name: to_east
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &955324682
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 955324681}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1321.7, y: -470.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1324627527}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &955324683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 955324681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dada8cd0d93bdd46bdbf5a2f0c11117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warpTarget: {fileID: 1083390324}
+--- !u!61 &955324684
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 955324681}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -23.961487}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 20, y: 147.92297}
   m_EdgeRadius: 0
 --- !u!1 &965896334
 GameObject:
@@ -830,6 +1413,41 @@ Prefab:
       propertyPath: m_Name
       value: pirate_dagger (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 114463318843531186, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: expGiven
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 114463318843531186, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: enemyMaxHealth
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 114251241844369850, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: basedamage
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393309840999642, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: isQuestPirate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114463318843531186, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: isQuestActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114463318843531186, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: isQuestMonster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114463318843531186, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: potion
+      value: 
+      objectReference: {fileID: 1882957520}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 720722954dbcb434e9d13d53ff4b6c79, type: 2}
   m_IsPrefabAsset: 0
@@ -860,6 +1478,189 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1904827894}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1051961110
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1051961111}
+  m_Layer: 0
+  m_Name: from_wjungle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1051961111
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1051961110}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 55, y: -350, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1199831179}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1076317238
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1076317239}
+  m_Layer: 0
+  m_Name: warp_entrance
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1076317239
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1076317238}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1083390324}
+  m_Father: {fileID: 1947835168}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1083390323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1083390324}
+  m_Layer: 0
+  m_Name: from_town
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1083390324
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1083390323}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 58, y: -468, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1076317239}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1169701467
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1169701468}
+  - component: {fileID: 1169701470}
+  - component: {fileID: 1169701469}
+  m_Layer: 0
+  m_Name: to_town
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1169701468
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1169701467}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1001.2, y: -440.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 749776337}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1169701469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1169701467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dada8cd0d93bdd46bdbf5a2f0c11117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warpTarget: {fileID: 1051961111}
+--- !u!61 &1169701470
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1169701467}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -7.438904}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 20, y: 114.87781}
+  m_EdgeRadius: 0
+--- !u!1 &1199831178
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1199831179}
+  m_Layer: 0
+  m_Name: warp_entrance
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1199831179
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1199831178}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1051961111}
+  - {fileID: 673886267}
+  - {fileID: 1624602479}
+  m_Father: {fileID: 1656827146}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1215334644
 GameObject:
@@ -932,6 +1733,41 @@ Prefab:
       propertyPath: m_Name
       value: pirate_saber_79 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114956753737429596, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: expGiven
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 114956753737429596, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: enemyMaxHealth
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 114078577308328904, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: basedamage
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114956753737429596, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: isQuestActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114547754105346386, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: isQuestPirate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114956753737429596, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: isQuestMonster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114956753737429596, guid: e2870e5214df1584baaa4b00153ca2ce,
+        type: 2}
+      propertyPath: potion
+      value: 
+      objectReference: {fileID: 1882957520}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2870e5214df1584baaa4b00153ca2ce, type: 2}
   m_IsPrefabAsset: 0
@@ -964,6 +1800,139 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1302490362
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1302490363}
+  - component: {fileID: 1302490365}
+  - component: {fileID: 1302490364}
+  m_Layer: 0
+  m_Name: to_settlement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1302490363
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1302490362}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1321.6, y: -1210, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1324627527}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1302490364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1302490362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dada8cd0d93bdd46bdbf5a2f0c11117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warpTarget: {fileID: 561456480}
+--- !u!61 &1302490365
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1302490362}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -25.94867}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 20, y: 151.89734}
+  m_EdgeRadius: 0
+--- !u!1 &1324627526
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1324627527}
+  m_Layer: 0
+  m_Name: warp_exits
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1324627527
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1324627526}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1568518519}
+  - {fileID: 955324682}
+  - {fileID: 1302490363}
+  m_Father: {fileID: 1656827146}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1441601715
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1933734060831438, guid: d5a8ab78df1dd2346942cf3e516df926,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1441601716}
+  m_Layer: 5
+  m_Name: Side3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1441601716
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 224066113926518604, guid: d5a8ab78df1dd2346942cf3e516df926,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1441601715}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 193522036}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1454663676
 Prefab:
   m_ObjectHideFlags: 0
@@ -1139,9 +2108,139 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 114463318843531186, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: expGiven
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 114463318843531186, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: enemyMaxHealth
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 114251241844369850, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: basedamage
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393309840999642, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: isQuestPirate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114463318843531186, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: isQuestActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114463318843531186, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: isQuestMonster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114463318843531186, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: potion
+      value: 
+      objectReference: {fileID: 1882957520}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 720722954dbcb434e9d13d53ff4b6c79, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1568518518
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1568518519}
+  - component: {fileID: 1568518521}
+  - component: {fileID: 1568518520}
+  m_Layer: 0
+  m_Name: to_wjungle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1568518519
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1568518518}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 22.6, y: -349.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1324627527}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1568518520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1568518518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dada8cd0d93bdd46bdbf5a2f0c11117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warpTarget: {fileID: 1728301404}
+--- !u!61 &1568518521
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1568518518}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -3.8119354}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 20, y: 107.62387}
+  m_EdgeRadius: 0
+--- !u!1 &1624602478
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1624602479}
+  m_Layer: 0
+  m_Name: from_settlement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1624602479
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1624602478}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1227, y: -1244, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1199831179}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1656827145
 Prefab:
   m_ObjectHideFlags: 0
@@ -1194,6 +2293,35 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4195582219723654, guid: d7801c26b53e28541b06a4f119f7a555,
     type: 2}
   m_PrefabInternal: {fileID: 1656827145}
+--- !u!1 &1661979734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1661979735}
+  m_Layer: 0
+  m_Name: warp_exits
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1661979735
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1661979734}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 701870523}
+  m_Father: {fileID: 1947835168}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1666650130
 Prefab:
   m_ObjectHideFlags: 0
@@ -1237,6 +2365,41 @@ Prefab:
       propertyPath: m_Name
       value: pirate_dagger (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114463318843531186, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: expGiven
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 114463318843531186, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: enemyMaxHealth
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 114251241844369850, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: basedamage
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393309840999642, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: isQuestPirate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114463318843531186, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: isQuestActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114463318843531186, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: isQuestMonster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114463318843531186, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: potion
+      value: 
+      objectReference: {fileID: 1882957520}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 720722954dbcb434e9d13d53ff4b6c79, type: 2}
   m_IsPrefabAsset: 0
@@ -1283,6 +2446,41 @@ Prefab:
       propertyPath: m_Name
       value: pirate_dagger (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114463318843531186, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: expGiven
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 114463318843531186, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: enemyMaxHealth
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 114251241844369850, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: basedamage
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393309840999642, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: isQuestPirate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114463318843531186, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: isQuestActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114463318843531186, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: isQuestMonster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114463318843531186, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: potion
+      value: 
+      objectReference: {fileID: 1882957520}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 720722954dbcb434e9d13d53ff4b6c79, type: 2}
   m_IsPrefabAsset: 0
@@ -1409,226 +2607,179 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1759214217
-Prefab:
+--- !u!1 &1728301403
+GameObject:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 114496159627500560, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: questDesc.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114496159627500560, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: questTitle.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 224978750939633052, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224978750939633052, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224978750939633052, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224978750939633052, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224978750939633052, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224978750939633052, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224978750939633052, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224978750939633052, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 224978750939633052, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 312.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224978750939633052, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 329.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224978750939633052, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 224978750939633052, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 224978750939633052, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224978750939633052, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224978750939633052, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224978750939633052, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224978750939633052, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224978750939633052, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114496159627500560, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: questTitle.Array.data[3]
-      value: Call to Arms.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114496159627500560, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: questTitle.Array.data[4]
-      value: For Silk, We Must
-      objectReference: {fileID: 0}
-    - target: {fileID: 114496159627500560, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: questTitle.Array.data[5]
-      value: Safe Passage
-      objectReference: {fileID: 0}
-    - target: {fileID: 114496159627500560, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: questTitle.Array.data[6]
-      value: My End of the Bargain
-      objectReference: {fileID: 0}
-    - target: {fileID: 114496159627500560, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: questTitle.Array.data[7]
-      value: Unsheathe
-      objectReference: {fileID: 0}
-    - target: {fileID: 114496159627500560, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: questTitle.Array.data[8]
-      value: Silky Smooth
-      objectReference: {fileID: 0}
-    - target: {fileID: 114496159627500560, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: questTitle.Array.data[9]
-      value: Where to next?
-      objectReference: {fileID: 0}
-    - target: {fileID: 114496159627500560, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: questTitle.Array.data[0]
-      value: Onwards to Davao!
-      objectReference: {fileID: 0}
-    - target: {fileID: 114496159627500560, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: questTitle.Array.data[1]
-      value: Small Stop.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114496159627500560, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: questTitle.Array.data[2]
-      value: Welcome to Samal.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114496159627500560, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: questDesc.Array.data[4]
-      value: Find the trader's assistant. He was last seen heading towards the eastern
-        forest.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114496159627500560, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: questDesc.Array.data[5]
-      value: Defeat 3 wolves in the area.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114496159627500560, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: questDesc.Array.data[6]
-      value: Return to the trader once more.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114496159627500560, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: questDesc.Array.data[7]
-      value: Fight off the ravaging pirates.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114496159627500560, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: questDesc.Array.data[8]
-      value: Talk to trader.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114496159627500560, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: questDesc.Array.data[9]
-      value: Talk to your companion.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114496159627500560, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: questDesc.Array.data[0]
-      value: Find your way to Davao.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114496159627500560, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: questDesc.Array.data[1]
-      value: Finish the Island quests.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114496159627500560, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: questDesc.Array.data[2]
-      value: Talk to Datu Daupan.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114496159627500560, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: questDesc.Array.data[3]
-      value: Proceed to Davao.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114496159627500560, guid: d5a8ab78df1dd2346942cf3e516df926,
-        type: 2}
-      propertyPath: questupdated
-      value: 
-      objectReference: {fileID: 101872218}
-    m_RemovedComponents:
-    - {fileID: 114496159627500560, guid: d5a8ab78df1dd2346942cf3e516df926, type: 2}
-    - {fileID: 114763488880620312, guid: d5a8ab78df1dd2346942cf3e516df926, type: 2}
-    - {fileID: 114439536121049706, guid: d5a8ab78df1dd2346942cf3e516df926, type: 2}
-    - {fileID: 114725879492732946, guid: d5a8ab78df1dd2346942cf3e516df926, type: 2}
-  m_SourcePrefab: {fileID: 100100000, guid: d5a8ab78df1dd2346942cf3e516df926, type: 2}
-  m_IsPrefabAsset: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1728301404}
+  m_Layer: 0
+  m_Name: from_town
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1728301404
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1728301403}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 937, y: -474, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 412664855}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1759214218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114336734084704456, guid: d5a8ab78df1dd2346942cf3e516df926,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 193522035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a0766f2f70bfa34d9d6556df42faa4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questlog: {fileID: 0}
+  mainqactive: 0
+  questDesc: {fileID: 0}
+  questProg: {fileID: 0}
+  questTitle: {fileID: 0}
+  side1active: 0
+  side2active: 0
+  side3active: 0
+  mainindex: 0
+  side1index: 0
+  side2index: 0
+  side3index: 0
+  buttonMain: {fileID: 0}
+  side1btn: {fileID: 0}
+  side2btn: {fileID: 0}
+  side3btn: {fileID: 0}
+  qactivate: {fileID: 0}
+--- !u!1 &1759214219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1481279676472644, guid: d5a8ab78df1dd2346942cf3e516df926,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1759214221}
+  - component: {fileID: 1759214220}
+  m_Layer: 5
+  m_Name: Main
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1759214220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1759214219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7231d6a4aaff171449110bdfaad500f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questTitle:
+  - Onwards to Davao.
+  - Rough Winds Ahead.
+  - Arrrrr...
+  - Can I talk to you about....
+  - Storm Update
+  - Anchors aweigh
+  - Small Stop at Samal Island
+  - Datu Daupan
+  - To Davao we go.
+  questDesc:
+  - Make your way to Davao.
+  - Due to a storm, you decide to dock. Explore the area.
+  - Pirates have taken over the town, defeat them!
+  - Talk to the townsfolk, and find willing crew members.
+  - Return to your companion.
+  - The storm has passed, it is time to move.
+  - Explore the Island, talk to the people.
+  - Talk to the Samales Datu.
+  - Onwards to Davao
+  questProg: []
+  isCompleted: 
+  questActive: 0
+  questIndex: 0
+  qm: {fileID: 1759214218}
+  questupdated: {fileID: 101872218}
+  wolfcount: 0
+  lines: []
+  charac: []
+  img: []
+  images: []
+  istriggered: 0
+  questcomp: {fileID: 101872219}
+  zCont: {fileID: 0}
+--- !u!224 &1759214221
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 224308669237681250, guid: d5a8ab78df1dd2346942cf3e516df926,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1759214219}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 193522036}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1772967700
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1477515684049680, guid: d5a8ab78df1dd2346942cf3e516df926,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1772967701}
+  m_Layer: 5
+  m_Name: Side2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1772967701
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 224995399862316094, guid: d5a8ab78df1dd2346942cf3e516df926,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1772967700}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 193522036}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1850595401
 Prefab:
   m_ObjectHideFlags: 0
@@ -1676,6 +2827,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99c193b150d06ca4b99c9b793423a188, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &1850595402 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4100997186761536, guid: 99c193b150d06ca4b99c9b793423a188,
+    type: 2}
+  m_PrefabInternal: {fileID: 1850595401}
 --- !u!1001 &1882957519
 Prefab:
   m_ObjectHideFlags: 0
@@ -1722,6 +2878,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9de9356c914f86242bc02d2b5df6e51b, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1882957520 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1079213881350548, guid: 9de9356c914f86242bc02d2b5df6e51b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1882957519}
 --- !u!1 &1904827893
 GameObject:
   m_ObjectHideFlags: 0
@@ -1760,7 +2921,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4640910745771084, guid: 3eb2c108b0cc10d4db5ce869c9c9b724, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 2361
+      value: 3452
       objectReference: {fileID: 0}
     - target: {fileID: 4640910745771084, guid: 3eb2c108b0cc10d4db5ce869c9c9b724, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1798,6 +2959,107 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3eb2c108b0cc10d4db5ce869c9c9b724, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &1947835168 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4640910745771084, guid: 3eb2c108b0cc10d4db5ce869c9c9b724,
+    type: 2}
+  m_PrefabInternal: {fileID: 1947835167}
+--- !u!1 &1974553268
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1974553269}
+  - component: {fileID: 1974553271}
+  - component: {fileID: 1974553270}
+  m_Layer: 0
+  m_Name: to_west2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1974553269
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1974553268}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 22.6, y: -487, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 749776337}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1974553270
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1974553268}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 20, y: 100}
+  m_EdgeRadius: 0
+--- !u!114 &1974553271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1974553268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dada8cd0d93bdd46bdbf5a2f0c11117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warpTarget: {fileID: 1039291800}
+--- !u!1 &2066769225
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2066769226}
+  m_Layer: 0
+  m_Name: warp_exits
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2066769226
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2066769225}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 937811808}
+  m_Father: {fileID: 648439314}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2126174621
 Prefab:
   m_ObjectHideFlags: 0
@@ -1841,6 +3103,70 @@ Prefab:
       propertyPath: m_Name
       value: pirate_dagger (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114463318843531186, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: expGiven
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 114463318843531186, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: enemyMaxHealth
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 114251241844369850, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: basedamage
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393309840999642, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: isQuestPirate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114463318843531186, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: isQuestActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114463318843531186, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: isQuestMonster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114463318843531186, guid: 720722954dbcb434e9d13d53ff4b6c79,
+        type: 2}
+      propertyPath: potion
+      value: 
+      objectReference: {fileID: 1882957520}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 720722954dbcb434e9d13d53ff4b6c79, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &2137801716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2137801717}
+  m_Layer: 0
+  m_Name: warp_entrance
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2137801717
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2137801716}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 561456480}
+  m_Father: {fileID: 648439314}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

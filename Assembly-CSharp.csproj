@@ -124,6 +124,7 @@
     <Compile Include="Assets\Scripts\Player\PlayerStartPoint.cs" />
     <Compile Include="Assets\Scripts\Quests\banana.cs" />
     <Compile Include="Assets\Scripts\Quests\bananaController.cs" />
+    <Compile Include="Assets\Scripts\Quests\level2\questMainl2.cs" />
     <Compile Include="Assets\Scripts\Quests\mango.cs" />
     <Compile Include="Assets\Scripts\Quests\mangoController.cs" />
     <Compile Include="Assets\Scripts\Quests\npcController.cs" />
@@ -172,8 +173,10 @@
     <None Include="Assets\Tiled2Unity\Imported\WestFields.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\labmap.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\palawan.tiled2unity.xml" />
+    <None Include="Assets\Tiled2Unity\Imported\samalsouthbay.tiled2unity.xml" />
     <None Include="Assets\CharScripts\Script1.txt" />
     <None Include="Assets\Tiled2Unity\Imported\EastSettlement.tiled2unity.xml" />
+    <None Include="Assets\Tiled2Unity\Imported\samalsettlement.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\eastFields.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\SouthGrave.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\Island2WestJungle2.tiled2unity.xml" />
