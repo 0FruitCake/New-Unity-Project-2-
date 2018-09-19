@@ -35,6 +35,9 @@ public class PlayerMovement2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        sf = FindObjectOfType<ScreenFader>();
+        dm = FindObjectOfType<DialogueManager>();
+        
         if (sf.isFading || dm.dialogActive || incutscene)
         {
             canMove = false;
