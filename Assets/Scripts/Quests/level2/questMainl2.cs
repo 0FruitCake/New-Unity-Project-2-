@@ -22,7 +22,7 @@ public class questMainl2 : MonoBehaviour {
     public string[] img;
     public Sprite[] images;
     public bool istriggered;
-
+    public int recruitCount;
    private experienceManager xpm;
     public Image questcomp;
     public zoneController zCont;

@@ -22,6 +22,7 @@ public class UIManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        
         healthBar.maxValue = playerHealth.playerMaxHealth;
         healthBar.value = playerHealth.playerCurrentHealth;
         hpText.text = playerHealth.playerCurrentHealth + " / " + playerHealth.playerMaxHealth;
