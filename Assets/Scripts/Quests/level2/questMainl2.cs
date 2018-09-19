@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class questMainl2 : MonoBehaviour {
+public class questMainl2 : MonoBehaviour
+{
     public string[] questTitle;
     public string[] questDesc;
     public string[] questProg;
@@ -12,9 +13,10 @@ public class questMainl2 : MonoBehaviour {
     public int questIndex;
     public QuestManager qm;
     public Image questupdated;
-    
+
     public int wolfcount;
-    
+    public int recruitCount;
+
 
     private DialogueManager dMan;
     public string[] lines;
@@ -22,25 +24,40 @@ public class questMainl2 : MonoBehaviour {
     public string[] img;
     public Sprite[] images;
     public bool istriggered;
-    public int recruitCount;
-   private experienceManager xpm;
+
+    private experienceManager xpm;
     public Image questcomp;
-    public zoneController zCont;
+
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         dMan = FindObjectOfType<DialogueManager>();
         xpm = FindObjectOfType<experienceManager>();
         questProg = new string[questTitle.Length];
         isCompleted = new bool[questTitle.Length];
+        qm.mainqactive = true;
+        qm.questActivated();
+        qm.buttonMain.gameObject.SetActive(true);
+        questActive = true;
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
 
         if (questIndex == 2)
         {
 
             if (wolfcount == 10)
+            {
+                StartCoroutine("restoretownstate");
+            }
+        }
+
+        if (questIndex == 3)
+        {
+
+            if (recruitCount == 3)
             {
                 questCompleted();
             }
@@ -99,5 +116,21 @@ public class questMainl2 : MonoBehaviour {
                 qm.questProg.text = "";
             }
         }
+    }
+
+    IEnumerator restoretownstate()
+    {
+        questCompleted();
+        ScreenFader sf = GameObject.FindGameObjectWithTag("Fader").GetComponent<ScreenFader>();
+
+
+        yield return StartCoroutine(sf.FadeToBlack());
+
+        npcController npCont = GameObject.FindObjectOfType<npcController>().GetComponent<npcController>();
+        npCont.set1State(true);
+        npCont.set2State(false);
+
+        yield return StartCoroutine(sf.FadeToClear());
+
     }
 }
