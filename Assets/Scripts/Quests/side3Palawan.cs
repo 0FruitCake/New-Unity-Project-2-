@@ -37,6 +37,8 @@ public class side3Palawan : MonoBehaviour {
         {
             sct.SetActive(false);
             zct.zone1State(true);
+            questCompleted();
+            kapDefeated = false;
         }
 
     }

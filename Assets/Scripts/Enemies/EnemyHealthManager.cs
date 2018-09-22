@@ -46,7 +46,7 @@ public class EnemyHealthManager : MonoBehaviour {
                 
             }
 
-            if(gameObject.transform.parent.name == "Kapre")
+            if(gameObject.transform.name == "Kapre")
             {
                 s3p = FindObjectOfType<side3Palawan>();
                 s3p.kapDefeated = true;
