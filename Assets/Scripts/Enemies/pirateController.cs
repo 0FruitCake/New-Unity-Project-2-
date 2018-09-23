@@ -134,7 +134,7 @@ public class pirateController : MonoBehaviour {
                         moving = true;
                         //timeToMoveCounter = timeToMove;
                         timeToMoveCounter = Random.Range(timeToMove * 0.75f, timeToMove * 1.25f);
-                        float direction = Random.Range(0f, 1f);
+                        //float direction = Random.Range(0f, 1f);
 
 
 

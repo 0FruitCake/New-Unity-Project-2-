@@ -61,7 +61,7 @@ public class PlayerMovement2 : MonoBehaviour
             if (Input.GetAxisRaw("Horizontal") > 0f || Input.GetAxisRaw("Horizontal") < -0f)
             {
                 //transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
-                playerMoving = true; ;
+                playerMoving = true; 
                 myRigidbody.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, myRigidbody.velocity.y);
                 lastMove = new Vector2(Input.GetAxisRaw("Horizontal"), 0f);
             }
