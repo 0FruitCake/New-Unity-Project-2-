@@ -46943,6 +46943,69 @@ Prefab:
       propertyPath: cgman
       value: 
       objectReference: {fileID: 1858143036}
+    - target: {fileID: 114719513478503726, guid: 606b6ddc5a6fdc74b98d0f260043f15f,
+        type: 2}
+      propertyPath: cglines2.Array.data[1]
+      value: With that, I sailed for Manila to complete the degree he began at the
+        Colegio Real Universidad de Bergara in Spain.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114719513478503726, guid: 606b6ddc5a6fdc74b98d0f260043f15f,
+        type: 2}
+      propertyPath: cglines2.Array.data[2]
+      value: It was in August 5,1837 when I obtained my Bachiller en Leyes.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114719513478503726, guid: 606b6ddc5a6fdc74b98d0f260043f15f,
+        type: 2}
+      propertyPath: cglines2.Array.data[3]
+      value: I then held a position of judge in Tondo, Manila from 1839 to 1844, before
+        eventually being relieved to give way to a Madrid appointee.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114719513478503726, guid: 606b6ddc5a6fdc74b98d0f260043f15f,
+        type: 2}
+      propertyPath: cglines2.Array.data[4]
+      value: Thus, I pursued my business ventures in Caraga, and it was there when
+        I met my lover, Maria Luisa Azaola.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114719513478503726, guid: 606b6ddc5a6fdc74b98d0f260043f15f,
+        type: 2}
+      propertyPath: cglines2.Array.data[8]
+      value: The ship San Rufo was anchored of the coast of Malipano on Samal Island.
+        Her captain had presented a letter of introduction to the Moros there.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114719513478503726, guid: 606b6ddc5a6fdc74b98d0f260043f15f,
+        type: 2}
+      propertyPath: cglines2.Array.data[11]
+      value: The incident caused an outrage in Manila.. Thus, looking for answers,
+        the Spaniards confronted Datu Quadratullah, but he disclaimed all responsibility.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114719513478503726, guid: 606b6ddc5a6fdc74b98d0f260043f15f,
+        type: 2}
+      propertyPath: cglines2.Array.data[13]
+      value: It did not take long for me to organize an expedition. I approached businessmen
+        to finance the project and presented my proposal to Governor General Claveria.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114719513478503726, guid: 606b6ddc5a6fdc74b98d0f260043f15f,
+        type: 2}
+      propertyPath: cglines2.Array.data[14]
+      value: Soon enough, Claveria granted the mission on February 27, 1847. My mission,
+        to conquer and subdue all Moros in the entire gulf area.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114719513478503726, guid: 606b6ddc5a6fdc74b98d0f260043f15f,
+        type: 2}
+      propertyPath: cglines2.Array.data[15]
+      value: I was provided with soliders, artillery, firearms and three gunships.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114719513478503726, guid: 606b6ddc5a6fdc74b98d0f260043f15f,
+        type: 2}
+      propertyPath: cglines2.Array.data[16]
+      value: Attracted by the promise of new territory, many adventuresome natives
+        from different areas in the Philippines also supplemented my crew.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114719513478503726, guid: 606b6ddc5a6fdc74b98d0f260043f15f,
+        type: 2}
+      propertyPath: cglines2.Array.data[17]
+      value: We set sail for Mindanao on April 1848.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 606b6ddc5a6fdc74b98d0f260043f15f, type: 2}
   m_IsPrefabAsset: 0

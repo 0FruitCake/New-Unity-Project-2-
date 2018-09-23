@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\Canvas\TextImporter.cs" />
     <Compile Include="Assets\Scripts\Canvas\UIManager.cs" />
     <Compile Include="Assets\Scripts\CG - VN\mainpalawan_transition.cs" />
+    <Compile Include="Assets\Scripts\Cutscenes\level2\cutTrigger1.cs" />
     <Compile Include="Assets\Scripts\Cutscenes\level2\questTrigger1.cs" />
     <Compile Include="Assets\Scripts\Cutscenes\level2\questTrigger2.cs" />
     <Compile Include="Assets\Scripts\Cutscenes\palawan\cut1.cs" />
@@ -89,6 +90,7 @@
     <Compile Include="Assets\Scripts\Dialog Scripts\companionDialogue.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\companionDialogue2.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\crewRecruit.cs" />
+    <Compile Include="Assets\Scripts\Dialog Scripts\datuDaupan.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\DialogRange.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\dialogueHolder.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\headMerchant.cs" />

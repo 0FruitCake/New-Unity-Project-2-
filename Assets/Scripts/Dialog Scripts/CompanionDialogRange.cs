@@ -5,17 +5,25 @@ using UnityEngine;
 public class CompanionDialogRange : MonoBehaviour {
 
     private CompanionController npcmove;
+    
     public bool triggeractive;
     private Vector3 playerPos;
     // Use this for initialization
     void Start () {
-        npcmove = GetComponentInParent<CompanionController>();
+        
         
     }
 	
 	// Update is called once per frame
 	void Update () {
-       
+       if(npcmove == null)
+        {
+            if(GetComponentInParent<CompanionController>()!= null)
+            {
+                npcmove = GetComponentInParent<CompanionController>();
+            }
+
+        }
     }
 
     private void OnTriggerStay2D(Collider2D other)
@@ -34,11 +42,15 @@ public class CompanionDialogRange : MonoBehaviour {
             }
         }
 
-        if (other.gameObject.tag == "Player" && npcmove.incutscene == false && triggeractive== true)
+        if (GetComponentInParent<CompanionController>() != null)
+        {
+            if (other.gameObject.tag == "Player" && npcmove.incutscene == false && triggeractive == true)
             {
                 npcmove.canMove = false;
                 npcmove.myRigidbody.bodyType = RigidbodyType2D.Kinematic;
             }
+        }
+
         
          
      }

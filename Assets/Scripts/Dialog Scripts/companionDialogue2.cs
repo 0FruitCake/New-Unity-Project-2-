@@ -42,12 +42,16 @@ public class companionDialogue2 : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        thePlayer = FindObjectOfType<PlayerMovement2>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (thePlayer == null)
+        {
+            thePlayer = FindObjectOfType<PlayerMovement2>();
+        }
         if (Input.GetKeyDown(KeyCode.E) && playerEnter)
         {
             if (qmp.questIndex ==1)
@@ -148,7 +152,7 @@ public class companionDialogue2 : MonoBehaviour {
 
         if (!dMan.dialogActive)
         {
-
+            qmp.questCompleted();
             dMan.showDialogue();
             dMan.currentLine = 0;
             istriggered = true;
@@ -233,8 +237,8 @@ public class companionDialogue2 : MonoBehaviour {
       
       yield return StartCoroutine(sf.FadeToBlack());
 
-        
-         thePlayer.gameObject.transform.position = pwarptarget.position;
+        dMan.background.gameObject.SetActive(false);
+        thePlayer.gameObject.transform.position = pwarptarget.position;
        
          thePlayer.anim.SetFloat("LastMoveX", 0f);
          thePlayer.anim.SetFloat("LastMoveY", 1f);
@@ -244,7 +248,8 @@ public class companionDialogue2 : MonoBehaviour {
 
             load = false;
             load2 = false;
-            dMan.background.gameObject.SetActive(false);
+        qmp.questCompleted();
+            
 
     }
 }
