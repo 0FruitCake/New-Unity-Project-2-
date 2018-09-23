@@ -5,9 +5,10 @@ using UnityEngine;
 public class Range : MonoBehaviour {
 
     private WolfController parent;
+    private Vector3 playerPos;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         parent = GetComponentInParent<WolfController>();
 	}
 
@@ -20,7 +21,18 @@ public class Range : MonoBehaviour {
             parent.chaseactive = true;
             parent.initial = parent.transform.position;
             
-            
+        }
+        playerPos = other.transform.position;
+        if (other.gameObject.tag == "Player")
+        {
+            if (playerPos.y > transform.position.y)
+            {
+                GetComponentInParent<SpriteRenderer>().sortingOrder = 1;
+            }
+            else
+            {
+                GetComponentInParent<SpriteRenderer>().sortingOrder = 0;
+            }
         }
     }
 

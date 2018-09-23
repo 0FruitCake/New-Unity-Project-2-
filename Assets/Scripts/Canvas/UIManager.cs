@@ -15,14 +15,19 @@ public class UIManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        playerHealth = FindObjectOfType<PlayerHealthManager>();
-        experience = FindObjectOfType<experienceManager>();
+        
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        
+        if (playerHealth == null && experience == null)
+        {
+            playerHealth = FindObjectOfType<PlayerHealthManager>();
+            experience = FindObjectOfType<experienceManager>();
+        }
+       
+
         healthBar.maxValue = playerHealth.playerMaxHealth;
         healthBar.value = playerHealth.playerCurrentHealth;
         hpText.text = playerHealth.playerCurrentHealth + " / " + playerHealth.playerMaxHealth;

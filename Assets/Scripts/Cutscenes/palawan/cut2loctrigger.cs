@@ -11,7 +11,7 @@ public class cut2loctrigger : MonoBehaviour {
     public Sprite[] images;
     private bool playerEnter;
     public CompanionController theCompanion;
-    public PlayerMovement2 thePlayer;
+    private PlayerMovement2 thePlayer;
     public questMainPalawan qmp;
    
     public Transform pwarptarget;
@@ -24,6 +24,10 @@ public class cut2loctrigger : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (thePlayer == null)
+        {
+            thePlayer = FindObjectOfType<PlayerMovement2>();
+        }
 
         if (playerEnter)
         {

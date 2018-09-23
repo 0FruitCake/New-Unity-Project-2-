@@ -10,10 +10,19 @@ public class sfxManager : MonoBehaviour {
     public AudioSource itemPick;
     public AudioSource potionPick;
     public AudioSource levelUP;
+    private static bool exists;
     // Use this for initialization
     void Start () {
-        DontDestroyOnLoad(transform.gameObject);
-	}
+        if (!exists)
+        {
+            exists = true;
+            DontDestroyOnLoad(transform.gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 	
 	// Update is called once per frame
 	void Update () {

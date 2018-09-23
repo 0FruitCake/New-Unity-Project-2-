@@ -16,7 +16,7 @@ public class cut3 : MonoBehaviour
     public bool istriggered;
     public CompanionController theCompanion;
     public questMainPalawan qmp;
-    public PlayerMovement2 thePlayer;
+    private PlayerMovement2 thePlayer;
     public string[] Replines;
     public string[] Repcharac;
     public string[] Repimg;
@@ -47,6 +47,11 @@ public class cut3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (thePlayer == null)
+        {
+            thePlayer = FindObjectOfType<PlayerMovement2>();
+        }
         if (playerEnter)
         {
             if (!dMan.isreply)

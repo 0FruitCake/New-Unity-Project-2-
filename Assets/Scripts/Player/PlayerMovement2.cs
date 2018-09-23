@@ -9,7 +9,7 @@ public class PlayerMovement2 : MonoBehaviour
     public Animator anim;
     private bool playerMoving;
     public Vector2 lastMove;
-    private static bool playerExists;
+    private static bool exists;
     private bool attacking;
     public float attackTime;
     private float attackTimeCounter;
@@ -20,6 +20,7 @@ public class PlayerMovement2 : MonoBehaviour
     public bool incutscene;
     private sfxManager sfxMan;
 
+    
 
     // Use this for initialization
     void Start()
@@ -29,7 +30,18 @@ public class PlayerMovement2 : MonoBehaviour
         sf = FindObjectOfType<ScreenFader>();
         dm = FindObjectOfType<DialogueManager>();
         sfxMan = FindObjectOfType<sfxManager>();
-        DontDestroyOnLoad(transform.gameObject);
+
+        if (!exists)
+        {
+            exists = true;
+            DontDestroyOnLoad(transform.gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
+        
     }
 
     // Update is called once per frame
@@ -52,6 +64,7 @@ public class PlayerMovement2 : MonoBehaviour
         {
             myRigidbody.velocity = Vector2.zero;
             anim.SetBool("PlayerMoving", false);
+            anim.SetBool("PlayerAttacking", false);
             return;
         }
         if (!attacking)

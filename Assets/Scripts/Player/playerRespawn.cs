@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class playerRespawn : MonoBehaviour {
     public float respawntime;
     public float currentrestime;
@@ -14,10 +14,17 @@ public class playerRespawn : MonoBehaviour {
     void Start () {
         respawnon = true;
         currentrestime = respawntime;
-	}
+        
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
+        if(phm == null && player == null) { 
+        phm = FindObjectOfType<PlayerHealthManager>();
+        player = GameObject.FindWithTag("Player");
+        }
+
         targetPos = new Vector3(player.transform.position.x, player.transform.position.y, transform.position.z);
         transform.position = Vector3.Lerp(transform.position, targetPos, moveSpeed * Time.deltaTime);
 
@@ -44,8 +51,17 @@ public class playerRespawn : MonoBehaviour {
             }
             else if (!respawnon)
             {
-                Debug.Log("Game Over");
+                restartCurrentScene();
             }
         }
+    }
+    public void restartCurrentScene()
+    {
+        int scene = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(scene, LoadSceneMode.Single);
+        phm.playerCurrentHealth = phm.playerMaxHealth;
+        player.SetActive(true);
+        phm.isactive = true;
+
     }
 }

@@ -82,8 +82,8 @@
     <Compile Include="Assets\Scripts\Cutscenes\palawan\cut2.cs" />
     <Compile Include="Assets\Scripts\Cutscenes\palawan\cut2loctrigger.cs" />
     <Compile Include="Assets\Scripts\Cutscenes\palawan\cut3.cs" />
+    <Compile Include="Assets\Scripts\Cutscenes\palawan\cut3sidetrigger.cs" />
     <Compile Include="Assets\Scripts\Cutscenes\palawan\cutside3.cs" />
-    <Compile Include="Assets\Scripts\Cutscenes\palawan\cutSide3Trigger.cs" />
     <Compile Include="Assets\Scripts\Cutscenes\palawan\cutside3v2.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\CompanionDialogRange.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\companionDialogue.cs" />
@@ -116,6 +116,7 @@
     <Compile Include="Assets\Scripts\Enemies\Range.cs" />
     <Compile Include="Assets\Scripts\Enemies\WolfController.cs" />
     <Compile Include="Assets\Scripts\Items\potionPickUp.cs" />
+    <Compile Include="Assets\Scripts\Main Menu\menuManager.cs" />
     <Compile Include="Assets\Scripts\NPC Scripts\CompanionController.cs" />
     <Compile Include="Assets\Scripts\NPC Scripts\NPCMoving.cs" />
     <Compile Include="Assets\Scripts\NPC Scripts\sortingLayerChange.cs" />

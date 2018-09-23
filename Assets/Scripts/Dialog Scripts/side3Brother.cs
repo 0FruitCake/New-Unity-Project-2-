@@ -42,8 +42,7 @@ public class side3Brother : MonoBehaviour {
         if (!dMan.dialogActive && istriggered)
         {
             exitTrigger.SetActive(true);
-            zct.zone1State(false);
-            zct.battleOn(true);
+            
             qmp.questCompleted();
             istriggered = false;
         }

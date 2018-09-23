@@ -5,6 +5,7 @@ using UnityEngine;
 public class pirateRange : MonoBehaviour {
 
     private pirateController parent;
+    private Vector3 playerPos;
 
     // Use this for initialization
     void Start()
@@ -21,7 +22,19 @@ public class pirateRange : MonoBehaviour {
             parent.chaseactive = true;
             parent.initial = parent.transform.position;
 
+        }
 
+        playerPos = other.transform.position;
+        if (other.gameObject.tag == "Player")
+        {
+            if (playerPos.y > transform.position.y)
+            {
+                GetComponentInParent<SpriteRenderer>().sortingOrder = 1;
+            }
+            else
+            {
+                GetComponentInParent<SpriteRenderer>().sortingOrder = 0;
+            }
         }
     }
 }

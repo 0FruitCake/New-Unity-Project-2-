@@ -8,10 +8,20 @@ public class CameraController2 : MonoBehaviour
     private Vector3 targetPos;
     public float moveSpeed;
     public static bool cameraExists;
+    private static bool exists;
     // Use this for initialization
     void Start()
     {
-        DontDestroyOnLoad(transform.gameObject);
+        if (!exists)
+        {
+            exists = true;
+            DontDestroyOnLoad(transform.gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
 
     }
 

@@ -10,6 +10,7 @@ public class experienceManager : MonoBehaviour {
     public int currentExperience;
     public int maxExperience;
     private sfxManager sfxman;
+    private static bool exists;
    
 
 
@@ -21,12 +22,21 @@ public class experienceManager : MonoBehaviour {
         sfxman = FindObjectOfType<sfxManager>();
         dm = FindObjectOfType<DamageManager>();
         phm = FindObjectOfType<PlayerHealthManager>();
-        DontDestroyOnLoad(transform.gameObject);
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+        if (!exists)
+        {
+            exists = true;
+            DontDestroyOnLoad(transform.gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
+
+    }
+
+    // Update is called once per frame
+    void Update () {
 		if(currentExperience >= maxExperience)
         {
             sfxman.levelUP.Play();

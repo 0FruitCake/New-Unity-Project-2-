@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class cut2 : MonoBehaviour {
 
-    public PlayerMovement2 pm2;
+    private PlayerMovement2 pm2;
     public CompanionController cmc;
     public Transform target;
     private bool playerEnter;
@@ -15,7 +15,10 @@ public class cut2 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-      
+      if(pm2 == null)
+        {
+            pm2 = FindObjectOfType<PlayerMovement2>();
+        }
 	}
 
     private void OnTriggerEnter2D(Collider2D other)

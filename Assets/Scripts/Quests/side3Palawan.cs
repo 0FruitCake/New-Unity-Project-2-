@@ -20,6 +20,7 @@ public class side3Palawan : MonoBehaviour {
     public bool kapDefeated;
     public zoneController zct;
     public GameObject sct;
+    
     // Use this for initialization
     void Start()
     {
@@ -33,10 +34,28 @@ public class side3Palawan : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if(kapDefeated == true)
+        if(questIndex == 1)
         {
-            sct.SetActive(false);
+            zct.zone1State(false);
+            sct.SetActive(true);
+
+        }
+        else if(questIndex == 2)
+        {
             zct.zone1State(true);
+            sct.SetActive(false);
+        }      
+        
+        else
+        {
+            zct.zone1State(true);
+            
+            
+        }
+
+        if (kapDefeated == true)
+        {
+            
             questCompleted();
             kapDefeated = false;
         }

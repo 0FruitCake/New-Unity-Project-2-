@@ -16,6 +16,7 @@ public class cutside3v2 : MonoBehaviour {
 
     private bool dialogOngoing;
     public bool istriggered;
+    private bool finished;
 
    
     public side3Palawan qmp;
@@ -32,12 +33,16 @@ public class cutside3v2 : MonoBehaviour {
 
         dMan = FindObjectOfType<DialogueManager>();
         
-        thePlayer = FindObjectOfType<PlayerMovement2>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (thePlayer == null)
+        {
+            thePlayer = FindObjectOfType<PlayerMovement2>();
+        }
         if (playerEnter)
         {
             dMan.textLines = lines;
@@ -61,11 +66,16 @@ public class cutside3v2 : MonoBehaviour {
         if (!dMan.dialogActive && istriggered)
         {
             spiderController.SetActive(true);
-            zCont.zone1State(false);
-            qmp.questCompleted();
+            zCont.battleOn(true);
+            
+            qmp.questCompleted(); 
+            
+            istriggered = false;
             transform.gameObject.SetActive(false);
 
+
         }
+        
 
 
     }
