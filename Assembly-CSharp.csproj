@@ -78,6 +78,7 @@
     <Compile Include="Assets\Scripts\Cutscenes\level2\cutTrigger1.cs" />
     <Compile Include="Assets\Scripts\Cutscenes\level2\questTrigger1.cs" />
     <Compile Include="Assets\Scripts\Cutscenes\level2\questTrigger2.cs" />
+    <Compile Include="Assets\Scripts\Cutscenes\level3\cutTrigger1lvl3.cs" />
     <Compile Include="Assets\Scripts\Cutscenes\palawan\cut1.cs" />
     <Compile Include="Assets\Scripts\Cutscenes\palawan\cut1loctrigger.cs" />
     <Compile Include="Assets\Scripts\Cutscenes\palawan\cut2.cs" />
@@ -89,6 +90,7 @@
     <Compile Include="Assets\Scripts\Dialog Scripts\CompanionDialogRange.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\companionDialogue.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\companionDialogue2.cs" />
+    <Compile Include="Assets\Scripts\Dialog Scripts\councilDialogue.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\crewRecruit.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\datuDaupan.cs" />
     <Compile Include="Assets\Scripts\Dialog Scripts\DialogRange.cs" />
@@ -132,6 +134,8 @@
     <Compile Include="Assets\Scripts\Quests\banana.cs" />
     <Compile Include="Assets\Scripts\Quests\bananaController.cs" />
     <Compile Include="Assets\Scripts\Quests\level2\questMainl2.cs" />
+    <Compile Include="Assets\Scripts\Quests\level3\nipaPalms.cs" />
+    <Compile Include="Assets\Scripts\Quests\level3\questMainl3.cs" />
     <Compile Include="Assets\Scripts\Quests\mango.cs" />
     <Compile Include="Assets\Scripts\Quests\mangoController.cs" />
     <Compile Include="Assets\Scripts\Quests\npcController.cs" />
@@ -166,6 +170,7 @@
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\TmxObject.cs" />
     <None Include="Assets\Tiled2Unity\Shaders\shaDiffuseDepth-Instanced.shader" />
     <None Include="Assets\Tiled2Unity\Imported\Island2settlemen.tiled2unity.xml" />
+    <None Include="Assets\Tiled2Unity\Imported\midDavao.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Shaders\shaDefault.shader" />
     <None Include="Assets\Tiled2Unity\Shaders\shaDepth-Instanced.shader" />
     <None Include="Assets\Tiled2Unity\Prefabs\_ReadMe.txt" />
@@ -178,6 +183,7 @@
     <None Include="Assets\Tiled2Unity\Shaders\shaDepth.shader" />
     <None Include="Assets\Tiled2Unity\Shaders\shaDiffuseDepth.shader" />
     <None Include="Assets\Tiled2Unity\Imported\WestFields.tiled2unity.xml" />
+    <None Include="Assets\Tiled2Unity\Imported\davaoSettlement.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\labmap.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\palawan.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\samalsouthbay.tiled2unity.xml" />
@@ -190,6 +196,7 @@
     <None Include="Assets\Tiled2Unity\Imported\SouthFields.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\Innercave.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\eastJungle.tiled2unity.xml" />
+    <None Include="Assets\Tiled2Unity\Imported\davaoForest.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Materials\_ReadMe.txt" />
     <None Include="Assets\Tiled2Unity\Textures\_ReadMe.txt" />
     <None Include="Assets\Tiled2Unity\Imported\EastOutercave.tiled2unity.xml" />

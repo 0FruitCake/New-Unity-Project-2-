@@ -94,7 +94,7 @@ public class datuDaupan : MonoBehaviour
         if (!dMan.dialogActive && istriggered && load)
         {
 
-            lna.loadFromDialogue("Level2");
+            lna.loadFromDialogue("Level3");
 
             istriggered = false;
             //dMan.background.gameObject.SetActive(false);
