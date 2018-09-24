@@ -17,6 +17,8 @@ public class UIManager : MonoBehaviour {
     private LoadNewArea lna;
     GameObject[] gameOver;
     public GameObject player;
+    public GameObject tip;
+    
 
     // Use this for initialization
     void Start () {
@@ -144,7 +146,11 @@ public class UIManager : MonoBehaviour {
         playerHealth.isactive = true;
 
     }
+    public void closetip()
+    {
+        tip.SetActive(false);
 
+    }
 
     //loads inputted level
 
