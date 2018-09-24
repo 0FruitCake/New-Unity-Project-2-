@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/shagi/OneDrive/Desktop/Pepe_the_historian/New Unity Project (2).exe
+C:/Users/ppvcadano/Desktop/Pepe_the_historian/New Unity Project (2).exe
 SceneListBegin?
 Assets/Scenes/mainMenu.unity
 Assets/Scenes/main.unity
@@ -252,6 +252,7 @@ aac9c55ae7ba4b95b852a7d9c191acd1 Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 0a006f3734181ba8b26758f0866152c0 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 d06455083d7db4d349d71b767643be85 Assembly-CSharp.dll:.cut3sidetrigger
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:Tiled2Unity.SortingLayerExposed
+e016001fbd9d7c70515ba26880763016 Assembly-CSharp.dll:.musicSwitcher
 aaf3fc6261493d2e43f8e694b6fedc17 Assembly-CSharp.dll:Tiled2Unity.SpriteDepthInMap
 0ce0312582e9b526993ccfbe490ab8ce Assembly-CSharp.dll:.DamageNumbers
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.pirateRange
@@ -273,4 +274,3 @@ b1f889d09b7714d954bc5925de295caa Assembly-CSharp.dll:.side2Palawan
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.cut1loctrigger
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.EnemyAttack
 7c1c23b8f97080ac97fc7b2a31ffa42a Assembly-CSharp.dll:.zoneController
-e016001fbd9d7c70515ba26880763016 Assembly-CSharp.dll:.musicSwitcher
