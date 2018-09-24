@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class potionPickUp : MonoBehaviour {
 
-    public PlayerHealthManager phm;
+    private PlayerHealthManager phm;
     private sfxManager sfxMan;
 
     void Start()
@@ -15,6 +15,11 @@ public class potionPickUp : MonoBehaviour {
     // Use this for initialization
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if(phm == null)
+        {
+            phm = FindObjectOfType<PlayerHealthManager>();
+
+        }
         if(other.gameObject.tag == "Player")
         {
             sfxMan.potionPick.Play();

@@ -658,7 +658,7 @@ Prefab:
     - target: {fileID: 224885930834317378, guid: b8554a96427b04a44a324806dd870d61,
         type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 224167053039699742, guid: b8554a96427b04a44a324806dd870d61,
         type: 2}
@@ -798,6 +798,11 @@ Prefab:
         type: 2}
       propertyPath: m_RootOrder
       value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 224321855561156568, guid: b8554a96427b04a44a324806dd870d61,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8554a96427b04a44a324806dd870d61, type: 2}
@@ -7734,6 +7739,7 @@ MonoBehaviour:
   images: []
   istriggered: 0
   questcomp: {fileID: 101872219}
+  npCont: {fileID: 2147258387}
 --- !u!224 &1759214221
 RectTransform:
   m_ObjectHideFlags: 0
