@@ -35,6 +35,7 @@ public class cut3 : MonoBehaviour
     public pirateController[] piratesc;
     public EnemyDamageController[] edc;
     public zoneController zCont;
+    private musicController mc;
 
     // Use this for initialization
     void Start()
@@ -47,7 +48,10 @@ public class cut3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (mc == null)
+        {
+            mc = FindObjectOfType<musicController>();
+        }
         if (thePlayer == null)
         {
             thePlayer = FindObjectOfType<PlayerMovement2>();
@@ -122,7 +126,7 @@ public class cut3 : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-
+            mc.switchTrack(0);
             playerEnter = true;
 
 

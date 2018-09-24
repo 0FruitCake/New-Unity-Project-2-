@@ -9,26 +9,45 @@ public class councilDialogue : MonoBehaviour {
     public string[] img;
     public Sprite[] images;
     private bool istriggered;
-   private bool cgistriggered;
+    private bool istriggered2;
+    private bool cgistriggered;
     private bool playerEnter;
-    public questMainl2 qmp;
+    public questMainl3 qmp;
 
     public string[] lines2;
     public string[] charac2;
     public string[] img2;
 
-	// Use this for initialization
-	void Start () {
+    public cgManager cgman;
+
+    public string[] cglines;
+
+    public string[] cgimg;
+    public Sprite[] cgimages;
+    private musicController mc;
+    private UIManager pr;
+    // Use this for initialization
+    void Start () {
 		
 	}
 
     // Update is called once per frame
     void Update()
     {
+        if (mc == null)
+        {
+            mc = FindObjectOfType<musicController>();
+        }
         if (Input.GetKeyDown(KeyCode.E) && playerEnter)
         {
-          
-
+          if(qmp.questIndex == 0)
+            {
+                questInstance1();
+            }
+            if (qmp.questIndex ==2)
+            {
+                questInstance2();
+            }
 
         }
 
@@ -36,8 +55,20 @@ public class councilDialogue : MonoBehaviour {
 
         if (!dMan.dialogActive && istriggered)
         {
-
             istriggered = false;
+            qmp.questCompleted();
+        }
+
+        if (!dMan.dialogActive && istriggered2)
+        {
+            Debug.Log("INnnnn");
+            istriggered2 = false;
+            runCG();
+        }
+
+        if(!cgman.cgActive && cgistriggered)
+        {
+            pr.showGameOver();
         }
 
 
@@ -93,17 +124,38 @@ public class councilDialogue : MonoBehaviour {
         if (!dMan.dialogActive)
         {
 
+            
             dMan.showDialogue();
             dMan.currentLine = 0;
-            istriggered = true;
-           
+            istriggered2 = true;
+            qmp.questCompleted();
 
         }
     }
 
- 
+    public void runCG()
+    {
+        mc.switchTrack(1);
+        cgman.textLines = cglines;
+        cgman.textimage = cgimg;
+        cgman.images = cgimages;
+
+
+        if (!cgman.cgActive)
+        {
+            cgman.currentLine = 0;
+            cgman.showDialogue();
+            cgistriggered = true;
+
+        }
 
 
 
     }
+
+
+
+
+
+}
 

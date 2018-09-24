@@ -40,7 +40,7 @@ public class datuDaupan : MonoBehaviour
    
     public string btext;
     public string btext2;
-    
+    private musicController mc;
 
 
     private PlayerMovement2 thePlayer;
@@ -53,6 +53,10 @@ public class datuDaupan : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (mc == null)
+        {
+            mc = FindObjectOfType<musicController>();
+        }
         if (thePlayer == null)
         {
             thePlayer = FindObjectOfType<PlayerMovement2>();
@@ -75,7 +79,7 @@ public class datuDaupan : MonoBehaviour
             
         }
 
-        if (cgman.currentLine == 4 && cgistriggered == true)
+        if (cgman.currentLine == 3 && cgistriggered == true)
         {
 
             dMan.background.gameObject.SetActive(true);
@@ -154,7 +158,7 @@ public class datuDaupan : MonoBehaviour
         {
 
             dMan.showDialogue();
-            dMan.currentLine = 0;
+            dMan.currentLine = -1;
             istriggered = true;
             load = true;
 
@@ -196,6 +200,7 @@ public class datuDaupan : MonoBehaviour
 
         if (!cgman.cgActive)
         {
+            mc.switchTrack(3);
             cgman.currentLine = 0;
             cgman.showDialogue();
             cgistriggered = true;

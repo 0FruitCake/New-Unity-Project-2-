@@ -15,6 +15,7 @@ public class side3Brother : MonoBehaviour {
     public side3Palawan qmp;
     public zoneController zct;
     public GameObject exitTrigger;
+    private musicController mc;
     
 
     // Use this for initialization
@@ -26,10 +27,15 @@ public class side3Brother : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        if (mc == null)
+        {
+            mc = FindObjectOfType<musicController>();
+        }
         if (Input.GetKeyDown(KeyCode.E) && playerEnter)
         {
             if (qmp.questIndex == 2)
             {
+                mc.switchTrack(2);
                 questInstance1();
             }
             else

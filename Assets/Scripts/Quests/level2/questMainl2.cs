@@ -27,7 +27,7 @@ public class questMainl2 : MonoBehaviour
 
     private experienceManager xpm;
     public Image questcomp;
-
+    private musicController mc;
     // Use this for initialization
     void Start()
     {
@@ -44,6 +44,10 @@ public class questMainl2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(mc== null)
+        {
+            mc = FindObjectOfType<musicController>();
+        }
 
         if (questIndex == 2)
         {
@@ -129,7 +133,7 @@ public class questMainl2 : MonoBehaviour
         npcController npCont = GameObject.FindObjectOfType<npcController>().GetComponent<npcController>();
         npCont.set1State(true);
         npCont.set2State(false);
-
+        mc.switchTrack(1);
         yield return StartCoroutine(sf.FadeToClear());
 
     }

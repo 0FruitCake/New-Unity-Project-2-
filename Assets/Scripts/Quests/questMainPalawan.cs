@@ -31,6 +31,7 @@ public class questMainPalawan : MonoBehaviour {
     public experienceManager xpm;
     public Image questcomp;
     public zoneController zCont;
+    private musicController mc;
 
     // Use this for initialization
     void Start () {
@@ -43,10 +44,14 @@ public class questMainPalawan : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if(mc == null)
+        {
+            mc = FindObjectOfType<musicController>();
+        }
 		if(questIndex == 2)
         {
          
-            if(bananaCount == 10)
+            if(bananaCount == 5)
             {
                 questCompleted();
             }
@@ -142,7 +147,7 @@ public class questMainPalawan : MonoBehaviour {
 
             if (questIndex == 2)
             {
-                questProg[questIndex] = "Banana Hands Collected : " + bananaCount + "/10";
+                questProg[questIndex] = "Banana Hands Collected : " + bananaCount + "/5";
                 qm.questProg.text = questProg[questIndex];
            
             }
@@ -185,7 +190,7 @@ public class questMainPalawan : MonoBehaviour {
         zCont.zone1State(false);
         zCont.battleOn(false);
         theTrader.transform.position = tposition.position;
-        
+        mc.switchTrack(1);
         yield return StartCoroutine(sf.FadeToClear());
 
     }

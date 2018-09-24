@@ -256,6 +256,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 50878227701625334, guid: 606b6ddc5a6fdc74b98d0f260043f15f,
+        type: 2}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114514134050087480, guid: 606b6ddc5a6fdc74b98d0f260043f15f, type: 2}
     - {fileID: 114719513478503726, guid: 606b6ddc5a6fdc74b98d0f260043f15f, type: 2}
@@ -653,7 +658,7 @@ Prefab:
     - target: {fileID: 224885930834317378, guid: b8554a96427b04a44a324806dd870d61,
         type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 224167053039699742, guid: b8554a96427b04a44a324806dd870d61,
         type: 2}
@@ -663,7 +668,7 @@ Prefab:
     - target: {fileID: 224831674508701862, guid: b8554a96427b04a44a324806dd870d61,
         type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 224613145006449478, guid: b8554a96427b04a44a324806dd870d61,
         type: 2}
@@ -672,7 +677,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4130662819292462, guid: b8554a96427b04a44a324806dd870d61, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 224927052622733370, guid: b8554a96427b04a44a324806dd870d61,
         type: 2}
@@ -682,7 +687,7 @@ Prefab:
     - target: {fileID: 224338435504625926, guid: b8554a96427b04a44a324806dd870d61,
         type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 114364036365335358, guid: b8554a96427b04a44a324806dd870d61,
         type: 2}
@@ -778,6 +783,21 @@ Prefab:
         type: 2}
       propertyPath: m_AnchorMax.x
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224150463480058556, guid: b8554a96427b04a44a324806dd870d61,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 224556739828396038, guid: b8554a96427b04a44a324806dd870d61,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 224623150659202750, guid: b8554a96427b04a44a324806dd870d61,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8554a96427b04a44a324806dd870d61, type: 2}
@@ -3435,6 +3455,49 @@ MonoBehaviour:
   istriggered: 0
   qmp: {fileID: 1759214220}
   qm: {fileID: 1759214218}
+--- !u!1 &907925809
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 907925811}
+  - component: {fileID: 907925810}
+  m_Layer: 0
+  m_Name: Music Switcher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &907925810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 907925809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ffbbdc940c0e7489a06c0bddb71f77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newTrack: 5
+  switchOnStart: 1
+  musicOnPlay: 0
+--- !u!4 &907925811
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 907925809}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1757.5575, y: -69.26009, z: -81.27476}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &934058848
 GameObject:
   m_ObjectHideFlags: 0
@@ -7144,9 +7207,7 @@ MonoBehaviour:
   - He also told me vital information for our conquest.
   - He provided information regarding Datu Bago's settlement.
   - Now equipped with knowledge and confident, we sailed for Davao.
-  - Now equipped with knowledge and confident, we sailed for Davao.
   cgimg:
-  - 0
   - 0
   - 0
   - 0

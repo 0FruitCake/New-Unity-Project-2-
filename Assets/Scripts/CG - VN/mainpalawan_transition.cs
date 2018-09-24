@@ -12,6 +12,7 @@ public class mainpalawan_transition : MonoBehaviour {
     public string[] img;
     public Sprite[] images;
     private LoadNewArea lna;
+    private musicController mc;
 
     // Use this for initialization
     void Start () {
@@ -21,10 +22,15 @@ public class mainpalawan_transition : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-     
-        	 if (Input.GetKeyDown(KeyCode.E) && playerEnter)
+        if (mc == null)
         {
-        	
+            mc = FindObjectOfType<musicController>();
+        }
+
+        if (Input.GetKeyDown(KeyCode.E) && playerEnter)
+        {
+            mc.switchTrack(3);
+            mc.musicCanPlay = true;
 			cgman.textLines = lines;
             cgman.textimage = img;
             

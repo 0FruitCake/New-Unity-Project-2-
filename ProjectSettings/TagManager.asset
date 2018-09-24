@@ -11,6 +11,8 @@ TagManager:
   - ef_witness
   - Player_HitBox
   - Enemy_HitBox
+  - ShowOnPause
+  - gameOver
   layers:
   - Default
   - TransparentFX

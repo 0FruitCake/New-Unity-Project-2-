@@ -25,7 +25,7 @@ public class companionDialogue : MonoBehaviour
     public string btext;
     public string btext2;
     public string btext3;
-
+    public bool badending;
 
     public string[] lines2;
     public string[] charac2;
@@ -43,6 +43,8 @@ public class companionDialogue : MonoBehaviour
     public Sprite[] cgimages2;
     private LoadNewArea lna;
     private bool load;
+    private UIManager pr;
+    private musicController mc;
 
     // Use this for initialization
     void Start()
@@ -53,6 +55,14 @@ public class companionDialogue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(mc == null)
+        {
+            mc = FindObjectOfType<musicController>();
+        }
+        if(pr == null)
+        {
+            pr = FindObjectOfType<UIManager>();
+        }
         if (Input.GetKeyDown(KeyCode.E) && playerEnter)
         {
             if (qmp.questIndex >8)
@@ -109,6 +119,10 @@ public class companionDialogue : MonoBehaviour
             //dMan.background.gameObject.SetActive(false);
 
 
+        }
+        if(istriggered && badending && !cgman.cgActive)
+        {
+            pr.showGameOver();
         }
     }
 
@@ -219,7 +233,7 @@ public class companionDialogue : MonoBehaviour
             cgman.currentLine = 0;
             cgman.showDialogue();
             cgistriggered = true;
-
+            badending = true;
         }
 
 
@@ -228,6 +242,7 @@ public class companionDialogue : MonoBehaviour
 
         public void runCG2()
         {
+        mc.switchTrack(3);
             Debug.Log("CGGGG");
             cgman.textLines = cglines2;
             cgman.textimage = cgimg2;

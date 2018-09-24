@@ -10,6 +10,7 @@ public class playerRespawn : MonoBehaviour {
     public GameObject player;
     private Vector3 targetPos;
     public float moveSpeed;
+    private UIManager uiman;
     // Use this for initialization
     void Start () {
         respawnon = true;
@@ -25,6 +26,10 @@ public class playerRespawn : MonoBehaviour {
         player = GameObject.FindWithTag("Player");
         }
 
+        if(uiman == null)
+        {
+            uiman = FindObjectOfType<UIManager>();
+        }
         targetPos = new Vector3(player.transform.position.x, player.transform.position.y, transform.position.z);
         transform.position = Vector3.Lerp(transform.position, targetPos, moveSpeed * Time.deltaTime);
 
@@ -51,7 +56,7 @@ public class playerRespawn : MonoBehaviour {
             }
             else if (!respawnon)
             {
-                restartCurrentScene();
+                uiman.showGameOver();
             }
         }
     }

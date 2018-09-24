@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CompanionDialogRange : MonoBehaviour {
 
+    [SerializeField]
     private CompanionController npcmove;
     
     public bool triggeractive;

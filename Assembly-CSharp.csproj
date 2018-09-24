@@ -70,6 +70,8 @@
     <Compile Include="Assets\Scripts\Canvas\experienceManager.cs" />
     <Compile Include="Assets\Scripts\Canvas\hideOverTime.cs" />
     <Compile Include="Assets\Scripts\Canvas\hideOverTime1.cs" />
+    <Compile Include="Assets\Scripts\Canvas\musicController.cs" />
+    <Compile Include="Assets\Scripts\Canvas\musicSwitcher.cs" />
     <Compile Include="Assets\Scripts\Canvas\ScreenFader.cs" />
     <Compile Include="Assets\Scripts\Canvas\sfxManager.cs" />
     <Compile Include="Assets\Scripts\Canvas\TextImporter.cs" />
@@ -145,6 +147,7 @@
     <Compile Include="Assets\Scripts\Quests\side2Palawan.cs" />
     <Compile Include="Assets\Scripts\Quests\side3Palawan.cs" />
     <Compile Include="Assets\Scripts\Quests\spawnSpiders.cs" />
+    <Compile Include="Assets\Scripts\Quests\sword.cs" />
     <Compile Include="Assets\Scripts\Quests\wolf.cs" />
     <Compile Include="Assets\Scripts\Quests\zoneController.cs" />
     <Compile Include="Assets\Scripts\Tips\tipManager.cs" />
