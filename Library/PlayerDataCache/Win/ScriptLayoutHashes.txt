@@ -1,8 +1,12 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/ppvcadano/Desktop/buuld4/New Unity Project (2).exe
+C:/Users/ppvcadano/Desktop/okdad/epep.exe
 SceneListBegin?
 Assets/Scenes/mainMenu.unity
+Assets/Scenes/main.unity
+Assets/Scenes/palawan.unity
+Assets/Scenes/Level2.unity
+Assets/Scenes/Level3.unity
 SceneListEnd?
 9dcf6daef89ce236425ad40670cce7a9 Assembly-CSharp.dll:.cutTrigger1lvl3
 9d1fb5b5a5a9f901ee2a5cfd89630113 Assembly-CSharp.dll:.ScreenFader

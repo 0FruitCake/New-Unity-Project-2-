@@ -132,7 +132,7 @@ public class questMainl2 : MonoBehaviour
 
         npcController npCont = GameObject.FindObjectOfType<npcController>().GetComponent<npcController>();
         npCont.set1State(true);
-        
+        npCont.set2State(false);
         mc.switchTrack(1);
         yield return StartCoroutine(sf.FadeToClear());
 

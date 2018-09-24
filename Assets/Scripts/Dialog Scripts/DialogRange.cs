@@ -10,18 +10,19 @@ public class DialogRange : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        if(GetComponentInParent<NPCMoving>() != null)
-        {
-
-            npcmove = GetComponentInParent<NPCMoving>();
-        }
+        
 		
     }
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+
+        if (GetComponentInParent<NPCMoving>() != null)
+        {
+
+            npcmove = GetComponentInParent<NPCMoving>();
+        }
+    }
 
     private void OnTriggerStay2D(Collider2D other)
     {
