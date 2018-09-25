@@ -11,6 +11,7 @@ public class playerRespawn : MonoBehaviour {
     private Vector3 targetPos;
     public float moveSpeed;
     private UIManager uiman;
+    public GameObject respawn;
     // Use this for initialization
     void Start () {
         respawnon = true;
@@ -30,17 +31,24 @@ public class playerRespawn : MonoBehaviour {
         {
             uiman = FindObjectOfType<UIManager>();
         }
+
+        if(respawn == null)
+        {
+            respawn = GameObject.Find("Respawn");
+            respawn.SetActive(false);
+        }
         targetPos = new Vector3(player.transform.position.x, player.transform.position.y, transform.position.z);
         transform.position = Vector3.Lerp(transform.position, targetPos, moveSpeed * Time.deltaTime);
 
         if (!phm.isactive)
         {
 
-
+            respawn.SetActive(true);
             if (respawnon)
             {
                 if (currentrestime > 0)
                 {
+                    
                     currentrestime -= Time.deltaTime;
                 }
 

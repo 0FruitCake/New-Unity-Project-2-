@@ -90,7 +90,6 @@ public class companionDialogue : MonoBehaviour
             btn3.SetActive(true);
         }
 
-
         if (!dMan.dialogActive && istriggered && !load)
         {
             
@@ -106,7 +105,6 @@ public class companionDialogue : MonoBehaviour
             cgistriggered = false;
             playerEnter = false;
             questInstance2();
-           
 
         }
 
@@ -118,11 +116,13 @@ public class companionDialogue : MonoBehaviour
             istriggered = false;
             //dMan.background.gameObject.SetActive(false);
 
-
         }
-        if(istriggered && badending)
+        if(cgistriggered && badending && !cgman.cgActive)
         {
+            Debug.Log("ello");
             pr.showGameOver();
+            cgistriggered = false;
+            badending = false;
         }
     }
 

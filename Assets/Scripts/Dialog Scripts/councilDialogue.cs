@@ -66,9 +66,10 @@ public class councilDialogue : MonoBehaviour {
             runCG();
         }
 
-        if(!cgman.cgActive && cgistriggered)
+        if(cgistriggered && !cgman.cgActive)
         {
             pr.showGameOver();
+            cgistriggered = false;
         }
 
 
