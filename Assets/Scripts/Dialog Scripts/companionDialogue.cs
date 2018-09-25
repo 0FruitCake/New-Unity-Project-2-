@@ -120,7 +120,7 @@ public class companionDialogue : MonoBehaviour
 
 
         }
-        if(istriggered && badending && !cgman.cgActive)
+        if(istriggered && badending)
         {
             pr.showGameOver();
         }
