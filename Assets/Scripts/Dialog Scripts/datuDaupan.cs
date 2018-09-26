@@ -41,6 +41,7 @@ public class datuDaupan : MonoBehaviour
     public string btext;
     public string btext2;
     private musicController mc;
+    private bool hasBeenActivated;
 
 
     private PlayerMovement2 thePlayer;
@@ -138,10 +139,14 @@ public class datuDaupan : MonoBehaviour
 
         if (!dMan.dialogActive)
         {
-            qmp.questCompleted();
+            if (!hasBeenActivated)
+            {
+                qmp.questCompleted();
+            }
             dMan.showDialogue();
             dMan.currentLine = 0;
             istriggered = true;
+            hasBeenActivated = true;
 
         }
     }
