@@ -35,7 +35,7 @@ public class side2Palawan : MonoBehaviour {
 
     public void questCompleted()
     {
-        if (questIndex == questTitle.Length)
+        if (questIndex == questTitle.Length -1)
         {
             questcomp.gameObject.SetActive(true);
         }

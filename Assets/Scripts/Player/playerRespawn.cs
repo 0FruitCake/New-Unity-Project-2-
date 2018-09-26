@@ -43,18 +43,19 @@ public class playerRespawn : MonoBehaviour {
         if (!phm.isactive)
         {
 
-            respawn.SetActive(true);
+            
             if (respawnon)
             {
                 if (currentrestime > 0)
                 {
-                    
+                    respawn.SetActive(true);
+
                     currentrestime -= Time.deltaTime;
                 }
 
                 if (currentrestime <= 0)
                 {
-
+                    respawn.SetActive(false);
                     phm.playerCurrentHealth = phm.playerMaxHealth / 3;
                     player.SetActive(true);
                     phm.isactive = true;

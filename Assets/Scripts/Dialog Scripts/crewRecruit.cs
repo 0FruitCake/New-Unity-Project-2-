@@ -41,6 +41,7 @@ public class crewRecruit : MonoBehaviour {
         {
             qmp.recruitCount += 1;
             isRecruited = true;
+            istriggered = false;
         }
     }
 

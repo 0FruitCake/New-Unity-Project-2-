@@ -343,11 +343,10 @@ MonoBehaviour:
   enemyCurrentHealth: 0
   potion: {fileID: 0}
   isDead: 0
-  expm: {fileID: 0}
   expGiven: 5
   isQuestMonster: 0
   isQuestActive: 0
-  dropchance: 4
+  dropchance: 3
 --- !u!114 &114665168343555676
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -744,7 +744,7 @@ MonoBehaviour:
   istriggered: 0
   tips: {fileID: 742217644}
   tip: {fileID: 2118903640}
-  tiptext: The game includes NPCs. When in range, press E to interact.
+  tiptext: Interact with characters by pressing E.
 --- !u!61 &419088087
 BoxCollider2D:
   m_ObjectHideFlags: 0
