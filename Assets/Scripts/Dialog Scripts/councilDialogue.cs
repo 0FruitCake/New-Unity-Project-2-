@@ -38,6 +38,10 @@ public class councilDialogue : MonoBehaviour {
         {
             mc = FindObjectOfType<musicController>();
         }
+        if (pr == null)
+        {
+            pr = FindObjectOfType<UIManager>();
+        }
         if (Input.GetKeyDown(KeyCode.E) && playerEnter)
         {
           if(qmp.questIndex == 0)
@@ -66,8 +70,9 @@ public class councilDialogue : MonoBehaviour {
             runCG();
         }
 
-        if(cgistriggered && !cgman.cgActive)
+        if(cgistriggered == true && !cgman.cgActive)
         {
+            Debug.Log("iinnn");
             pr.showGameOver();
             cgistriggered = false;
         }
