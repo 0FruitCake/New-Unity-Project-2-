@@ -12,6 +12,7 @@ public class playerRespawn : MonoBehaviour {
     public float moveSpeed;
     private UIManager uiman;
     public GameObject respawn;
+    
     // Use this for initialization
     void Start () {
         respawnon = true;
@@ -22,7 +23,9 @@ public class playerRespawn : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if(phm == null && player == null) { 
+       
+        
+        if (phm == null && player == null) { 
         phm = FindObjectOfType<PlayerHealthManager>();
         player = GameObject.FindWithTag("Player");
         }
@@ -54,11 +57,12 @@ public class playerRespawn : MonoBehaviour {
                 }
 
                 if (currentrestime <= 0)
-                {
+                { 
                     respawn.SetActive(false);
                     phm.playerCurrentHealth = phm.playerMaxHealth / 3;
                     player.SetActive(true);
                     phm.isactive = true;
+                    
 
                     currentrestime = respawntime;
                 }
@@ -78,4 +82,5 @@ public class playerRespawn : MonoBehaviour {
         phm.isactive = true;
 
     }
+   
 }

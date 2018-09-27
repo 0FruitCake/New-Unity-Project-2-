@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 114592023490076240}
   m_Layer: 0
   m_Name: atk_collider_up
-  m_TagString: Untagged
+  m_TagString: attackCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61,7 +61,7 @@ GameObject:
   - component: {fileID: 114657753186992640}
   m_Layer: 0
   m_Name: atk_collider_left
-  m_TagString: Untagged
+  m_TagString: attackCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 114466378090011042}
   m_Layer: 0
   m_Name: atk_collider_right
-  m_TagString: Untagged
+  m_TagString: attackCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,7 +144,7 @@ GameObject:
   - component: {fileID: 114653472725332178}
   m_Layer: 0
   m_Name: atk_collider_down
-  m_TagString: Untagged
+  m_TagString: attackCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -525,6 +525,11 @@ MonoBehaviour:
   isQuestMonster: 0
   isQuestActive: 0
   dropchance: 3
+  attackCollider:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &114590731995181234
 MonoBehaviour:
   m_ObjectHideFlags: 1

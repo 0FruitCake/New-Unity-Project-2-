@@ -71,7 +71,7 @@ GameObject:
   - component: {fileID: 61106714483100480}
   m_Layer: 0
   m_Name: attack_collider
-  m_TagString: Untagged
+  m_TagString: attackCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -420,6 +420,8 @@ MonoBehaviour:
   isQuestMonster: 0
   isQuestActive: 0
   dropchance: 6
+  attackCollider:
+  - {fileID: 0}
 --- !u!212 &212772851210666742
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -16,14 +16,24 @@ public class EnemyHealthManager : MonoBehaviour {
     private questMainl2 qml2;
     private side3Palawan s3p;
     public int dropchance;
+    public GameObject[] attackCollider;
+    int x = 0;
 
     // Use this for initialization
     void Start()
     {
         expm = FindObjectOfType<experienceManager>();
         enemyCurrentHealth = enemyMaxHealth;
-        
-    }
+
+        foreach (Transform child in transform)
+            if (child.CompareTag("attackCollider"))
+            {
+                attackCollider[x] = child.gameObject;
+                x++;
+            } 
+    
+
+}
 
     // Update is called once per frame
     void Update()
@@ -60,6 +70,11 @@ public class EnemyHealthManager : MonoBehaviour {
             }
             expm.currentExperience += expGiven;
             Debug.Log(expm.currentExperience);
+            for(int y = 0; y < attackCollider.Length; y++)
+            {
+                attackCollider[y].SetActive(false);
+            }
+            
             gameObject.SetActive(false);
             isDead = true;
             

@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 114251241844369850}
   m_Layer: 0
   m_Name: attack_colider
-  m_TagString: Untagged
+  m_TagString: attackCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,7 +121,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1532596964017820}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1867.494, y: 161.05844, z: 0}
+  m_LocalPosition: {x: -4680.96, y: -313.9411, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4991377637729244}
@@ -303,10 +303,10 @@ BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1532345203769488}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -409,6 +409,8 @@ MonoBehaviour:
   isQuestMonster: 0
   isQuestActive: 0
   dropchance: 6
+  attackCollider:
+  - {fileID: 0}
 --- !u!114 &114607025377864418
 MonoBehaviour:
   m_ObjectHideFlags: 1
