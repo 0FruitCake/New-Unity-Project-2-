@@ -88,13 +88,15 @@ public class DialogueManager : MonoBehaviour
 
    public IEnumerator AnimateText()
     {
-
-        for (int i = 0; i < (textLines[currentLine].Length + 1); i++)
-        {
-            
-            dText.text= textName[currentLine] + ": " +  textLines[currentLine].Substring(0, i);
-            yield return new WaitForSeconds(.03f);
-        }
+        
+            for (int i = 0; i < (textLines[currentLine].Length + 1); i++)
+            {
+                dText.text = textName[currentLine] + ": " + textLines[currentLine].Substring(0, i);      
+                yield return new WaitForSeconds(.03f);
+             }
+        
+        
+        
     }
 
     public void SkipToNextText()
@@ -106,7 +108,10 @@ public class DialogueManager : MonoBehaviour
         {
             currentLine = 0;
         }
-        StartCoroutine(AnimateText());
+        else
+        {
+            StartCoroutine(AnimateText());
+        }
     }
 
 }
