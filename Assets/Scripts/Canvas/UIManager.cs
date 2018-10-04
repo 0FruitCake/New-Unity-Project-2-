@@ -18,6 +18,7 @@ public class UIManager : MonoBehaviour {
     GameObject[] gameOver;
     public GameObject player;
     public GameObject tip;
+    public GameObject quest;
     
 
     // Use this for initialization
@@ -150,6 +151,9 @@ public class UIManager : MonoBehaviour {
     {
         tip.SetActive(false);
 
+    }
+    public void closequest() {
+        quest.SetActive(false);
     }
 
     //loads inputted level
