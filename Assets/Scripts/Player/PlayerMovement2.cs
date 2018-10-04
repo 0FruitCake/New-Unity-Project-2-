@@ -58,7 +58,15 @@ public class PlayerMovement2 : MonoBehaviour
         {
             canMove = true;
         }
-        
+
+        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+        {
+            moveSpeed = 160;
+        }
+        else
+        {
+            moveSpeed = 70;
+        }
 
         if (!canMove)
         {

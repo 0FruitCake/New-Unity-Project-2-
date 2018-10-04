@@ -47,8 +47,7 @@ public class side3Brother : MonoBehaviour {
         }
         if (!dMan.dialogActive && istriggered)
         {
-            exitTrigger.SetActive(true);
-            
+
             qmp.questCompleted();
             istriggered = false;
         }

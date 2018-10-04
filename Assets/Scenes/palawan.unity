@@ -2667,6 +2667,7 @@ MonoBehaviour:
   isQuestMonster: 0
   isQuestActive: 0
   dropchance: 4
+  attackCollider: []
 --- !u!114 &106298801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4317,6 +4318,7 @@ MonoBehaviour:
   isQuestMonster: 0
   isQuestActive: 0
   dropchance: 1
+  attackCollider: []
 --- !u!1 &194776439
 GameObject:
   m_ObjectHideFlags: 0
@@ -5914,7 +5916,7 @@ MonoBehaviour:
   tips: {fileID: 529563908}
   tip: {fileID: 383586746}
   tiptext: "Controls :  \nE - Interact\nF - Attack \nU - Quest Log\nWASD / Arrow keys
-    - Movement\n"
+    - Movement\nRight/Left shift - Sprint"
 --- !u!61 &266121797
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17183,8 +17185,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: -13.343002}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.77, y: 0.5}
-    oldSize: {x: 57, y: 51}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 30, y: 49}
     newSize: {x: 64, y: 64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -36520,7 +36522,8 @@ MonoBehaviour:
   istriggered: 0
   tips: {fileID: 529563908}
   tip: {fileID: 383586746}
-  tiptext: "Additional Controls :  \nF - Attack \nU - View Quest Log\n"
+  tiptext: "Additional Controls :  \nF - Attack \nU - View Quest Log\nRight/Left shift
+    - Sprint\n"
 --- !u!61 &1781253075
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41404,6 +41407,7 @@ MonoBehaviour:
   isQuestMonster: 0
   isQuestActive: 0
   dropchance: 4
+  attackCollider: []
 --- !u!114 &1806919748
 MonoBehaviour:
   m_ObjectHideFlags: 0

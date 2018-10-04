@@ -22,11 +22,11 @@ public class DamageController : MonoBehaviour {
 		
 	}
 
-   public void OnTriggerEnter2D(Collider2D other)
+    public void OnTriggerEnter2D(Collider2D other)
     {
-        
+
         {
-            if (other.CompareTag("Enemy")) 
+            if (other.CompareTag("Enemy") || other.CompareTag("Enemy_HitBox")) 
             {
                 damage = dm.basedamage + (Random.Range(0, 3));
                 
@@ -36,15 +36,7 @@ public class DamageController : MonoBehaviour {
                 Instantiate(damageBurst, bursthitPoint.position, transform.rotation);
                 
             }
-            else if (other.CompareTag("Enemy_HitBox"))
-            {
-                damage = dm.basedamage + (Random.Range(0, 3));
-
-                other.gameObject.GetComponentInParent<EnemyHealthManager>().HurtEnemy(damage);
-                var clone = (GameObject)Instantiate(damageNumber, other.transform.position, Quaternion.Euler(Vector3.zero));
-                clone.GetComponent<DamageNumbers>().damageNumber = damage;
-                Instantiate(damageBurst, bursthitPoint.position, transform.rotation);
-            }
+         
         }
     }
 }

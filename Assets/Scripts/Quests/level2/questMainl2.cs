@@ -53,7 +53,7 @@ public class questMainl2 : MonoBehaviour
         if (questIndex == 2)
         {
 
-            if (wolfcount == 10)
+            if (wolfcount == 8)
             {
                 StartCoroutine("restoretownstate");
             }

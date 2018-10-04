@@ -17,7 +17,7 @@ public class sword : MonoBehaviour {
     // Use this for initialization
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(FindObjectOfType<DamageManager>() == null)
+        if(dm == null)
         {
 
             dm = FindObjectOfType<DamageManager>();
