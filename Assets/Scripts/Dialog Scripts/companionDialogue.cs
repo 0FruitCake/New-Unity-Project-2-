@@ -98,7 +98,7 @@ public class companionDialogue : MonoBehaviour
 
  
 
-        if (cgman.currentLine == 18 && cgistriggered == true)
+        if (cgman.currentLine == 17 && cgistriggered == true)
         {
             
             dMan.background.gameObject.SetActive(true);

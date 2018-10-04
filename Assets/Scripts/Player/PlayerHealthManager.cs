@@ -8,7 +8,7 @@ public class PlayerHealthManager : MonoBehaviour {
     public int playerMaxHealth;
     public int playerCurrentHealth;
     public bool isactive;
-    GameObject[] attackCollider;
+    public GameObject[] attackCollider;
 
     // Use this for initialization
     void Start () {
@@ -20,10 +20,7 @@ public class PlayerHealthManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (attackCollider == null)
-        {
-            attackCollider = GameObject.FindGameObjectsWithTag("attackCollider");
-        }
+     
         if (playerCurrentHealth <= 0)
         {
             disableColliders();

@@ -656,7 +656,7 @@ Prefab:
     - target: {fileID: 224321855561156568, guid: b8554a96427b04a44a324806dd870d61,
         type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4130662819292462, guid: b8554a96427b04a44a324806dd870d61, type: 2}
       propertyPath: m_RootOrder
@@ -685,7 +685,7 @@ Prefab:
     - target: {fileID: 224623150659202750, guid: b8554a96427b04a44a324806dd870d61,
         type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 114364036365335358, guid: b8554a96427b04a44a324806dd870d61,
         type: 2}
@@ -696,6 +696,28 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: onClickMain
+      objectReference: {fileID: 0}
+    - target: {fileID: 224392471061887172, guid: b8554a96427b04a44a324806dd870d61,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 224281309116743664, guid: b8554a96427b04a44a324806dd870d61,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733287932239622, guid: b8554a96427b04a44a324806dd870d61, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1339925613413972, guid: b8554a96427b04a44a324806dd870d61, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630906335590332, guid: b8554a96427b04a44a324806dd870d61, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8554a96427b04a44a324806dd870d61, type: 2}
@@ -735,12 +757,6 @@ GameObject:
 --- !u!114 &214764900 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114257916032829118, guid: b8554a96427b04a44a324806dd870d61,
-    type: 2}
-  m_PrefabInternal: {fileID: 214764893}
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
---- !u!114 &214764901 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114504442701722992, guid: b8554a96427b04a44a324806dd870d61,
     type: 2}
   m_PrefabInternal: {fileID: 214764893}
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -2414,9 +2430,40 @@ Prefab:
       propertyPath: potion
       value: 
       objectReference: {fileID: 1015997386}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 61587453829222626, guid: e2870e5214df1584baaa4b00153ca2ce, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: e2870e5214df1584baaa4b00153ca2ce, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1102752200 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1818525041641004, guid: e2870e5214df1584baaa4b00153ca2ce,
+    type: 2}
+  m_PrefabInternal: {fileID: 1102752199}
+--- !u!61 &1102752201
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1102752200}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 30, y: 47}
+    newSize: {x: 30, y: 47}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 30, y: 47}
+  m_EdgeRadius: 0
 --- !u!1001 &1117590184
 Prefab:
   m_ObjectHideFlags: 0
@@ -3063,6 +3110,11 @@ Prefab:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 23969169935816908, guid: 7d22bf5b54a08ee4fb38312620527e5b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23172626112422612, guid: 7d22bf5b54a08ee4fb38312620527e5b,
         type: 2}
       propertyPath: m_Enabled
       value: 0
@@ -3765,9 +3817,40 @@ Prefab:
       propertyPath: potion
       value: 
       objectReference: {fileID: 1015997386}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 61196254493824566, guid: 720722954dbcb434e9d13d53ff4b6c79, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 720722954dbcb434e9d13d53ff4b6c79, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1279861859 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1532596964017820, guid: 720722954dbcb434e9d13d53ff4b6c79,
+    type: 2}
+  m_PrefabInternal: {fileID: 1279861858}
+--- !u!61 &1279861860
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1279861859}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 30, y: 47}
+    newSize: {x: 30, y: 47}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 30, y: 47}
+  m_EdgeRadius: 0
 --- !u!1001 &1287294734
 Prefab:
   m_ObjectHideFlags: 0
@@ -3821,9 +3904,40 @@ Prefab:
       propertyPath: potion
       value: 
       objectReference: {fileID: 1015997386}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 61196254493824566, guid: 720722954dbcb434e9d13d53ff4b6c79, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 720722954dbcb434e9d13d53ff4b6c79, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1287294735 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1532596964017820, guid: 720722954dbcb434e9d13d53ff4b6c79,
+    type: 2}
+  m_PrefabInternal: {fileID: 1287294734}
+--- !u!61 &1287294736
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1287294735}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 30, y: 47}
+    newSize: {x: 30, y: 47}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 30, y: 47}
+  m_EdgeRadius: 0
 --- !u!1001 &1378310731
 Prefab:
   m_ObjectHideFlags: 0
@@ -3877,9 +3991,40 @@ Prefab:
       propertyPath: m_Name
       value: pirate_dagger (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 61196254493824566, guid: 720722954dbcb434e9d13d53ff4b6c79, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 720722954dbcb434e9d13d53ff4b6c79, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1378310732 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1532596964017820, guid: 720722954dbcb434e9d13d53ff4b6c79,
+    type: 2}
+  m_PrefabInternal: {fileID: 1378310731}
+--- !u!61 &1378310733
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1378310732}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 30, y: 47}
+    newSize: {x: 30, y: 47}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 30, y: 47}
+  m_EdgeRadius: 0
 --- !u!1 &1385991523
 GameObject:
   m_ObjectHideFlags: 0
@@ -4052,9 +4197,40 @@ Prefab:
       propertyPath: potion
       value: 
       objectReference: {fileID: 1015997386}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 61196254493824566, guid: 720722954dbcb434e9d13d53ff4b6c79, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 720722954dbcb434e9d13d53ff4b6c79, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1410532114 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1532596964017820, guid: 720722954dbcb434e9d13d53ff4b6c79,
+    type: 2}
+  m_PrefabInternal: {fileID: 1410532113}
+--- !u!61 &1410532115
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1410532114}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 30, y: 47}
+    newSize: {x: 30, y: 47}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 30, y: 47}
+  m_EdgeRadius: 0
 --- !u!1 &1419481936
 GameObject:
   m_ObjectHideFlags: 0
@@ -4730,9 +4906,40 @@ Prefab:
       propertyPath: m_Name
       value: pirate_saber_79 (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 61587453829222626, guid: e2870e5214df1584baaa4b00153ca2ce, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: e2870e5214df1584baaa4b00153ca2ce, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1806486103 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1818525041641004, guid: e2870e5214df1584baaa4b00153ca2ce,
+    type: 2}
+  m_PrefabInternal: {fileID: 1806486102}
+--- !u!61 &1806486104
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1806486103}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 30, y: 47}
+    newSize: {x: 30, y: 47}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 30, y: 47}
+  m_EdgeRadius: 0
 --- !u!1 &1844164571
 GameObject:
   m_ObjectHideFlags: 0
@@ -4997,7 +5204,7 @@ MonoBehaviour:
   questlog: {fileID: 214764903}
   mainqactive: 0
   questDesc: {fileID: 214764902}
-  questProg: {fileID: 214764901}
+  questProg: {fileID: 0}
   questTitle: {fileID: 214764900}
   side1active: 0
   side2active: 0

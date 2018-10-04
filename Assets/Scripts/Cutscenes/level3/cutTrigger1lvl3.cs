@@ -58,6 +58,7 @@ public class cutTrigger1lvl3 : MonoBehaviour {
             qm.mainqactive = true;
             qm.questActivated();
             qm.buttonMain.gameObject.SetActive(true);
+            qmp.questActive = true;
             transform.gameObject.SetActive(false);
 
         }
