@@ -29,13 +29,21 @@ public class DamageController : MonoBehaviour {
             if (other.CompareTag("Enemy") || other.CompareTag("Enemy_HitBox")) 
             {
                 damage = dm.basedamage + (Random.Range(0, 3));
+                if (other.CompareTag("Enemy"))
+                {
+                    other.gameObject.GetComponent<EnemyHealthManager>().HurtEnemy(damage);
+                }
+                else
+                {
+                    other.gameObject.GetComponentInParent<EnemyHealthManager>().HurtEnemy(damage);
+                }
                 
-                other.gameObject.GetComponent<EnemyHealthManager>().HurtEnemy(damage);
                 var clone = (GameObject)Instantiate(damageNumber, other.transform.position, Quaternion.Euler(Vector3.zero));
                 clone.GetComponent<DamageNumbers>().damageNumber = damage;
                 Instantiate(damageBurst, bursthitPoint.position, transform.rotation);
                 
             }
+            
          
         }
     }
