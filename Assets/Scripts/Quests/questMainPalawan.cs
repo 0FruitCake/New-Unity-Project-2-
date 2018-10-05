@@ -48,7 +48,12 @@ public class questMainPalawan : MonoBehaviour {
         {
             mc = FindObjectOfType<musicController>();
         }
-		if(questIndex == 2)
+
+        if (xpm == null)
+        {
+            xpm = FindObjectOfType<experienceManager>();
+        }
+        if (questIndex == 2)
         {
          
             if(bananaCount == 5)

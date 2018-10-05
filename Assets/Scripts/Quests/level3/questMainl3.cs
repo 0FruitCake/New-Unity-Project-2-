@@ -43,7 +43,11 @@ public class questMainl3 : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if(questIndex == 1)
+        if (xpm == null)
+        {
+            xpm = FindObjectOfType<experienceManager>();
+        }
+        if (questIndex == 1)
         {
             if(wolfcount == 8)
             {

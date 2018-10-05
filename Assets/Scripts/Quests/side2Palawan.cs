@@ -29,7 +29,10 @@ public class side2Palawan : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-      
+        if (xpm == null)
+        {
+            xpm = FindObjectOfType<experienceManager>();
+        }
 
     }
 

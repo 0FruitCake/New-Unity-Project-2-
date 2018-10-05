@@ -30,6 +30,14 @@ public class side1Palawan : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (xpm == null)
+        {
+            xpm = FindObjectOfType<experienceManager>();
+        }
+        if (phm == null)
+        {
+            phm = FindObjectOfType<PlayerHealthManager>();
+        }
         if (questIndex == 0)
         {
 

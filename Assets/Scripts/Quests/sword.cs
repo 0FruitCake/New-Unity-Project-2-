@@ -5,23 +5,29 @@ using UnityEngine;
 public class sword : MonoBehaviour {
 
     // Use this for initialization
-    
+    [SerializeField]
     private sfxManager sfxMan;
+    [SerializeField]
     private DamageManager dm;
 
-    void Start()
+    void Update()
     {
-        sfxMan = FindObjectOfType<sfxManager>();
+        if(sfxMan == null)
+        {
+            sfxMan = FindObjectOfType<sfxManager>();
+        }
+        if (dm == null)
+        {
+            dm = FindObjectOfType<DamageManager>();
+        }
+
+      
     }
 
     // Use this for initialization
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(dm == null)
-        {
-
-            dm = FindObjectOfType<DamageManager>();
-        }
+      
 
         if (other.gameObject.tag == "Player")
         {

@@ -49,6 +49,10 @@ public class questMainl2 : MonoBehaviour
         {
             mc = FindObjectOfType<musicController>();
         }
+        if (xpm == null)
+        {
+            xpm = FindObjectOfType<experienceManager>();
+        }
 
         if (questIndex == 2)
         {
