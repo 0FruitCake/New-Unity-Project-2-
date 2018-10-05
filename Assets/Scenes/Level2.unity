@@ -679,6 +679,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1111134967915332, guid: b8554a96427b04a44a324806dd870d61, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8554a96427b04a44a324806dd870d61, type: 2}
   m_IsPrefabAsset: 0
@@ -726,6 +730,12 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1256085447456514, guid: b8554a96427b04a44a324806dd870d61,
     type: 2}
   m_PrefabInternal: {fileID: 101872217}
+--- !u!114 &101872226 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114018424124558966, guid: b8554a96427b04a44a324806dd870d61,
+    type: 2}
+  m_PrefabInternal: {fileID: 101872217}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!114 &101872227 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114257916032829118, guid: b8554a96427b04a44a324806dd870d61,
@@ -9103,8 +9113,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questlog: {fileID: 101872234}
   mainqactive: 0
-  questDesc: {fileID: 101872228}
-  questProg: {fileID: 0}
+  questDesc: {fileID: 101872226}
+  questProg: {fileID: 101872228}
   questTitle: {fileID: 101872227}
   side1active: 0
   side2active: 0
