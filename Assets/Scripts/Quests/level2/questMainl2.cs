@@ -114,7 +114,7 @@ public class questMainl2 : MonoBehaviour
 
             if (questIndex == 2)
             {
-                questProg[questIndex] = "Pirates Defeated : " + wolfcount + "/10";
+                questProg[questIndex] = "Pirates Defeated : " + wolfcount + "/8";
                 qm.questProg.text = questProg[questIndex];
 
             }
